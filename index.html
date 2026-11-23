@@ -419,7 +419,7 @@ h1,h2,h3,h4,p,li,.v,.lead{word-break:keep-all;overflow-wrap:break-word}
           <div class="eyebrow">NOV – DEC 2026</div>
           <h2>이달의 <em>프로모션 차종</em></h2>
         </div>
-        <p>할인율이 가장 큰 차종입니다. 메르세데스-벤츠 코리아 11~12월 고객 리테일 프로모션(2026.11.20) 기준이며, 카드를 누르면 트림별 혜택이 열립니다.</p>
+        <p>할인 폭이 큰 트림을 차종별로 모았습니다. 메르세데스-벤츠 코리아 11~12월 고객 리테일 프로모션(2026.11.20) 기준이며, 카드를 누르면 트림별 혜택이 열립니다.</p>
       </div>
       <div class="promo-grid" id="promoGrid"></div>
       <div class="special-grid">
@@ -798,16 +798,16 @@ function priceText(p){ if(p==null) return "상담 문의"; return (typeof p==="n
 function catName(id){ return (CATS.find(c=>c.id===id)||{}).name||""; }
 const esc = s => String(s).replace(/[&<>"]/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch]));
 
-// 이달의 프로모션 (할인 폭 큰 트림)
+// 이달의 프로모션 (할인 폭 큰 트림, 같은 차종끼리 묶어 세단→SUV 크기순)
 const PICKS = [
-  ["gle-coupe","GLE 450 4MATIC Coupé AMG Line",26],
-  ["e-class","E 200 EXCLUSIVE",27],
-  ["glb","GLB 250 4MATIC",26],
-  ["e-class","E 200 AMG Line",27],
-  ["gle","GLE 450 4MATIC",26],
   ["c-class","C 200 AMG Line",26],
+  ["e-class","E 200 EXCLUSIVE",27],
+  ["e-class","E 200 AMG Line",27],
   ["gla","GLA 250 4MATIC AMG Line",26],
-  ["amg-glb","Mercedes-AMG GLB 35 4MATIC",26]
+  ["glb","GLB 250 4MATIC",26],
+  ["amg-glb","Mercedes-AMG GLB 35 4MATIC",26],
+  ["gle","GLE 450 4MATIC",26],
+  ["gle-coupe","GLE 450 4MATIC Coupé AMG Line",26]
 ];
 function renderPicks(){
   const g=document.getElementById("promoGrid");
