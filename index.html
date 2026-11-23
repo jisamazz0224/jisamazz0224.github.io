@@ -45,7 +45,7 @@ button{font-family:inherit}
 .brand b{color:var(--yellow)}
 .nav nav{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
 .nav nav::-webkit-scrollbar{display:none}
-.nav nav a{text-decoration:none;font-size:14px;color:var(--onbg-muted);padding:8px 10px;border-radius:8px;white-space:nowrap}
+.nav nav a{text-decoration:none;font-size:14px;color:var(--onbg-muted);padding:12px 10px;border-radius:8px;white-space:nowrap}
 .nav nav a:hover{color:var(--onbg);background:var(--bg2)}
 @media (max-width:640px){.brand{display:none}.nav nav{margin-left:0}}
 
@@ -75,7 +75,7 @@ button{font-family:inherit}
 .dock{position:fixed;left:0;right:0;bottom:0;z-index:55;background:rgba(11,11,12,.97);border-top:1px solid var(--line);padding:8px max(10px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(10px,env(safe-area-inset-left,0px))}
 .dock .in{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .dock .btn{width:100%;padding:14px 8px;font-size:17px;font-weight:900}
-body{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}
+body{padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
 /* notice */
 .notice{background:var(--bg2);border-bottom:1px solid var(--line);font-size:13px;color:var(--onbg-muted)}
 .notice .wrap{padding-block:9px}
@@ -85,7 +85,7 @@ body{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}
 /* filter */
 .filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:-4px 0 14px}
 .filters label{display:flex;align-items:center;gap:6px;font-size:14px;color:var(--onbg-muted);font-weight:700}
-.filters select{font:inherit;font-size:15px;font-weight:700;background:var(--card);color:var(--ink);border:0;border-radius:10px;padding:10px 12px}
+.filters select{font:inherit;font-size:16px;font-weight:700;background:var(--card);color:var(--ink);border:0;border-radius:10px;padding:10px 12px}
 .filters .reset{background:transparent;border:1px solid var(--line);color:var(--onbg);border-radius:10px;padding:10px 12px;font-size:14px;cursor:pointer}
 .filters .fhint{font-size:12px;color:var(--onbg-muted);flex-basis:100%}
 .mcard .fit{font-size:12px;color:#b42318;font-weight:700}
@@ -125,7 +125,7 @@ body{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}
 .ew-tbl{margin-top:10px}
 .gt{margin-top:10px;border:1px solid #e4e4e8;border-radius:10px;padding:8px 10px}
 .gt-h{font-size:13px;font-weight:900}
-.gt-h span{font-size:11px;font-weight:500;color:var(--muted);margin-left:4px}
+.gt-h span{font-size:12px;font-weight:500;color:var(--muted);margin-left:4px}
 .gt ul{margin:4px 0 0;padding-left:18px;font-size:13px}
 .gt-n{font-size:12px!important;color:var(--muted)!important;margin-top:8px!important}
 .gift{margin:12px 0 0;background:var(--soft);border-radius:10px;padding:10px 12px;font-size:13px}
@@ -151,8 +151,8 @@ body{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}
 .ew-tbl td.r{white-space:nowrap}
 .ewg{display:block;width:max-content;margin-bottom:2px}
 .ew-tbl th{white-space:normal;line-height:1.3}
-.ewg{display:inline-block;font-size:11px;font-weight:900;background:var(--soft);border-radius:4px;padding:1px 5px;margin-right:4px}
-.ew-link{display:inline-block;margin-top:8px;font-size:13px;font-weight:700;color:var(--ink)}
+.ewg{display:inline-block;font-size:12px;font-weight:900;background:var(--soft);border-radius:4px;padding:1px 5px;margin-right:4px}
+.ew-link{display:inline-block;margin-top:4px;padding:12px 0;font-size:13px;font-weight:700;color:var(--ink)}
 .calc{margin-top:18px;border:2px solid var(--ink);border-radius:12px;padding:16px}
 .calc h4{margin:0 0 4px;font-size:18px;font-weight:900}
 .calc h4 span{background:var(--yellow);color:var(--yellow-ink);font-size:12px;padding:2px 6px;border-radius:4px;margin-left:6px;vertical-align:middle}
@@ -160,7 +160,7 @@ body{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}
 .calc label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:700;color:#3d3d45}
 .calc input,.calc select{font:inherit;font-size:16px;padding:10px;border:1px solid #c9c9d0;border-radius:8px;background:#fff;color:var(--ink);min-width:0}
 .calc .quick{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
-.calc .quick button{border:1px solid #c9c9d0;background:#fff;color:var(--ink);border-radius:999px;padding:6px 10px;font-size:13px;font-weight:700;cursor:pointer}
+.calc .quick button{border:1px solid #c9c9d0;background:#fff;color:var(--ink);border-radius:999px;padding:6px 12px;min-height:44px;font-size:14px;font-weight:700;cursor:pointer}
 .calc .quick button.hi{border-color:var(--ink);background:var(--yellow);color:var(--yellow-ink)}
 .calc .dp-note{font-size:12px;color:#3d3d45;margin:8px 0 0}
 .calc .dp-note b{color:#b42318}
@@ -176,7 +176,7 @@ body{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}
 .social svg{flex:none;display:block}
 .social.sm{margin-top:12px;gap:8px}
 .social.sm a{padding:0;border:0;background:transparent}
-.social.sm svg{width:34px;height:34px}
+.social.sm svg{width:44px;height:44px}
 .hero-points span{font-size:13px;border:1px solid var(--line);color:var(--onbg-muted);padding:6px 10px;border-radius:999px}
 
 /* sections */
@@ -253,7 +253,7 @@ section.block{padding-block:56px}
 .hits{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:6px}
 .hits li{background:var(--soft);border-radius:8px;padding:8px 12px;font-size:14px;display:flex;justify-content:space-between;gap:8px}
 .hits li .g{color:var(--muted);font-size:12px;white-space:nowrap}
-.hits li .new{background:var(--ink);color:var(--yellow);font-size:11px;font-weight:900;padding:1px 6px;border-radius:4px;white-space:nowrap}
+.hits li .new{background:var(--ink);color:var(--yellow);font-size:12px;font-weight:900;padding:1px 6px;border-radius:4px;white-space:nowrap}
 .mou-meta{margin-top:16px;font-size:12px;color:var(--muted)}
 
 /* footer */
@@ -263,7 +263,7 @@ footer strong{color:var(--onbg)}
 footer ul{margin:8px 0 0;padding-left:18px}
 
 /* detail sheet */
-.sheet{position:fixed;inset:0 0 calc(70px + env(safe-area-inset-bottom,0px)) 0;z-index:50;background:rgba(0,0,0,.6);display:flex;justify-content:center;align-items:flex-end}
+.sheet{position:fixed;inset:0 0 calc(77px + env(safe-area-inset-bottom,0px)) 0;z-index:50;background:rgba(0,0,0,.6);display:flex;justify-content:center;align-items:flex-end}
 .sheet-in{background:var(--card);color:var(--ink);width:100%;max-width:880px;max-height:calc(100% - env(safe-area-inset-top,0px) - 24px);overflow:auto;border-radius:18px 18px 0 0;padding:22px max(18px,env(safe-area-inset-right,0px)) 28px max(18px,env(safe-area-inset-left,0px))}
 @media (min-width:900px){.sheet{align-items:center}.sheet-in{border-radius:18px;max-height:90%}}
 .sheet-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
@@ -285,7 +285,7 @@ td:first-child{white-space:nowrap}
 td:nth-child(2){min-width:220px}
 td .sm{display:block;font-size:12px;color:var(--muted)}
 .chips{display:flex;flex-wrap:wrap;gap:4px}
-.chip{font-size:11px;font-weight:700;padding:2px 7px;border-radius:4px;background:#eef0ff;color:#2a3a8f;white-space:nowrap}
+.chip{font-size:12px;font-weight:700;padding:2px 7px;border-radius:4px;background:#eef0ff;color:#2a3a8f;white-space:nowrap}
 .chip.y{background:var(--yellow);color:var(--yellow-ink)}
 .chip.t{background:var(--trade);color:#fff}
 .tri-note{margin-top:8px!important;font-size:12px!important;color:#3d3d45}
@@ -307,7 +307,7 @@ td .sm{display:block;font-size:12px;color:var(--muted)}
 .gate-list li em{font-style:normal;color:#0a66d8}
 .seat-mini{font-size:12px;color:#3d3d45;margin:10px 0}
 .seat-mini b{color:#b42318}
-.gate-ok{display:flex;gap:8px;align-items:center;font-weight:700;font-size:15px;cursor:pointer;padding:6px 0}
+.gate-ok{display:flex;gap:8px;align-items:center;font-weight:700;font-size:15px;cursor:pointer;padding:6px 0;min-height:44px}
 .gate-ok input{width:20px;height:20px;accent-color:#111114}
 .gate-links{margin-top:10px}
 .notes{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:6px}
@@ -320,6 +320,47 @@ td .sm{display:block;font-size:12px;color:var(--muted)}
 .sheet-cta .t .who .num{font-size:14px;color:#d8d8de}
 .red{color:#e11d2e;font-weight:700}
 .toast{position:fixed;left:50%;bottom:calc(88px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--yellow);color:var(--yellow-ink);font-weight:900;padding:10px 16px;border-radius:10px;z-index:60}
+
+@media (max-width:600px){
+.trim-tbl{border:0;border-radius:0;overflow:visible}
+.trim-tbl table{min-width:0;font-size:14px}
+.trim-tbl thead{display:none}
+.trim-tbl tbody{display:grid;gap:10px}
+.trim-tbl tr{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #e4e4e8;border-radius:12px;overflow:hidden}
+.trim-tbl td{border:0;padding:8px 12px;min-width:0!important;white-space:normal}
+.trim-tbl td:nth-child(1){grid-column:1/-1;padding:10px 12px 0;font-size:12px;color:var(--muted);font-weight:700}
+.trim-tbl td:nth-child(2){grid-column:1/-1;padding-top:2px;font-size:16px}
+.trim-tbl td:nth-child(3),.trim-tbl td:nth-child(4),.trim-tbl td:nth-child(5){text-align:left;background:var(--soft);border-top:1px solid #ececf0}
+.trim-tbl td:nth-child(4),.trim-tbl td:nth-child(5){border-left:1px solid #ececf0}
+.trim-tbl td:nth-child(6){grid-column:1/-1;display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap;background:var(--ink);color:#fff!important;padding:10px 12px}
+.trim-tbl td:nth-child(6) .sm{display:inline;color:var(--yellow);font-size:15px;font-weight:900}
+.trim-tbl td:nth-child(6) .pct{font-size:20px}
+.trim-tbl td:nth-child(6) .pct.big{background:none;color:var(--yellow)}
+.trim-tbl td[data-l]::before{content:attr(data-l);display:block;font-size:12px;font-weight:700;color:var(--muted);margin-bottom:2px}
+.trim-tbl td:nth-child(6)::before{display:inline;color:#d8d8de;margin:0 auto 0 0}
+}
+
+.nav nav.more{-webkit-mask-image:linear-gradient(90deg,#000 80%,transparent);mask-image:linear-gradient(90deg,#000 80%,transparent)}
+
+h1,h2,h3,h4,p,li,.v,.lead{word-break:keep-all;overflow-wrap:break-word}
+@media (max-width:600px){
+.ew-cards{border:0;border-radius:0;overflow:visible}
+.ew-cards table{min-width:0;font-size:14px}
+.ew-cards thead{display:none}
+.ew-cards tbody{display:grid;gap:8px}
+.ew-cards tr{display:grid;grid-template-columns:1fr 1fr;border:1px solid #e4e4e8;border-radius:12px;overflow:hidden}
+.ew-cards td{border:0;padding:8px 12px;min-width:0!important}
+.ew-cards td:first-child{grid-column:1/-1;padding:10px 12px 6px;font-size:15px}
+.ew-cards td.r{text-align:left;border-top:1px solid #ececf0;font-size:16px;font-weight:900}
+.ew-cards td:nth-child(3),.ew-cards td:nth-child(5){border-left:1px solid #ececf0}
+.ew-cards:not(.mb-tbl) td:nth-child(2),.ew-cards:not(.mb-tbl) td:nth-child(3){background:#f3f8ff}
+.ew-cards td[data-l]::before{content:attr(data-l);display:block;white-space:pre-line;font-size:12px;font-weight:700;line-height:1.3;margin-bottom:2px}
+.mb-tbl.ew-cards td[data-l]::before{color:var(--muted)}
+.mb-tbl.ew-cards td:nth-child(3)::before{color:#0a7a3d}
+.ew-cards:not(.mb-tbl) td:nth-child(2)::before,.ew-cards:not(.mb-tbl) td:nth-child(3)::before{color:#0a66d8}
+.ew-cards:not(.mb-tbl) td:nth-child(4)::before,.ew-cards:not(.mb-tbl) td:nth-child(5)::before{color:#7a3ff2}
+}
+.gt small{font-size:12px}
 </style>
 
 </head>
@@ -449,7 +490,7 @@ td .sm{display:block;font-size:12px;color:var(--muted)}
         <h2>MOU 대상 기업 확인</h2>
         <p class="sub">재직 중인 회사 이름을 입력하세요.</p>
         <div class="mou-search">
-          <label class="field" for="mq"><input id="mq" type="search" placeholder="예: 효성, 삼성전자, SK, 네이버" autocomplete="off"></label>
+          <label class="field" for="mq"><input id="mq" type="search" placeholder="예: 효성, 삼성전자, SK" autocomplete="off"></label>
           <button class="btn btn-d" type="button" id="mqBtn">조회</button>
         </div>
         <div class="mou-result" id="mouResult" aria-live="polite"></div>
@@ -484,7 +525,7 @@ td .sm{display:block;font-size:12px;color:var(--muted)}
               <li><b>Advance Standard</b> Early와 같은 보장 · 등록 90일 이후 ~ 공식 보증 종료 전 가입</li>
               <li><b>Extra</b> 공식 보증이 끝난 차량용 · 등록 7년·15만km 이내, 사전 점검 필요</li>
             </ul>
-            <div class="tbl-wrap ew-tbl mb-tbl"><table>
+            <div class="tbl-wrap ew-tbl mb-tbl ew-cards"><table>
               <thead><tr><th>차급</th><th class="r">Basic</th><th class="r">Advance<br>Early</th><th class="r">Advance<br>Standard</th><th class="r">Extra</th></tr></thead>
               <tbody><tr><td><span class="ewg">일반</span> A·CLA·GLA·GLB</td><td class="r num">63만원</td><td class="r num">139만원</td><td class="r num">169만원</td><td class="r num">195만원</td></tr><tr><td><span class="ewg">일반</span> C·GLC·CLE</td><td class="r num">71만원</td><td class="r num">162만원</td><td class="r num">189만원</td><td class="r num">218만원</td></tr><tr><td><span class="ewg">일반</span> E·GLE·CLS</td><td class="r num">87만원</td><td class="r num">193만원</td><td class="r num">239만원</td><td class="r num">262만원</td></tr><tr><td><span class="ewg">일반</span> S·SL·G·GLS</td><td class="r num">169만원</td><td class="r num">381만원</td><td class="r num">466만원</td><td class="r num">595만원</td></tr><tr><td><span class="ewg">AMG</span> A·CLA·GLA·GLB</td><td class="r num">72만원</td><td class="r num">177만원</td><td class="r num">198만원</td><td class="r num">231만원</td></tr><tr><td><span class="ewg">AMG</span> C·GLC·CLE</td><td class="r num">85만원</td><td class="r num">216만원</td><td class="r num">227만원</td><td class="r num">262만원</td></tr><tr><td><span class="ewg">AMG</span> E·GLE·CLS</td><td class="r num">130만원</td><td class="r num">282만원</td><td class="r num">367만원</td><td class="r num">435만원</td></tr><tr><td><span class="ewg">AMG</span> S·SL·G·GLS·GT</td><td class="r num">244만원</td><td class="r num">577만원</td><td class="r num">689만원</td><td class="r num">798만원</td></tr><tr><td><span class="ewg">EQ</span> EQA·EQB</td><td class="r">–</td><td class="r num">93만원</td><td class="r num">103만원</td><td class="r num">130만원</td></tr><tr><td><span class="ewg">EQ</span> EQE</td><td class="r">–</td><td class="r num">171만원</td><td class="r num">190만원</td><td class="r num">232만원</td></tr><tr><td><span class="ewg">EQ</span> EQS</td><td class="r">–</td><td class="r num">286만원</td><td class="r num">329만원</td><td class="r num">421만원</td></tr></tbody>
             </table></div>
@@ -506,7 +547,7 @@ td .sm{display:block;font-size:12px;color:var(--muted)}
       </div>
       <div class="ewcard" style="margin-top:12px">
         <div class="ew-tag y">HS효성 보증 상품 가격 · 신차 기준</div>
-        <div class="tbl-wrap ew-tbl"><table>
+        <div class="tbl-wrap ew-tbl ew-cards"><table>
           <thead><tr><th>차급</th><th class="r std-h">STANDARD<br>+2년/6만km</th><th class="r std-h">STANDARD<br>+3년/15만km</th><th class="r pre-h">PREMIUM<br>+2년/6만km</th><th class="r pre-h">PREMIUM<br>+3년/15만km</th></tr></thead>
           <tbody><tr><td><span class="ewg">일반</span> Compact (A·B·CLA·GLA·GLB)</td><td class="r num">138만원</td><td class="r num">270만원</td><td class="r num">199만원</td><td class="r num">370만원</td></tr><tr><td><span class="ewg">일반</span> C (C·GLC)</td><td class="r num">161만원</td><td class="r num">290만원</td><td class="r num">220만원</td><td class="r num">390만원</td></tr><tr><td><span class="ewg">일반</span> E (E·CLS·CLE·GLE)</td><td class="r num">192만원</td><td class="r num">360만원</td><td class="r num">260만원</td><td class="r num">460만원</td></tr><tr><td><span class="ewg">일반</span> S 6기통 이하 (S·G 450 d·GLS)</td><td class="r num">368만원</td><td class="r num">610만원</td><td class="r num">430만원</td><td class="r num">740만원</td></tr><tr><td><span class="ewg">일반</span> S 8기통 이상·마이바흐</td><td class="r num">380만원</td><td class="r num">690만원</td><td class="r num">480만원</td><td class="r num">840만원</td></tr><tr><td><span class="ewg">AMG</span> Compact (A·GLA·GLB 35/45)</td><td class="r num">177만원</td><td class="r num">340만원</td><td class="r">–</td><td class="r">–</td></tr><tr><td><span class="ewg">AMG</span> C (C·GLC 43/63)</td><td class="r num">216만원</td><td class="r num">380만원</td><td class="r">–</td><td class="r">–</td></tr><tr><td><span class="ewg">AMG</span> E (E·CLS·GLE 53/63, GT 43)</td><td class="r num">282만원</td><td class="r num">510만원</td><td class="r">–</td><td class="r">–</td></tr><tr><td><span class="ewg">AMG</span> S (S·G 63·GT 63)</td><td class="r num">577만원</td><td class="r num">865만원</td><td class="r">–</td><td class="r">–</td></tr><tr><td><span class="ewg">EQ</span> Compact (EQA·EQB)</td><td class="r num">112만원</td><td class="r num">185만원</td><td class="r">–</td><td class="r">–</td></tr><tr><td><span class="ewg">EQ</span> EQE</td><td class="r num">171만원</td><td class="r num">299만원</td><td class="r">–</td><td class="r">–</td></tr><tr><td><span class="ewg">EQ</span> EQS</td><td class="r num">286만원</td><td class="r num">426만원</td><td class="r">–</td><td class="r">–</td></tr></tbody>
         </table></div>
@@ -847,10 +888,10 @@ function openModel(id, push){
     return `<tr>
       <td class="num">${t.y}년식</td>
       <td><b>${esc(t.n)}</b><div class="chips trim-chips">${chips.join("")}</div></td>
-      <td class="r num">${t.p==null?"<span class='sm'>상담</span>":priceText(t.p)}</td>
-      <td class="r num">${pctCell(t.c)}</td>
-      <td class="r num">${t.f==null?"–":(typeof t.f==="number"?"+"+t.f+"%":esc(t.f)+"%")}</td>
-      <td class="r num">${mx!=null?pctCell(mx,true):"–"}${est!=null?`<span class="sm">약 ${fmt(est)}만원</span>`:""}</td>
+      <td class="r num" data-l="권장가">${t.p==null?"<span class='sm'>상담</span>":priceText(t.p)}</td>
+      <td class="r num" data-l="현금 할인">${pctCell(t.c)}</td>
+      <td class="r num" data-l="파이낸셜">${t.f==null?"–":(typeof t.f==="number"?"+"+t.f+"%":esc(t.f)+"%")}</td>
+      <td class="r num" data-l="최대 · 예상가">${mx!=null?pctCell(mx,true):"–"}${est!=null?`<span class="sm">약 ${fmt(est)}만원</span>`:""}</td>
     </tr>`;
   }).join("");
   let mx=null; m.trims.forEach(t=>{const v=maxOfM(t,m); if(v!=null&&(mx==null||v>mx)) mx=v;}); const from=modelFrom(m);
@@ -869,7 +910,7 @@ function openModel(id, push){
       <span>트림 <b class="num">${m.trims.length}</b>개</span>
     </div>
     ${extraBlock(m)}
-    <div class="tbl-wrap"><table>
+    <div class="tbl-wrap trim-tbl"><table>
       <thead><tr><th>연식</th><th>트림 · 추가 혜택 (조건 충족 시)</th><th class="r">권장가</th><th class="r">현금 할인</th><th class="r">파이낸셜</th><th class="r">최대 · 예상가</th></tr></thead>
       <tbody>${rows}</tbody>
     </table></div>
@@ -950,6 +991,10 @@ try{ const c=localStorage.getItem("cat"); if(c&&CATS.some(x=>x.id===c)) curCat=c
 document.getElementById("mouCount").textContent=fmt(MOU.length);
 document.querySelectorAll(".rule-slot").forEach(el=>el.innerHTML=NAME_RULE);
 renderPicks(); renderTabs(); renderModels(); route();
+
+(function(){const n=document.querySelector('.nav nav'); if(!n) return; const f=()=>n.classList.toggle('more', n.scrollWidth-n.clientWidth-n.scrollLeft>4); n.addEventListener('scroll',f,{passive:true}); addEventListener('resize',f); f();})();
+
+document.querySelectorAll('.ew-cards table').forEach(t=>{const h=[...t.querySelectorAll('thead th')].map(th=>th.innerHTML.replace(/<br\s*\/?>/gi,'\n').replace(/<[^>]+>/g,'').trim());t.querySelectorAll('tbody tr').forEach(tr=>[...tr.children].forEach((td,i)=>{if(i>0&&h[i])td.setAttribute('data-l',h[i]);}));});
 </script>
 
 </body>
