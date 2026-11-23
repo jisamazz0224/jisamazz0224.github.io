@@ -373,6 +373,10 @@ h1,h2,h3,h4,p,li,.v,.lead{word-break:keep-all;overflow-wrap:break-word}
 .dock .btn-kakao svg{flex:none}
 @media (max-width:420px){.dock .in{gap:6px}.dock .btn{font-size:16px;padding:14px 4px;gap:4px;white-space:nowrap}}
 .dock-hint{display:block;margin-top:6px;color:var(--ink);font-weight:700}
+.cat-links{margin-top:12px}
+.cat-price{margin-top:12px;border-top:1px solid #e4e4e8;padding-top:4px}
+.cat-price summary{cursor:pointer;font-weight:900;padding:12px 0;min-height:44px;list-style-position:inside}
+.cat-price summary span{font-weight:500;font-size:12px;color:var(--muted);margin-left:6px}
 </style>
 
 </head>
@@ -707,15 +711,12 @@ function catalogBlock(m){
   const links=cats.map(c=>{const u=CATALOG_URLS[c]; const nm=CATALOG_NAMES[c]||"카탈로그";
     return u?`<a class="btn btn-y cat-link" href="${u}" target="_blank" rel="noopener">${esc(nm)} 열기 (PDF)</a>`:`<span class="btn btn-o" aria-disabled="true">${esc(nm)} 준비 중</span>`;}).join("");
   return `<div class="cat-box">
-    <div class="cat-head"><div><b>카탈로그 보기</b><p>옵션·사양은 카탈로그에서 확인하실 수 있습니다. 먼저 실제 차량가를 확인해 주세요.</p></div>
-    <button class="btn btn-d" type="button" data-gate="${m.id}">카탈로그 보기</button></div>
-    <div class="gate" id="gate-${m.id}" hidden>
-      <p class="gate-t">① 실제 차량가 확인 <span>권장 소비자가격, 부가세 포함 · 2026.11.16 기준</span></p>
+    <div class="cat-head"><div><b>카탈로그 보기</b><p>옵션·사양은 카탈로그(PDF)에서 확인하실 수 있습니다.</p></div></div>
+    <div class="btn-row cat-links">${links}</div>
+    <details class="cat-price"><summary>실제 차량가 확인 <span>권장 소비자가격, 부가세 포함 · 2026.11.16 기준</span></summary>
       <ul class="gate-list">${rows||"<li><span>가격은 상담 시 안내드립니다.</span></li>"}</ul>
       <p class="seat-mini"><b>※</b> 블랙 시트 외 시트 컬러 선택 시 옵션 비용이 발생할 수 있습니다. (차종별 상이)</p>
-      <label class="gate-ok"><input type="checkbox" id="ok-${m.id}" data-ok="${m.id}"> 위 차량 가격을 확인했습니다</label>
-      <div class="gate-links" id="links-${m.id}" hidden><p class="gate-t">② 카탈로그 열기</p><div class="btn-row">${links}</div></div>
-    </div>
+    </details>
   </div>`;
 }
 // 월 납입금 계산기 (원리금균등, 예상치)
