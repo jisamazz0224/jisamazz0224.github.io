@@ -101,10 +101,10 @@ body{padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
 .chip.m{background:var(--ink);color:var(--yellow)}
 .mou-go{margin-top:10px}
 .rule{margin-top:12px;border:1px solid #e3d27a;background:#fffbe6;border-radius:10px;color:var(--ink)}
-.rule summary{cursor:pointer;padding:10px 12px;font-size:14px;font-weight:900;list-style:none;display:flex;justify-content:space-between;gap:8px}
+.rule summary{cursor:pointer;padding:10px 12px;font-size:14px;font-weight:900;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:48px}
 .rule summary::-webkit-details-marker{display:none}
-.rule summary::after{content:"펼치기 ▾";font-size:12px;font-weight:700;color:var(--muted);white-space:nowrap}
-.rule[open] summary::after{content:"접기 ▴"}
+.rule summary::after{content:"눌러서 보기 ▼";flex:none;font-size:12px;font-weight:900;color:#fff;background:var(--ink);border-radius:999px;padding:6px 10px;white-space:nowrap}
+.rule[open] summary::after{content:"접기 ▲";background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
 .rule summary b{color:#b42318}
 .rule .rb{padding:0 12px 12px;font-size:13px;line-height:1.6}
 .rule .lead{font-weight:900;margin:0 0 8px}
@@ -374,11 +374,10 @@ h1,h2,h3,h4,p,li,.v,.lead{word-break:keep-all;overflow-wrap:break-word}
 @media (max-width:420px){.dock .in{gap:6px}.dock .btn{font-size:16px;padding:14px 4px;gap:4px;white-space:nowrap}}
 .dock-hint{display:block;margin-top:6px;color:var(--ink);font-weight:700}
 .cat-links{margin-top:12px}
-.cat-price{margin-top:12px;border-top:1px solid #e4e4e8;padding-top:4px}
-.cat-price summary{cursor:pointer;font-weight:900;padding:12px 0;min-height:44px;list-style-position:inside}
-.cat-price summary span{font-weight:500;font-size:12px;color:var(--muted);margin-left:6px}
+.cat-price summary small{display:block;font-weight:500;font-size:12px;color:var(--muted);margin-top:2px}
 .notice{color:var(--onbg);font-weight:700;font-size:14px}.notice .up{color:var(--yellow);font-size:16px;margin-right:6px}
 @media (max-width:600px){.notice{font-size:14px}}
+.cat-links{align-items:center}.pdf-link{font-size:13px;font-weight:700;color:var(--muted);padding:12px 6px;text-decoration:underline}
 </style>
 
 </head>
@@ -703,6 +702,7 @@ const M = META.map(m => ({...m, trims: TRIMS[m.id] || []}));
 
 
 const fmt = n => n.toLocaleString("ko-KR");
+const CATALOG_VIEW = true;
 function catalogBlock(m){
   const cats=(m.cats||[]);
   if(!cats.length) return "";
@@ -710,14 +710,15 @@ function catalogBlock(m){
     const mx=maxOfM(t,m); const est=mx!=null?Math.round(t.p*(1-mx/100)):null;
     return `<li><span>${t.y}년식 ${esc(t.n)}</span><b class="num">${fmt(t.p)}만원${est!=null?` <em>→ 약 ${fmt(est)}만원</em>`:""}</b></li>`;}).join("");
   const links=cats.map(c=>{const u=CATALOG_URLS[c]; const nm=CATALOG_NAMES[c]||"카탈로그";
+    if(u&&CATALOG_VIEW) return `<a class="btn btn-y cat-link" href="catalog.html?c=${c}">${esc(nm)} 보기</a><a class="pdf-link" href="${u}" download>PDF 원본 저장</a>`;
     return u?`<a class="btn btn-y cat-link" href="${u}" target="_blank" rel="noopener">${esc(nm)} 열기 (PDF)</a>`:`<span class="btn btn-o" aria-disabled="true">${esc(nm)} 준비 중</span>`;}).join("");
   return `<div class="cat-box">
-    <div class="cat-head"><div><b>카탈로그 보기</b><p>옵션·사양은 카탈로그(PDF)에서 확인하실 수 있습니다.</p></div></div>
+    <div class="cat-head"><div><b>카탈로그 보기</b><p>옵션·사양은 카탈로그에서 위아래로 넘겨 보실 수 있습니다.</p></div></div>
     <div class="btn-row cat-links">${links}</div>
-    <details class="cat-price"><summary>실제 차량가 확인 <span>권장 소비자가격, 부가세 포함 · 2026.11.16 기준</span></summary>
+    <details class="rule cat-price"><summary><span>※ <b>실제 차량가</b> 확인하기<small>권장 소비자가격, 부가세 포함 · 2026.11.16 기준</small></span></summary><div class="rb">
       <ul class="gate-list">${rows||"<li><span>가격은 상담 시 안내드립니다.</span></li>"}</ul>
       <p class="seat-mini"><b>※</b> 블랙 시트 외 시트 컬러 선택 시 옵션 비용이 발생할 수 있습니다. (차종별 상이)</p>
-    </details>
+    </div></details>
   </div>`;
 }
 // 월 납입금 계산기 (원리금균등, 예상치)
