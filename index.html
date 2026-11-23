@@ -296,7 +296,7 @@ td .sm{display:block;font-size:12px;color:var(--muted)}
 .seat-note{margin:12px 0 0;background:var(--ink);color:#fff;border-radius:10px;padding:10px 14px;font-size:14px;font-weight:700}
 .seat-note b{color:var(--yellow);margin-right:4px}
 .seat-note .seat-sub{font-size:12px;font-weight:500;color:#c9c9d0;white-space:nowrap}
-.cat-box{margin-top:18px;border:2px solid var(--ink);border-radius:12px;padding:14px 16px}
+.cat-box{margin:4px 0 18px;border:2px solid var(--ink);border-radius:12px;padding:14px 16px}
 .cat-head{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .cat-head p{margin:2px 0 0;font-size:13px;color:var(--muted)}
 .gate{margin-top:12px;border-top:1px solid #e4e4e8;padding-top:12px}
@@ -918,6 +918,7 @@ function openModel(id, push){
       <span>권장가 <b class="num">${from==null?"상담 문의":(typeof from==="number"?fmt(from)+"만원~":from+"만원")}</b></span>
       <span>트림 <b class="num">${m.trims.length}</b>개</span>
     </div>
+    ${catalogBlock(m)}
     ${extraBlock(m)}
     <div class="tbl-wrap trim-tbl"><table>
       <thead><tr><th>연식</th><th>트림 · 추가 혜택 (조건 충족 시)</th><th class="r">권장가</th><th class="r">현금 할인</th><th class="r">파이낸셜</th><th class="r">최대 · 예상가</th></tr></thead>
@@ -929,7 +930,6 @@ function openModel(id, push){
     <a class="ew-link" href="#warranty">공식 보증 3년/10만km · HS효성 보증 상품 보기 →</a>
     ${notes?`<ul class="notes">${notes}</ul>`:""}
     ${calcBlock(m)}
-    ${catalogBlock(m)}
     <div class="sheet-cta">
       <div class="t">이 차종 견적이 궁금하시면<span class="who"><b>박지성 과장</b><span class="num">010-6471-8942</span></span></div>
       <a class="btn btn-y" href="tel:01064718942">전화 상담</a>
