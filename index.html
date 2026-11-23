@@ -363,6 +363,13 @@ h1,h2,h3,h4,p,li,.v,.lead{word-break:keep-all;overflow-wrap:break-word}
 .gt small{font-size:12px}
 .nw{white-space:nowrap}
 @media (max-width:600px){.notice{font-size:12px;line-height:1.55}.notice .wrap{padding-block:8px}.sheet-notice{font-size:12.5px}}
+.name-row{display:flex;flex-wrap:wrap;align-items:center;column-gap:14px;row-gap:4px;margin:12px 0 8px}
+.name-row h1{margin:0}
+.name-row .badge-amb{margin-top:0}
+.tab-tip{margin:16px 0 0;display:inline-flex;align-items:center;gap:8px;border-left:3px solid var(--yellow);background:var(--bg2);color:var(--onbg);font-size:15px;font-weight:700;padding:9px 14px;border-radius:0 8px 8px 0}
+.tab-tip b{color:var(--yellow);font-size:17px}
+@media (max-width:600px){.name-row .badge-amb{font-size:14px;padding:7px 12px}.tab-tip{font-size:14px;padding:9px 12px}}
+@media (max-width:380px){.tab-tip{font-size:13px}}
 </style>
 
 </head>
@@ -385,10 +392,10 @@ h1,h2,h3,h4,p,li,.v,.lead{word-break:keep-all;overflow-wrap:break-word}
   <section class="hero" id="top">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">MERCEDES-BENZ OFFICIAL PARTNER · HS효성더클래스</div>
-        <h1>박지성<span class="rank">과장</span></h1>
+        <div class="eyebrow"><span class="nw">MERCEDES-BENZ OFFICIAL PARTNER</span><br><span class="nw">HS효성더클래스</span></div>
+        <div class="name-row"><h1>박지성<span class="rank">과장</span></h1><div class="badge-amb">★ 효성 벤츠 앰버서더 활동 중</div></div>
         <p class="org">HS효성더클래스 메르세데스-벤츠 세일즈 컨설턴트</p>
-        <div class="badge-amb">★ 효성 벤츠 앰버서더 활동 중</div>
+        <p class="tab-tip"><b>↑</b> 상단 탭으로 원하는 정보를 바로 확인하세요</p>
         <div class="hero-points">
           <span>11·12월 공식 프로모션 반영</span>
           <span>차종별 할인율 바로 확인</span>
