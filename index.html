@@ -378,6 +378,22 @@ h1,h2,h3,h4,p,li,.v,.lead{word-break:keep-all;overflow-wrap:break-word}
 .notice{color:var(--onbg);font-weight:700;font-size:14px}.notice .up{color:var(--yellow);font-size:16px;margin-right:6px}
 @media (max-width:600px){.notice{font-size:14px}}
 .cat-links{align-items:center}.pdf-link{font-size:13px;font-weight:700;color:var(--muted);padding:12px 6px;text-decoration:underline}
+.mcard.has-ph{padding:0;overflow:hidden;gap:0}
+.mcard.has-ph>span:not(.ph){padding-left:14px;padding-right:14px}
+.mcard.has-ph .seg{padding-top:12px}
+.mcard.has-ph .from{padding-bottom:14px;padding-top:4px}
+.mcard .ph{display:block;aspect-ratio:16/9;background:#1b1b1f;overflow:hidden}
+.mcard .ph img{display:block;width:100%;height:100%;object-fit:cover}
+.model-grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+@media (max-width:600px){
+.model-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.mcard.has-ph>span:not(.ph){padding-left:10px;padding-right:10px}
+.mcard.has-ph .seg{font-size:11.5px;padding-top:10px;line-height:1.4}
+.mcard.has-ph .nm{font-size:15px}
+.mcard.has-ph .max{font-size:19px}
+.mcard.has-ph .none{font-size:13px}
+.mcard.has-ph .from{font-size:12px;padding-bottom:12px}
+}
 </style>
 
 </head>
@@ -869,7 +885,9 @@ function renderModels(){
     if(mx!=null) disc=`<span class="max num">최대 <span class="hl">${mx}%</span></span>`;
     else if(hasCashStr) disc=`<span class="max num"><span class="hl">100만원</span> 할인</span>`;
     else disc=`<span class="none">재구매·보증 혜택</span>`;
-    return `<button class="mcard" type="button" data-id="${m.id}">
+    const cid=(m.cats||[])[0];
+    const ph=(CATALOG_VIEW&&cid)?`<span class="ph"><img src="thumb/${cid}.webp" width="640" height="360" alt="" loading="lazy" decoding="async"></span>`:"";
+    return `<button class="mcard${ph?" has-ph":""}" type="button" data-id="${m.id}">${ph}
       <span class="seg">${esc(catName(m.cat))} · ${esc(m.seg)}</span>
       <span class="nm">${esc(m.nm)}</span>
       ${disc}
