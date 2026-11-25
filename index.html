@@ -552,6 +552,9 @@ body::before{background:#fff}
 .cta2 a{display:flex;align-items:center;justify-content:center;min-height:56px;border-radius:14px;font-size:17px;font-weight:900;text-decoration:none}
 .cta2 .a1{background:var(--yellow);color:#111}
 .cta2 .a2{border:2px solid var(--ink);color:var(--ink);background:#fff}
+.qform{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;margin-top:18px;padding:10px 16px;border-radius:14px;background:var(--yellow);color:#111;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.12)}
+.qform b{font-size:18px;font-weight:900}
+.qform small{text-align:center;font-size:13px;font-weight:700;opacity:.75}
 .other{display:block;text-align:center;margin-top:12px;font-weight:900;color:var(--ink)}
 /* white-theme overrides for shared components */
 .btn-wo{color:var(--ink);border:2px solid var(--ink);background:#fff}
@@ -985,6 +988,27 @@ function vModel(id){
     ${(m.notes||[]).length?`<ul class="notes">${m.notes.map(n=>`<li>${esc(n)}</li>`).join("")}</ul>`:""}`;
   colorBind(m,el);
 }
+/* 견적 신청 구글 폼 (미리 채우기). 폼에 질문을 추가하면 여기 entry 번호만 채우면 됨 */
+const FORM_URL="https://docs.google.com/forms/d/e/1FAIpQLScX3q6MMv8Y6DHSh04MwbuQzRDARE3Kwy05UqgyBkjeZW_JQQ/viewform";
+const FORM_ID={car:"1880320799",color:"1673794623",promo:"1652368202",price:"",fin:""};
+function colorText(m){
+  return [["ext","외장"],["seat","시트"]].map(([k,lb])=>{ const i=colSel[m.id+k]; if(i==null) return "";
+    const SRC=k==="ext"?COLORS:SEATS, cid=(m.cats||[]).find(c=>SRC[c]&&SRC[c].length), c=cid&&SRC[cid][i];
+    return c?`${lb} ${c[0]} ${c[1]}`:""; }).filter(Boolean).join(" / ");
+}
+function formLink(m,t,picked,pct,cashAmt,est,fin){
+  const car=`${t.y}년식 ${m.nm} ${t.n}`;
+  const promo=picked.length?picked.map(o=>o.name.replace(/ \(.*\)$/,"")).join(", "):"추가 조건 없음";
+  const price=`예상 할인 ${pct}%${cashAmt?` + ${fmt(cashAmt)}만원`:""}${est!=null?` · 예상가 약 ${fmt(est)}만원`:""}`;
+  let finTxt=""; const dn=document.getElementById("cDown"), tm=document.getElementById("cTerm");
+  if(dn&&tm&&(fin||+dn.value>0)){ const P=+document.getElementById("cPrice").value||0, D=+dn.value||0;
+    finTxt=`할부 선수금 ${fmt(D)}만원${P?`(${Math.round(D/P*100)}%)`:""} · ${tm.value}개월`; }
+  const v={car, color:colorText(m), promo, price, fin:finTxt};
+  // 아직 폼에 없는 항목(예상가·금융 조건)은 프로모션 칸에 함께 적음
+  if(!FORM_ID.price) v.promo+=` / ${price}`; if(!FORM_ID.fin&&finTxt) v.promo+=` / ${finTxt}`;
+  const q=Object.keys(FORM_ID).filter(k=>FORM_ID[k]&&v[k]).map(k=>`entry.${FORM_ID[k]}=${encodeURIComponent(v[k])}`).join("&");
+  return `${FORM_URL}?usp=pp_url&${q}`;
+}
 /* 할인 확인 */
 let sel={}; try{ const s=JSON.parse(localStorage.getItem("v2sel")||"{}"); if(s&&typeof s==="object") sel=s; }catch(_){}
 function saveSel(){ try{localStorage.setItem("v2sel",JSON.stringify(sel))}catch(_){} }
@@ -1023,6 +1047,7 @@ function vTrim(id,i){
     ${t.r?NAME_RULE:""}
     ${giftLine(m)}
     ${typeof t.p==="number"?calcBlock(0):""}
+    <a class="qform" id="qformGo" href="${FORM_URL}" target="_blank" rel="noopener"><b>📝 이 조건으로 견적 받기</b><small>이름·연락처만 적으면 선택한 조건은 자동 입력됩니다</small></a>
     <div class="cta2"><a class="a1" href="tel:01064718942">📞 이 조건으로 상담</a><a class="a2" id="smsGo" href="sms:01064718942">✉ 문자로 견적 요청</a></div>
     <a class="other" href="#/m/${m.id}">← ${esc(m.nm)} 다른 트림 보기</a>`;
   const chk=el.querySelector("#chk");
@@ -1050,6 +1075,7 @@ function vTrim(id,i){
       <div class="sm">${typeof t.p==="number"?`권장가 ${fmt(t.p)}만원 기준 · 취득세·탁송료 별도`:"가격은 상담 시 안내"}</div>`;
     const picked=L.filter(o=>cur[o.k]).map(o=>o.name.replace(/ \(.*\)$/,"")).join(", ")||"추가 조건 없음";
     el.querySelector("#smsGo").href=`sms:01064718942${/iPhone|iPad|iPod/.test(navigator.userAgent)?"&":"?"}body=${encodeURIComponent(`[견적 요청] ${t.y}년식 ${t.n}\n선택 조건: ${picked}\n예상 할인 ${pct}%${est!=null?` · 예상가 약 ${fmt(est)}만원`:""}`)}`;
+    el.querySelector("#qformGo").onclick=function(){ this.href=formLink(m,t,L.filter(o=>cur[o.k]),pct,cashAmt,est,!!cur.fin); };
     if(document.getElementById("cPrice")&&est!=null){ document.getElementById("cPrice").value=est; calcRun(); }
     sel={...sel}; ["fin","ret","trd","cnq","mou","sme"].forEach(k=>{ if(avail.has(k)) sel[k]=!!cur[k]; }); saveSel();
   }
