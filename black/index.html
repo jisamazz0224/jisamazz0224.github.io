@@ -1,0 +1,1112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="HS효성더클래스 효성 벤츠 앰버서더 박지성 과장 · 이달의 차종별 할인, MOU 기업 조회, 월 납입금 계산">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HS효성더클래스 박지성 과장">
+<meta property="og:title" content="차종별 카탈로그 및 프로모션 안내 · 박지성 과장">
+<meta property="og:description" content="HS효성더클래스 효성 벤츠 앰버서더 박지성 과장 · 이달의 차종별 할인, MOU 기업 조회, 월 납입금 계산">
+<meta property="og:url" content="https://jisamazz0224.github.io/black/">
+<meta property="og:image" content="https://jisamazz0224.github.io/og-image-v5.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23FFD400' font-family='sans-serif' font-weight='900'%3EB%3C/text%3E%3C/svg%3E">
+<title>박지성 과장 벤츠 프로모션</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>
+/* Layout: 검은 바탕 위에 흰 카드, 노란색은 할인율·핵심 숫자에만. 한 줄 세로 흐름(소개 → 이달 차종 → 카테고리 → MOU) */
+:root{
+  --bg:#0b0b0c; --bg2:#151517; --line:#2a2a2e;
+  --card:#ffffff; --ink:#111114; --muted:#6b6b73; --soft:#f2f2f4;
+  --yellow:#ffd400; --trade:#0a66d8; --trade-soft:#b9d7ff; --yellow-ink:#1a1600; --onbg:#f5f5f7; --onbg-muted:#a3a3ab;
+  --font:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--onbg);font-family:var(--font);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+button{font-family:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+.num{font-variant-numeric:tabular-nums}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(11,11,12,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:16px;height:56px}
+.brand{font-weight:900;letter-spacing:.02em;white-space:nowrap}
+.brand b{color:var(--yellow)}
+.nav nav{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.nav nav::-webkit-scrollbar{display:none}
+.nav nav a{text-decoration:none;font-size:14px;color:var(--onbg-muted);padding:12px 10px;border-radius:8px;white-space:nowrap}
+.nav nav a:hover{color:var(--onbg);background:var(--bg2)}
+@media (max-width:640px){.brand{display:none}.nav nav{margin-left:0}}
+
+/* hero / profile */
+.hero{padding-block:56px 48px;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:end}
+@media (max-width:760px){.hero-grid{grid-template-columns:1fr}}
+.eyebrow{font-size:13px;letter-spacing:.12em;color:var(--yellow);font-weight:700}
+.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.15;margin:12px 0 8px;font-weight:900;text-wrap:balance}
+.hero h1 .rank{font-size:.5em;font-weight:700;color:var(--onbg-muted);margin-left:6px}
+.hero .org{font-size:18px;color:var(--onbg);margin:0}
+.badge-amb{display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--yellow);color:var(--yellow-ink);font-weight:900;padding:8px 14px;border-radius:6px;font-size:15px}
+.contact-card{background:var(--card);color:var(--ink);border-radius:14px;padding:22px}
+.contact-card .lbl{font-size:16px;color:#e11d2e;letter-spacing:.02em;font-weight:900}
+.phone{font-size:clamp(26px,4vw,32px);font-weight:900;margin:4px 0 14px;user-select:all;letter-spacing:.01em}
+.btn-row{display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:0;border-radius:10px;padding:12px 16px;font-size:15px;font-weight:700;cursor:pointer;text-decoration:none}
+.btn-y{background:var(--yellow);color:var(--yellow-ink)}
+.btn-d{background:var(--ink);color:#fff}
+.btn-o{background:transparent;color:var(--ink);border:1px solid #d6d6dc}
+.call-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.call-row .btn{width:100%;padding:16px 8px;font-size:17px}
+.btn-w{background:#fff;color:var(--ink);border:2px solid var(--ink)}
+.btn-wo{background:transparent;color:#fff;border:2px solid #fff}
+.call-row .btn-y{border:2px solid var(--ink)}
+/* bottom dock */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:55;background:rgba(11,11,12,.97);border-top:1px solid var(--line);padding:8px max(10px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(10px,env(safe-area-inset-left,0px))}
+.dock .in{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.dock .btn{width:100%;padding:14px 8px;font-size:17px;font-weight:900}
+body{padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+/* notice */
+.notice{background:var(--bg2);border-bottom:1px solid var(--line);font-size:13px;color:var(--onbg-muted)}
+.notice .wrap{padding-block:9px}
+.notice b{color:var(--yellow)}
+.sheet-notice{margin:8px 0 0;font-size:13px;color:#3d3d45}
+.sheet-notice b{color:#b42318}
+/* filter */
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:-4px 0 14px}
+.filters label{display:flex;align-items:center;gap:6px;font-size:14px;color:var(--onbg-muted);font-weight:700}
+.filters select{font:inherit;font-size:16px;font-weight:700;background:var(--card);color:var(--ink);border:0;border-radius:10px;padding:10px 12px}
+.filters .reset{background:transparent;border:1px solid var(--line);color:var(--onbg);border-radius:10px;padding:10px 12px;font-size:14px;cursor:pointer}
+.filters .fhint{font-size:12px;color:var(--onbg-muted);flex-basis:100%}
+.mcard .fit{font-size:12px;color:#b42318;font-weight:700}
+/* calculator */
+.extra{margin:0 0 12px;background:var(--soft);border-radius:12px;padding:12px 14px}
+.extra .t{font-size:14px;font-weight:900;margin-bottom:8px}
+.extra .t .grade{display:inline-block;background:var(--ink);color:var(--yellow);font-size:12px;padding:2px 6px;border-radius:4px;margin-left:6px}
+.extra .opts{display:flex;gap:6px;flex-wrap:wrap}
+.extra .opts button{border:2px solid #c9c9d0;background:#fff;color:var(--ink);border-radius:999px;padding:9px 14px;font-size:14px;font-weight:700;cursor:pointer}
+.extra .opts button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--yellow)}
+.extra .opts button:disabled{opacity:.4;cursor:not-allowed}
+.extra .fine{font-size:12px;color:var(--muted);margin:8px 0 0}
+.chip.m{background:var(--ink);color:var(--yellow)}
+.mou-go{margin-top:10px}
+.rule{margin-top:12px;border:1px solid #e3d27a;background:#fffbe6;border-radius:10px;color:var(--ink)}
+.rule summary{cursor:pointer;padding:10px 12px;font-size:14px;font-weight:900;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:48px}
+.rule summary::-webkit-details-marker{display:none}
+.rule summary::after{content:"눌러서 보기 ▼";flex:none;font-size:12px;font-weight:900;color:#fff;background:var(--ink);border-radius:999px;padding:6px 10px;white-space:nowrap}
+.rule[open] summary::after{content:"접기 ▲";background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.rule summary b{color:#b42318}
+.rule .rb{padding:0 12px 12px;font-size:13px;line-height:1.6}
+.rule .lead{font-weight:900;margin:0 0 8px}
+.rule h5{margin:10px 0 2px;font-size:13px;font-weight:900}
+.rule ul{margin:0;padding-left:18px}
+.rule .ok{color:#0a7a3d;font-weight:700}
+.rule .no{color:#b42318;font-weight:700}
+.rule .ex{color:#3d3d45}
+.ew-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+.ewcard{background:var(--card);color:var(--ink);border-radius:14px;padding:20px}
+.ew-tag{display:inline-block;background:var(--ink);color:#fff;font-size:12px;font-weight:900;padding:4px 8px;border-radius:4px}
+.ew-tag.y{background:var(--yellow);color:var(--yellow-ink)}
+.ew-big{font-size:clamp(28px,5vw,36px);font-weight:900;margin:10px 0 4px}
+.ew-big small{font-size:.5em;font-weight:700;color:var(--muted)}
+.ewcard p{margin:0;color:#3d3d45;font-size:14px}
+.ew-list{margin:10px 0 0;padding-left:18px;font-size:13px;color:#3d3d45;line-height:1.6}
+.ew-list b{color:var(--ink)}
+.ew-tbl{margin-top:10px}
+.gt{margin-top:10px;border:1px solid #e4e4e8;border-radius:10px;padding:8px 10px}
+.gt-h{font-size:13px;font-weight:900}
+.gt-h span{font-size:12px;font-weight:500;color:var(--muted);margin-left:4px}
+.gt ul{margin:4px 0 0;padding-left:18px;font-size:13px}
+.gt-n{font-size:12px!important;color:var(--muted)!important;margin-top:8px!important}
+.gift{margin:12px 0 0;background:var(--soft);border-radius:10px;padding:10px 12px;font-size:13px}
+.gift b{font-weight:900}
+.mb-tbl td{color:var(--ink)!important;background:none!important}
+.mb-tbl table{min-width:0!important;font-size:12px!important}
+.mb-tbl td:first-child{min-width:84px!important}
+.mb-tbl th,.mb-tbl td{padding:7px 5px}
+.mb-tbl .ewg{display:block}
+.mb-tbl td:nth-child(3){color:#0a7a3d!important;font-weight:900}
+.ewcard .std,.ewcard .pre{display:inline-block;font-weight:900;font-size:12px;color:#fff;border-radius:4px;padding:1px 6px;margin-right:2px}
+.ewcard .std{background:#0a66d8}
+.ewcard .pre{background:#7a3ff2}
+.ew-cmp{list-style:none;margin:0 0 8px -18px;background:var(--soft);border-radius:8px;padding:8px 10px}
+.ew-tbl th.std-h{background:#e6f0fd;color:#0a66d8}
+.ew-tbl th.pre-h{background:#f0e9fe;color:#7a3ff2}
+.ew-tbl td:nth-child(2),.ew-tbl td:nth-child(3){color:#0a4fa8}
+.ew-tbl td:nth-child(4),.ew-tbl td:nth-child(5){color:#5b2bc0;background:#faf7ff}
+.ew-tbl table{min-width:500px;font-size:13px}
+.ew-tbl td:nth-child(2){min-width:0}
+.ew-tbl td:first-child{white-space:normal;min-width:130px;font-weight:700}
+.ew-tbl th,.ew-tbl td{padding:8px 8px}
+.ew-tbl td.r{white-space:nowrap}
+.ewg{display:block;width:max-content;margin-bottom:2px}
+.ew-tbl th{white-space:normal;line-height:1.3}
+.ewg{display:inline-block;font-size:12px;font-weight:900;background:var(--soft);border-radius:4px;padding:1px 5px;margin-right:4px}
+.ew-link{display:inline-block;margin-top:4px;padding:12px 0;font-size:13px;font-weight:700;color:var(--ink)}
+.calc{margin-top:18px;border:2px solid var(--ink);border-radius:12px;padding:16px}
+.calc h4{margin:0 0 4px;font-size:18px;font-weight:900}
+.calc h4 span{background:var(--yellow);color:var(--yellow-ink);font-size:12px;padding:2px 6px;border-radius:4px;margin-left:6px;vertical-align:middle}
+.calc .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-top:10px}
+.calc label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:700;color:#3d3d45}
+.calc input,.calc select{font:inherit;font-size:16px;padding:10px;border:1px solid #c9c9d0;border-radius:8px;background:#fff;color:var(--ink);min-width:0}
+.calc .quick{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.calc .quick button{border:1px solid #c9c9d0;background:#fff;color:var(--ink);border-radius:999px;padding:6px 12px;min-height:44px;font-size:14px;font-weight:700;cursor:pointer}
+.calc .quick button.hi{border-color:var(--ink);background:var(--yellow);color:var(--yellow-ink)}
+.calc .dp-note{font-size:12px;color:#3d3d45;margin:8px 0 0}
+.calc .dp-note b{color:#b42318}
+.calc .out{margin-top:12px;background:var(--ink);color:#fff;border-radius:10px;padding:14px 16px}
+.calc .out .big{font-size:clamp(26px,5vw,34px);font-weight:900;color:var(--yellow)}
+.calc .out .sub{font-size:13px;color:#d8d8de;margin-top:4px}
+.calc .rate-fixed{background:#f1f1f4!important;color:var(--ink);font-weight:900;cursor:default}
+.calc .rate-note{font-size:13px;color:#3d3d45;background:#fff8cc;border-left:4px solid var(--yellow);border-radius:6px;padding:8px 10px;margin:10px 0 0}
+.calc .rate-note b{color:#b42318}
+.calc .fine{font-size:12px;color:var(--muted);margin:10px 0 0}
+.contact-card p{font-size:13px;color:var(--muted);margin:14px 0 0}
+.hero-points{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.social{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.social a{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--onbg);background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:6px 14px 6px 6px;font-size:14px;font-weight:700;transition:border-color .15s}
+.social a:hover{border-color:var(--yellow)}
+.social svg{flex:none;display:block}
+.social.sm{margin-top:12px;gap:8px}
+.social.sm a{padding:0;border:0;background:transparent}
+.social.sm svg{width:44px;height:44px}
+.hero-points span{font-size:13px;border:1px solid var(--line);color:var(--onbg-muted);padding:6px 10px;border-radius:999px}
+
+/* sections */
+section.block{padding-block:56px}
+.sec-head{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.sec-head h2{font-size:clamp(24px,3.6vw,34px);font-weight:900;margin:6px 0 0;text-wrap:balance}
+.sec-head h2 em{font-style:normal;color:var(--yellow)}
+.sec-head p{color:var(--onbg-muted);margin:0;font-size:14px;max-width:46ch}
+
+/* promo cards */
+.promo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.pcard{background:var(--card);color:var(--ink);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:6px;cursor:pointer;border:0;text-align:left;transition:transform .15s}
+.pcard:hover{transform:translateY(-3px)}
+.pcard .seg{font-size:12px;color:var(--muted);font-weight:700}
+.pcard .nm{font-size:17px;font-weight:900;line-height:1.3}
+.pcard .pct{font-size:44px;font-weight:900;line-height:1;margin-top:8px;color:var(--ink)}
+.pcard .pct small{font-size:15px;font-weight:700;margin-left:2px}
+.pcard .pct-lbl{display:inline-block;background:var(--yellow);color:var(--yellow-ink);font-size:12px;font-weight:900;padding:3px 8px;border-radius:4px;align-self:flex-start}
+.pcard .price{font-size:13px;color:var(--muted)}
+.pcard .price b{color:var(--ink);font-size:15px}
+.pcard .tag{font-size:12px;color:#b42318;font-weight:700}
+
+.special-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-top:18px}
+.scard{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:18px}
+.scard h3{margin:0 0 6px;font-size:16px;font-weight:900}
+.scard h3 span{color:var(--yellow)}
+.scard p{margin:0;color:var(--onbg-muted);font-size:14px}
+
+/* catalog */
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.search{flex:1 1 260px;display:flex;align-items:center;background:var(--card);border-radius:12px;padding:0 14px;min-width:0}
+.search input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:16px;color:var(--ink);padding:14px 0}
+.search svg{flex:none;margin-right:8px}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;margin-bottom:18px;scrollbar-width:thin}
+.tab{flex:none;border:1px solid var(--line);background:transparent;color:var(--onbg);padding:10px 16px;border-radius:999px;font-size:15px;font-weight:700;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--yellow);border-color:var(--yellow);color:var(--yellow-ink)}
+.tab .c{font-weight:500;opacity:.7;margin-left:4px;font-size:13px}
+.model-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.mcard{background:var(--card);color:var(--ink);border:0;border-radius:12px;padding:16px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:4px;min-height:132px;transition:transform .15s}
+.mcard:hover{transform:translateY(-2px)}
+.mcard .seg{font-size:12px;color:var(--muted);font-weight:700}
+.mcard .nm{font-size:16px;font-weight:900;line-height:1.3}
+.mcard .from{font-size:13px;color:var(--muted);margin-top:auto}
+.mcard .max{font-size:22px;font-weight:900}
+.mcard .max .hl{background:linear-gradient(transparent 55%,var(--yellow) 55%)}
+.mcard .none{font-size:14px;font-weight:700;color:var(--muted)}
+.empty{color:var(--onbg-muted);padding:24px 0}
+
+/* common benefits */
+.ben-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.ben{background:var(--card);color:var(--ink);border-radius:12px;padding:18px}
+.ben .k{font-size:12px;font-weight:700;color:var(--muted)}
+.ben .v{font-size:26px;font-weight:900;margin:2px 0 6px}
+.ben .v .hl{background:linear-gradient(transparent 55%,var(--yellow) 55%)}
+.ben p{margin:0;font-size:14px;color:#3d3d45}
+
+/* MOU */
+.mou{background:var(--card);color:var(--ink);border-radius:16px;padding:28px}
+.mou h2{margin:4px 0 6px;font-size:clamp(22px,3.4vw,30px);font-weight:900}
+.mou .eyebrow{color:#8a6d00}
+.mou .sub{color:var(--muted);margin:0 0 18px;font-size:14px}
+.mou-search{display:flex;gap:8px;flex-wrap:wrap}
+.mou-search .field{flex:1 1 240px;display:flex;align-items:center;border:2px solid var(--ink);border-radius:12px;padding:0 14px;min-width:0}
+.mou-search input{flex:1;min-width:0;border:0;outline:0;font:inherit;font-size:17px;padding:14px 0;background:transparent;color:var(--ink)}
+.mou-result{margin-top:18px;min-height:60px}
+.verdict{display:flex;gap:12px;align-items:flex-start;padding:16px;border-radius:12px}
+.verdict.ok{background:#fff8cc}
+.verdict.no{background:var(--soft)}
+.verdict .ic{flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-weight:900}
+.verdict.ok .ic{background:var(--yellow);color:var(--yellow-ink)}
+.verdict.no .ic{background:#d9d9de;color:var(--ink)}
+.verdict b{font-size:17px}
+.verdict p{margin:2px 0 0;font-size:14px;color:#3d3d45}
+.hits{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:6px}
+.hits li{background:var(--soft);border-radius:8px;padding:8px 12px;font-size:14px;display:flex;justify-content:space-between;gap:8px}
+.hits li .g{color:var(--muted);font-size:12px;white-space:nowrap}
+.hits li .new{background:var(--ink);color:var(--yellow);font-size:12px;font-weight:900;padding:1px 6px;border-radius:4px;white-space:nowrap}
+.mou-meta{margin-top:16px;font-size:12px;color:var(--muted)}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding-block:36px 48px;color:var(--onbg-muted);font-size:13px}
+footer .fc{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between}
+footer strong{color:var(--onbg)}
+footer ul{margin:8px 0 0;padding-left:18px}
+
+/* detail sheet */
+.sheet{position:fixed;inset:0 0 calc(77px + env(safe-area-inset-bottom,0px)) 0;z-index:50;background:rgba(0,0,0,.6);display:flex;justify-content:center;align-items:flex-end}
+.sheet-in{background:var(--card);color:var(--ink);width:100%;max-width:880px;max-height:calc(100% - env(safe-area-inset-top,0px) - 24px);overflow:auto;border-radius:18px 18px 0 0;padding:22px max(18px,env(safe-area-inset-right,0px)) 28px max(18px,env(safe-area-inset-left,0px))}
+@media (min-width:900px){.sheet{align-items:center}.sheet-in{border-radius:18px;max-height:90%}}
+.sheet-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.sheet-top .seg{font-size:13px;color:var(--muted);font-weight:700}
+.sheet-top h3{font-size:clamp(24px,4vw,32px);font-weight:900;margin:2px 0 0;line-height:1.2}
+.x{border:0;background:var(--soft);width:40px;height:40px;border-radius:50%;font-size:20px;cursor:pointer;flex:none;color:var(--ink)}
+.desc{color:#3d3d45;margin:10px 0 14px;max-width:62ch}
+.kv{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.kv span{background:var(--soft);border-radius:8px;padding:6px 10px;font-size:13px}
+.kv b{font-weight:900}
+.tbl-wrap{overflow-x:auto;border:1px solid #e4e4e8;border-radius:12px}
+table{color:inherit;border-collapse:collapse;width:100%;min-width:600px;font-size:14px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid #ececf0;vertical-align:top}
+th{background:var(--soft);font-size:12px;color:var(--muted);font-weight:700;white-space:nowrap}
+td.r,th.r{text-align:right}
+td .pct{font-weight:900;font-size:16px}
+td .pct.big{background:linear-gradient(transparent 55%,var(--yellow) 55%)}
+td:first-child{white-space:nowrap}
+td:nth-child(2){min-width:220px}
+td .sm{display:block;font-size:12px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:4px}
+.chip{font-size:12px;font-weight:700;padding:2px 7px;border-radius:4px;background:#eef0ff;color:#2a3a8f;white-space:nowrap}
+.chip.y{background:var(--yellow);color:var(--yellow-ink)}
+.chip.t{background:var(--trade);color:#fff}
+.tri-note{margin-top:8px!important;font-size:12px!important;color:#3d3d45}
+.tri-note b:first-child{color:var(--trade);font-size:14px}
+.ben .v .hl-t{background:linear-gradient(transparent 55%,var(--trade-soft) 55%)}
+.trim-chips{margin-top:6px}
+.chip.k{background:var(--ink);color:#fff}
+.seat-note{margin:12px 0 0;background:var(--ink);color:#fff;border-radius:10px;padding:10px 14px;font-size:14px;font-weight:700}
+.seat-note b{color:var(--yellow);margin-right:4px}
+.seat-note .seat-sub{font-size:12px;font-weight:500;color:#c9c9d0;white-space:nowrap}
+.col-wrap{margin:4px 0 18px}
+.col-wrap .rule:first-child{margin-top:0}
+.col-fold summary span{display:flex;flex-direction:column;gap:2px}
+.col-fold summary small{font-size:12px;font-weight:500;color:var(--muted)}
+.col-fold summary b.ct{color:var(--ink);font-size:15px}
+.col-fold summary b.ct i{font-style:normal;font-size:13px;color:#3d3d45;margin-left:4px}
+.col-ph{position:sticky;top:-23px;z-index:2;margin:0;background:#0b0b0d;aspect-ratio:900/506;overflow:hidden}
+.col-ph.seat{aspect-ratio:4/3}
+.col-ph img{display:block;width:100%;height:100%;object-fit:cover;transition:opacity .15s}
+.col-ph.seat img{object-fit:contain}
+.col-ph img.ld{opacity:.35}
+.col-now{position:absolute;left:0;right:0;bottom:0;margin:0;padding:6px 12px;background:rgba(0,0,0,.62);color:#fff;font-size:14px;font-weight:700;line-height:1.35}
+.col-now .num{color:var(--yellow);margin-right:6px}
+.col-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin:10px 12px 0}
+.col-list button{font:inherit;text-align:left;border:1.5px solid #d6d6dc;background:#fff;color:var(--ink);border-radius:9px;padding:7px 9px;min-height:44px;line-height:1.25;cursor:pointer;display:flex;flex-direction:column;justify-content:flex-start}
+.col-list button b{font-size:13px;font-weight:900}
+.col-list button span{font-size:12px;color:#3d3d45;word-break:keep-all}
+.col-list button em{font-style:normal;font-size:11px;font-weight:700;color:#b42318}
+.col-list button em.base{color:#0a66d8}
+.col-list button small{font-size:11px;color:var(--muted);word-break:keep-all;margin-top:2px}
+.col-list button[aria-pressed="true"]{border-color:var(--ink);background:var(--yellow)}
+.col-note{font-size:12px;color:#3d3d45;margin:10px 12px 12px}
+.col-note b{color:#b42318}
+@media (min-width:600px){.col-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.cat-box{margin:4px 0 18px;border:2px solid var(--ink);border-radius:12px;padding:14px 16px}
+.cat-head{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.cat-head p{margin:2px 0 0;font-size:13px;color:var(--muted)}
+.gate{margin-top:12px;border-top:1px solid #e4e4e8;padding-top:12px}
+.gate-t{font-weight:900;margin:0 0 8px}
+.gate-t span{font-weight:500;font-size:12px;color:var(--muted);margin-left:6px}
+.gate-list{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.gate-list li{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--soft);border-radius:8px;padding:8px 12px;font-size:14px}
+.gate-list li em{font-style:normal;color:#0a66d8}
+.seat-mini{font-size:12px;color:#3d3d45;margin:10px 0}
+.seat-mini b{color:#b42318}
+.gate-ok{display:flex;gap:8px;align-items:center;font-weight:700;font-size:15px;cursor:pointer;padding:6px 0;min-height:44px}
+.gate-ok input{width:20px;height:20px;accent-color:#111114}
+.gate-links{margin-top:10px}
+.notes{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.notes li{font-size:13px;color:#3d3d45;padding-left:14px;position:relative}
+.notes li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;background:var(--yellow);border-radius:1px}
+.sheet-cta{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;background:var(--ink);color:#fff;border-radius:12px;padding:14px 16px}
+.sheet-cta .t{flex:1 1 200px;font-size:14px}
+.sheet-cta .t .who{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-top:2px}
+.sheet-cta .t .who b{color:var(--yellow);font-size:20px;font-weight:900;font-family:var(--font)}
+.sheet-cta .t .who .num{font-size:14px;color:#d8d8de}
+.red{color:#e11d2e;font-weight:700}
+.toast{position:fixed;left:50%;bottom:calc(88px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--yellow);color:var(--yellow-ink);font-weight:900;padding:10px 16px;border-radius:10px;z-index:60}
+
+@media (max-width:600px){
+.trim-tbl{border:0;border-radius:0;overflow:visible}
+.trim-tbl table{min-width:0;font-size:14px}
+.trim-tbl thead{display:none}
+.trim-tbl tbody{display:grid;gap:10px}
+.trim-tbl tr{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #e4e4e8;border-radius:12px;overflow:hidden}
+.trim-tbl td{border:0;padding:8px 12px;min-width:0!important;white-space:normal}
+.trim-tbl td:nth-child(1){grid-column:1/-1;padding:10px 12px 0;font-size:12px;color:var(--muted);font-weight:700}
+.trim-tbl td:nth-child(2){grid-column:1/-1;padding-top:2px;font-size:16px}
+.trim-tbl td:nth-child(3),.trim-tbl td:nth-child(4),.trim-tbl td:nth-child(5){text-align:left;background:var(--soft);border-top:1px solid #ececf0}
+.trim-tbl td:nth-child(4),.trim-tbl td:nth-child(5){border-left:1px solid #ececf0}
+.trim-tbl td:nth-child(6){grid-column:1/-1;display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap;background:var(--ink);color:#fff!important;padding:10px 12px}
+.trim-tbl td:nth-child(6) .sm{display:inline;color:var(--yellow);font-size:15px;font-weight:900}
+.trim-tbl td:nth-child(6) .pct{font-size:20px}
+.trim-tbl td:nth-child(6) .pct.big{background:none;color:var(--yellow)}
+.trim-tbl td[data-l]::before{content:attr(data-l);display:block;font-size:12px;font-weight:700;color:var(--muted);margin-bottom:2px}
+.trim-tbl td:nth-child(6)::before{display:inline;color:#d8d8de;margin:0 auto 0 0}
+}
+
+.nav nav.more{-webkit-mask-image:linear-gradient(90deg,#000 80%,transparent);mask-image:linear-gradient(90deg,#000 80%,transparent)}
+
+h1,h2,h3,h4,p,li,.v,.lead{word-break:keep-all;overflow-wrap:break-word}
+/* 단어가 중간에서 끊기지 않게: 한글은 띄어쓰기 단위로만 줄바꿈 */
+body,button,input,select,td,th{word-break:keep-all;overflow-wrap:break-word}
+@media (max-width:600px){
+.ew-cards{border:0;border-radius:0;overflow:visible}
+.ew-cards table{min-width:0;font-size:14px}
+.ew-cards thead{display:none}
+.ew-cards tbody{display:grid;gap:8px}
+.ew-cards tr{display:grid;grid-template-columns:1fr 1fr;border:1px solid #e4e4e8;border-radius:12px;overflow:hidden}
+.ew-cards td{border:0;padding:8px 12px;min-width:0!important}
+.ew-cards td:first-child{grid-column:1/-1;padding:10px 12px 6px;font-size:15px}
+.ew-cards td.r{text-align:left;border-top:1px solid #ececf0;font-size:16px;font-weight:900}
+.ew-cards td:nth-child(3),.ew-cards td:nth-child(5){border-left:1px solid #ececf0}
+.ew-cards:not(.mb-tbl) td:nth-child(2),.ew-cards:not(.mb-tbl) td:nth-child(3){background:#f3f8ff}
+.ew-cards td[data-l]::before{content:attr(data-l);display:block;white-space:pre-line;font-size:12px;font-weight:700;line-height:1.3;margin-bottom:2px}
+.mb-tbl.ew-cards td[data-l]::before{color:var(--muted)}
+.mb-tbl.ew-cards td:nth-child(3)::before{color:#0a7a3d}
+.ew-cards:not(.mb-tbl) td:nth-child(2)::before,.ew-cards:not(.mb-tbl) td:nth-child(3)::before{color:#0a66d8}
+.ew-cards:not(.mb-tbl) td:nth-child(4)::before,.ew-cards:not(.mb-tbl) td:nth-child(5)::before{color:#7a3ff2}
+}
+.gt small{font-size:12px}
+.nw{white-space:nowrap}
+@media (max-width:600px){.notice{font-size:12px;line-height:1.55}.notice .wrap{padding-block:8px}.sheet-notice{font-size:12.5px}}
+.name-row{display:flex;flex-wrap:wrap;align-items:center;column-gap:14px;row-gap:4px;margin:12px 0 8px}
+.name-row h1{margin:0}
+.name-row .badge-amb{margin-top:0}
+.tab-tip{margin:16px 0 0;display:inline-flex;align-items:center;gap:8px;border-left:3px solid var(--yellow);background:var(--bg2);color:var(--onbg);font-size:15px;font-weight:700;padding:9px 14px;border-radius:0 8px 8px 0}
+.tab-tip b{color:var(--yellow);font-size:17px}
+@media (max-width:600px){.name-row .badge-amb{font-size:14px;padding:7px 12px}.tab-tip{font-size:14px;padding:9px 12px}}
+@media (max-width:380px){.tab-tip{font-size:13px}}
+.dock .btn-kakao svg{flex:none}
+@media (max-width:420px){.dock .in{gap:6px}.dock .btn{font-size:16px;padding:14px 4px;gap:4px;white-space:nowrap}}
+.dock-hint{display:block;margin-top:6px;color:var(--ink);font-weight:700}
+.cat-links{margin-top:12px}
+.cat-price summary small{display:block;font-weight:500;font-size:12px;color:var(--muted);margin-top:2px}
+.notice{color:var(--onbg);font-weight:700;font-size:14px}.notice .up{color:var(--yellow);font-size:16px;margin-right:6px}
+@media (max-width:600px){.notice{font-size:14px}}
+.cat-links{align-items:center}.pdf-link{font-size:13px;font-weight:700;color:var(--muted);padding:12px 6px;text-decoration:underline}
+.mcard.has-ph{padding:0;overflow:hidden;gap:0}
+.mcard.has-ph>span:not(.ph){padding-left:14px;padding-right:14px}
+.mcard.has-ph .seg{padding-top:12px}
+.mcard.has-ph .from{padding-bottom:14px;padding-top:4px}
+.mcard .ph{display:block;aspect-ratio:16/9;background:#1b1b1f;overflow:hidden}
+.mcard .ph img{display:block;width:100%;height:100%;object-fit:cover}
+.model-grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+@media (max-width:600px){
+.model-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.mcard.has-ph>span:not(.ph){padding-left:10px;padding-right:10px}
+.mcard.has-ph .seg{font-size:11.5px;padding-top:10px;line-height:1.4}
+.mcard.has-ph .nm{font-size:15px}
+.mcard.has-ph .max{font-size:19px}
+.mcard.has-ph .none{font-size:13px}
+.mcard.has-ph .from{font-size:12px;padding-bottom:12px}
+}
+</style>
+
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <div class="brand">HS효성더클래스 · <b>박지성 과장</b></div>
+    <nav aria-label="바로가기">
+      <a href="#promo">이달의 프로모션</a>
+      <a href="#models">차종별 혜택</a>
+      <a href="#benefits">추가 혜택</a>
+      <a href="#mou">MOU 조회</a>
+      <a href="#warranty">보증</a>
+    </nav>
+  </div>
+</header>
+<div class="notice"><div class="wrap"><b class="up">↑</b> 상단 탭으로 원하는 정보를 바로 확인하세요</div></div>
+
+<main>
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="nw">MERCEDES-BENZ OFFICIAL PARTNER</span><br><span class="nw">HS효성더클래스</span></div>
+        <div class="name-row"><h1>박지성<span class="rank">과장</span></h1><div class="badge-amb">★ 효성 벤츠 앰버서더 활동 중</div></div>
+        <p class="org">HS효성더클래스 메르세데스-벤츠 세일즈 컨설턴트</p>
+        <div class="hero-points">
+          <span>11·12월 공식 프로모션 반영</span>
+          <span>차종별 할인율 바로 확인</span>
+          <span>재직 기업 MOU 즉시 조회</span>
+        </div>
+        <div class="social" aria-label="채널 바로가기">
+          <a href="https://blog.naver.com/aosskfrt" target="_blank" rel="noopener"><svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#fff"/><rect x=".5" y=".5" width="39" height="39" rx="9.5" fill="none" stroke="#e3e3e3"/><text x="17" y="28" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="22" fill="#03C75A">b</text><rect x="26" y="12" width="2.6" height="17" rx="1" fill="#03C75A"/></svg><span>네이버 블로그</span></a>
+          <a href="https://www.youtube.com/@jisung_park224" target="_blank" rel="noopener"><svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#FF0000"/><path d="M16 13.5v13l11-6.5z" fill="#fff"/></svg><span>유튜브 · 앰버서더 영상</span></a>
+          <a href="https://open.kakao.com/o/sOhLJxKd" target="_blank" rel="noopener"><svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#FEE500"/><path d="M20 10.5c-6.4 0-11.5 4-11.5 8.9 0 3.2 2.1 6 5.3 7.6l-1.2 4.4c-.1.4.3.7.7.5l5.2-3.4c.5.1 1 .1 1.5.1 6.4 0 11.5-4 11.5-8.9S26.4 10.5 20 10.5z" fill="#191919"/></svg><span>카카오톡 오픈채팅</span></a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="lbl">견적·상담 문의</div>
+        <div class="phone num" id="phone">010-6471-8942</div>
+        <p>원하시는 차종과 연식, 결제 방식(현금·할부·리스)을 알려 주시면 최종 견적을 바로 보내드립니다. <b class="dock-hint">화면 아래 전화·문자·카톡 버튼으로 바로 연락하실 수 있습니다.</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="promo">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">NOV – DEC 2026</div>
+          <h2>이달의 <em>프로모션 차종</em></h2>
+        </div>
+        <p>할인 폭이 큰 트림을 차종별로 모았습니다. 메르세데스-벤츠 코리아 11~12월 고객 리테일 프로모션(2026.11.20) 기준이며, 카드를 누르면 트림별 혜택이 열립니다.</p>
+      </div>
+      <div class="promo-grid" id="promoGrid"></div>
+      <div class="special-grid">
+        <div class="scard"><h3>27년식 E 300 <span>최대 15%</span></h3><p>위탁·전시 차량 한정. 현금 8% + 위탁·전시 추가 2% + 파이낸셜 4% + 전시차 1%를 더해 최대 15%까지 적용됩니다.</p></div>
+        <div class="scard"><h3>GLC 전기차 <span>우선 배정</span></h3><p>GLC(가솔린·디젤) SUV·쿠페 또는 일렉트릭 GLB를 12월 31일까지 출고하면 2027년 GLC 전기차를 원하는 날짜에 우선 배정해 드립니다.</p></div>
+        <div class="scard"><h3>더 뉴 S-클래스 재구매 <span>최대 7%</span></h3><p>S-클래스 보유 고객이 27년식 S-클래스를 구매하면 재구매 2%, 트레이드인 최대 3%, 취득세 지원 4%(전시·위탁 차량)와 주유 바우처 50만원.</p></div>
+        <div class="scard"><h3>AMG G 63 <span>스페셜 기프트</span></h3><p>11월 30일까지 출고하는 고객 선착순 90명에게 G-클래스 슈트케이스를 드립니다. 다른 프로모션과 함께 받을 수 있습니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="models" style="background:var(--bg2);border-block:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">MODELS</div>
+          <h2>차종별 <em>혜택 확인</em></h2>
+        </div>
+        <p>카테고리를 고르거나 차종 이름으로 검색하세요. 예: E 200, GLE, 전기, 마이바흐</p>
+      </div>
+      <div class="toolbar">
+        <label class="search" for="q">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6b6b73" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="차종 검색 (예: GLC, E 300, AMG)" autocomplete="off">
+        </label>
+      </div>
+      <div class="tabs" role="tablist" id="tabs"></div>
+      <div class="filters">
+        <label for="fBudget">예산
+          <select id="fBudget">
+            <option value="">전체</option><option value="5000">5,000만원 이하</option><option value="7000">7,000만원 이하</option><option value="10000">1억원 이하</option><option value="15000">1억 5,000만원 이하</option><option value="20000">2억원 이하</option>
+          </select></label>
+        <button class="reset" type="button" id="fReset">초기화</button>
+        <span class="fhint">예산은 최대 할인 적용 후 예상가 기준입니다. 예산 안에 드는 트림이 있는 차종만 보여 드립니다.</span>
+      </div>
+      <div class="model-grid" id="modelGrid"></div>
+      <div class="empty" id="modelEmpty" hidden>검색 결과가 없습니다. 차종 이름을 다시 확인하시거나 문의 주세요.</div>
+    </div>
+  </section>
+
+  <section class="block" id="benefits">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">EXTRA BENEFITS</div>
+          <h2>조건이 맞으면 <em>추가로</em> 받는 혜택</h2>
+        </div>
+        <p>기본 할인에 더해 적용됩니다. 차종마다 적용 폭이 다르니 상세 화면의 표를 함께 확인하세요.</p>
+      </div>
+      <div class="ben-grid">
+        <div class="ben"><div class="k">재구매 (벤츠 보유 고객)</div><div class="v"><span class="hl">+1~2%</span></div><p>최근 3개월 안에 벤츠를 보유한 이력이 있으면 적용. 일반 모델 1%, AMG·S-클래스 등 2%. 가족 명의도 범위 내 가능.</p><div class="rule-slot"></div></div>
+        <div class="ben"><div class="k">트레이드인</div><div class="v"><span class="hl-t">+1%</span></div><p>타시던 벤츠를 공식 인증 중고차(Mercedes-Benz Certified)에 매각하면 1% 추가. <span class="red">재구매 할인과 중복 가능</span>합니다.</p><p class="tri-note"><b>※</b> 기존 차량이 <b>6년 미만</b>이고 <b>주행거리 15만km 미만</b>, 두 조건을 모두 충족할 때만 적용됩니다.</p></div>
+        <div class="ben"><div class="k">타 브랜드 보유 고객</div><div class="v"><span class="hl">+1%</span></div><p>BMW·아우디·제네시스·볼보·포르쉐·랜드로버·렉서스 보유 고객이 GLC·GLE(쿠페 포함) 구매 시. 마이바흐는 롤스로이스·벤틀리 포함 최대 7%.</p></div>
+        <div class="ben"><div class="k">MOU 기업 임직원</div><div class="v"><span class="hl">+2%</span></div><p>MOU 체결 기업 재직자(가족 포함)는 이달 프로모션에 2% 추가. 재직증명서 필요, 회계연도당 1대. G-클래스 제외. 아래 MOU 조회에서 회사를 확인하세요.</p></div>
+        <div class="ben"><div class="k">SME 법인 구매</div><div class="v"><span class="hl">+2%</span></div><p>법인 명의로 TEV 차종(마이바흐·AMG) 또는 TEV+ 차종(S-클래스·EQS·EQS SUV·GLS) 구매 시 2% 추가. G-클래스 제외.</p></div>
+        <div class="ben"><div class="k">벤츠파이낸셜 이용</div><div class="v"><span class="hl">+1~6%</span></div><p>차종별 할부·리스 추가 할인. 표의 ‘파이낸셜’ 열에 표시했습니다. KB·하나캐피탈 고잔가 운용리스 상품도 운영 중입니다.</p></div>
+        <div class="ben"><div class="k">골든타임 사은품</div><div class="v"><span class="hl">택 1</span></div><p>같은 달 안에 계약금 입금 후 <b>7일 이내</b> 잔금을 완납하면 차급별 사은품 중 1개를 드립니다.</p>
+          <div class="gt"><div class="gt-h">상위 차종 <span>S-클래스·마이바흐·AMG·EQS·GLS 등</span></div><ul><li>테일러메이드 웰컴 골프백 (그레이)</li><li>폴딩 체어 2개</li></ul></div>
+          <div class="gt"><div class="gt-h">그 외 차종 <span>A·C·E-클래스·GLA·GLB·GLC·GLE 등</span></div><ul><li>웰컴 보스턴 백 (화이트)</li><li>캠핑 테이블 & 피크닉 블랭킷 <small>(대체품: 테일러메이드 여행용 파우치 세트)</small></li></ul></div>
+          <p class="gt-n">G-클래스·V 300 d 제외. 27년식 S-클래스·마이바흐 S-클래스 사전 계약 재구매 고객은 전원 지급. 재고에 따라 대체품이 발송될 수 있으며, 계약 확정 다음 달 중순~말경 배송됩니다.</p></div>
+        <div class="ben"><div class="k">전기차 보증연장</div><div class="v"><span class="hl">+2년</span></div><p>EQ 모델 보증 +2년/+7만km (최대 5년/17만km). 일렉트릭 CLA·GLC는 제외.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="mou" style="padding-top:8px">
+    <div class="wrap">
+      <div class="mou">
+        <div class="eyebrow">MOU · 재직 기업 협약 혜택</div>
+        <h2>MOU 대상 기업 확인</h2>
+        <p class="sub">재직 중인 회사 이름을 입력하세요.</p>
+        <div class="mou-search">
+          <label class="field" for="mq"><input id="mq" type="search" placeholder="예: 효성, 삼성전자, SK" autocomplete="off"></label>
+          <button class="btn btn-d" type="button" id="mqBtn">조회</button>
+        </div>
+        <div class="mou-result" id="mouResult" aria-live="polite"></div>
+        <div class="mou-meta">메르세데스-벤츠 2026년 RoF 법인 임직원 프로그램 체결 기업 <b class="num" id="mouCount">0</b>곳에서 찾습니다. ‘SK’·‘에스케이’, ‘LG’·‘엘지’처럼 영문·한글 표기를 모두 찾습니다. 목록에 없어도 계열사·신규 체결일 수 있으니 문의 주세요.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="warranty">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">WARRANTY</div>
+          <h2>차량 <em>보증</em> 안내</h2>
+        </div>
+        <p>메르세데스-벤츠 공식 보증과 HS효성더클래스 자체 보증 상품을 구분해 안내합니다.</p>
+      </div>
+      <div class="ew-grid">
+        <div class="ewcard">
+          <div class="ew-tag">메르세데스-벤츠 코리아 공식 보증</div>
+          <div class="ew-big num">3년 <small>또는</small> 10만km</div>
+          <p>둘 중 먼저 도래하는 기준까지 무상 수리. 출고일과 최초 등록일 중 빠른 날부터 시작합니다.</p>
+          <ul class="ew-list">
+            <li>차종별 세부 보증 조건은 차량에 포함된 보증서를 기준으로 합니다.</li>
+            <li>이달 프로모션: EQ(전기차) 모델 보증 <b>+2년 / +7만km</b> (최대 5년 / 17만km, 일렉트릭 CLA·GLC 제외). 차종 상세의 ‘보증연장’ 칩을 확인하세요.</li>
+          </ul>
+          <details class="rule"><summary><span>※ 벤츠코리아 <b>공식 보증 상품</b> 가격 보기</span></summary><div class="rb">
+            <p class="lead">Warranty Plus · 공식 보증 종료 후 이어지는 메르세데스-벤츠 코리아 상품</p>
+            <ul>
+              <li><b>Basic</b> 동력계통(파워트레인) 보증 · 공식 보증(3년/10만km) 끝나기 전 가입</li>
+              <li><b>Advance Early</b> 동력계통+차체·일반 부품, +2년/6만km · <b>신차 등록 90일 이내</b> 가입 (Standard보다 최대 약 23% 저렴)</li>
+              <li><b>Advance Standard</b> Early와 같은 보장 · 등록 90일 이후 ~ 공식 보증 종료 전 가입</li>
+              <li><b>Extra</b> 공식 보증이 끝난 차량용 · 등록 7년·15만km 이내, 사전 점검 필요</li>
+            </ul>
+            <div class="tbl-wrap ew-tbl mb-tbl ew-cards"><table>
+              <thead><tr><th>차급</th><th class="r">Basic</th><th class="r">Advance<br>Early</th><th class="r">Advance<br>Standard</th><th class="r">Extra</th></tr></thead>
+              <tbody><tr><td><span class="ewg">일반</span> A·CLA·GLA·GLB</td><td class="r num">63만원</td><td class="r num">139만원</td><td class="r num">169만원</td><td class="r num">195만원</td></tr><tr><td><span class="ewg">일반</span> C·GLC·CLE</td><td class="r num">71만원</td><td class="r num">162만원</td><td class="r num">189만원</td><td class="r num">218만원</td></tr><tr><td><span class="ewg">일반</span> E·GLE·CLS</td><td class="r num">87만원</td><td class="r num">193만원</td><td class="r num">239만원</td><td class="r num">262만원</td></tr><tr><td><span class="ewg">일반</span> S·SL·G·GLS</td><td class="r num">169만원</td><td class="r num">381만원</td><td class="r num">466만원</td><td class="r num">595만원</td></tr><tr><td><span class="ewg">AMG</span> A·CLA·GLA·GLB</td><td class="r num">72만원</td><td class="r num">177만원</td><td class="r num">198만원</td><td class="r num">231만원</td></tr><tr><td><span class="ewg">AMG</span> C·GLC·CLE</td><td class="r num">85만원</td><td class="r num">216만원</td><td class="r num">227만원</td><td class="r num">262만원</td></tr><tr><td><span class="ewg">AMG</span> E·GLE·CLS</td><td class="r num">130만원</td><td class="r num">282만원</td><td class="r num">367만원</td><td class="r num">435만원</td></tr><tr><td><span class="ewg">AMG</span> S·SL·G·GLS·GT</td><td class="r num">244만원</td><td class="r num">577만원</td><td class="r num">689만원</td><td class="r num">798만원</td></tr><tr><td><span class="ewg">EQ</span> EQA·EQB</td><td class="r">–</td><td class="r num">93만원</td><td class="r num">103만원</td><td class="r num">130만원</td></tr><tr><td><span class="ewg">EQ</span> EQE</td><td class="r">–</td><td class="r num">171만원</td><td class="r num">190만원</td><td class="r num">232만원</td></tr><tr><td><span class="ewg">EQ</span> EQS</td><td class="r">–</td><td class="r num">286만원</td><td class="r num">329만원</td><td class="r num">421만원</td></tr></tbody>
+            </table></div>
+            <p class="ex" style="margin:8px 0 0">권장소비자가, VAT 포함, 만원 단위 (벤츠코리아 서비스 상품 안내 기준). 실제 가격은 서비스센터에서 확정되며, 정비가 포함된 ISP Plus 상품도 있습니다. 문의 080-001-1886</p>
+            <a class="btn btn-y" style="margin-top:10px" href="https://www.mercedes-benz.co.kr/passengercars/services/service-contracts.html" target="_blank" rel="noopener">벤츠코리아 공식 서비스 상품 페이지 열기</a>
+          </div></details>
+        </div>
+        <div class="ewcard">
+          <div class="ew-tag y">HS효성더클래스 자체 상품</div>
+          <div class="ew-big num">최대 6년 <small>/</small> 25만km</div>
+          <p>공식 보증(3년/10만km)이 끝난 뒤부터 이어서 보장하는 HS효성더클래스 보증 프로그램입니다. MBK 추가 보증을 받은 차량도 기존 3년/10만km 기준으로 이어집니다.</p>
+          <ul class="ew-list">
+            <li class="ew-cmp"><span class="std">STANDARD</span> = <b>고장 수리 보증만</b> &nbsp;·&nbsp; <span class="pre">PREMIUM</span> = <b>고장 수리 + 소모품 교체 + 픽업 서비스</b></li>
+            <li><span class="std">STANDARD</span> +2년/6만km 또는 +3년/15만km · 엔진·동력계통·차체 부품의 제조상 결함 수리</li>
+            <li><span class="pre">PREMIUM</span> STANDARD 보증 + 소모품 혜택. 2년형: 엔진오일 2회·브레이크 오일 1회·픽업&딜리버리 2회·부품 20% 쿠폰 4장. 3년형: 엔진오일 3회·브레이크 오일 2회·점화플러그(가솔린)/연료필터(디젤) 1회·픽업&딜리버리 3회·쿠폰 6장 + 1년간 유리·사이드미러 파손(한도 300만원, 자기부담 30%)·자차 자기부담금(한도 50만원) 지원</li>
+            <li><b>PLUS 1·2</b> MBK 보증이 4년(PLUS 1) 또는 5년(PLUS 2)인 차량 전용</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ewcard" style="margin-top:12px">
+        <div class="ew-tag y">HS효성 보증 상품 가격 · 신차 기준</div>
+        <div class="tbl-wrap ew-tbl ew-cards"><table>
+          <thead><tr><th>차급</th><th class="r std-h">STANDARD<br>+2년/6만km</th><th class="r std-h">STANDARD<br>+3년/15만km</th><th class="r pre-h">PREMIUM<br>+2년/6만km</th><th class="r pre-h">PREMIUM<br>+3년/15만km</th></tr></thead>
+          <tbody><tr><td><span class="ewg">일반</span> Compact (A·B·CLA·GLA·GLB)</td><td class="r num">138만원</td><td class="r num">270만원</td><td class="r num">199만원</td><td class="r num">370만원</td></tr><tr><td><span class="ewg">일반</span> C (C·GLC)</td><td class="r num">161만원</td><td class="r num">290만원</td><td class="r num">220만원</td><td class="r num">390만원</td></tr><tr><td><span class="ewg">일반</span> E (E·CLS·CLE·GLE)</td><td class="r num">192만원</td><td class="r num">360만원</td><td class="r num">260만원</td><td class="r num">460만원</td></tr><tr><td><span class="ewg">일반</span> S 6기통 이하 (S·G 450 d·GLS)</td><td class="r num">368만원</td><td class="r num">610만원</td><td class="r num">430만원</td><td class="r num">740만원</td></tr><tr><td><span class="ewg">일반</span> S 8기통 이상·마이바흐</td><td class="r num">380만원</td><td class="r num">690만원</td><td class="r num">480만원</td><td class="r num">840만원</td></tr><tr><td><span class="ewg">AMG</span> Compact (A·GLA·GLB 35/45)</td><td class="r num">177만원</td><td class="r num">340만원</td><td class="r">–</td><td class="r">–</td></tr><tr><td><span class="ewg">AMG</span> C (C·GLC 43/63)</td><td class="r num">216만원</td><td class="r num">380만원</td><td class="r">–</td><td class="r">–</td></tr><tr><td><span class="ewg">AMG</span> E (E·CLS·GLE 53/63, GT 43)</td><td class="r num">282만원</td><td class="r num">510만원</td><td class="r">–</td><td class="r">–</td></tr><tr><td><span class="ewg">AMG</span> S (S·G 63·GT 63)</td><td class="r num">577만원</td><td class="r num">865만원</td><td class="r">–</td><td class="r">–</td></tr><tr><td><span class="ewg">EQ</span> Compact (EQA·EQB)</td><td class="r num">112만원</td><td class="r num">185만원</td><td class="r">–</td><td class="r">–</td></tr><tr><td><span class="ewg">EQ</span> EQE</td><td class="r num">171만원</td><td class="r num">299만원</td><td class="r">–</td><td class="r">–</td></tr><tr><td><span class="ewg">EQ</span> EQS</td><td class="r num">286만원</td><td class="r num">426만원</td><td class="r">–</td><td class="r">–</td></tr></tbody>
+        </table></div>
+        <ul class="ew-list" style="margin-top:10px">
+          <li>단위 만원, VAT 포함 (2026년 9월 HS효성더클래스 안내 기준). PLUS 1: +1년/3만km 98만원~, +2년/6만km 164만원~ · PLUS 2: +1년/3만km 110만원~. 보유차 가입가는 상담 시 안내드립니다.</li>
+          <li><b>가입 조건</b> 신차는 최초 등록 후 90일·3천km 이내, 보유차는 36개월·10만km 이내. 보유차는 서비스센터에서만 가입. 수리는 HS효성더클래스 서비스센터에서 진행.</li>
+          <li><b>가입 불가</b> EQC, 마이바흐 풀만, 직수입 차량, 영업용·렌터카(36개월 이상 장기 렌트 제외), 사고 이력 차량(공식 서비스센터 수리 완료 제외), 개조 차량.</li>
+          <li><b>해약</b> 가입 후 14일 이내 위약금 없음, 이후 판매가의 20% 위약금. 소모품·타이어·휠·유리 등은 보증 대상이 아닙니다. 가격·차종은 변경될 수 있으며 자세한 내용은 약관을 따릅니다.</li>
+        </ul>
+        <details class="rule"><summary><span>※ 보증 <b>제외 사항</b> 확인하기</span></summary><div class="rb">
+          <p class="lead">아래 항목은 HS효성 보증 상품으로 수리되지 않습니다.</p>
+          <ul>
+            <li>소모품 교환 (브레이크 디스크·라이닝, 와이퍼 블레이드, 필터류, 배터리 등)</li>
+            <li>부품의 감각적 이상 (단순 구김, 부식, 변색, 벗겨짐, 오염, 잡음, 진동 등)</li>
+            <li>보증 수리 시 부품·공임 외 간접 비용 (교통비, 숙박비 등)</li>
+            <li>차량 성능·내구성·안전성에 영향을 주는 개조로 생긴 고장</li>
+            <li>메르세데스-벤츠 공식 서비스센터 외 수리 또는 순정부품 미사용으로 생긴 고장</li>
+            <li>무리한 운행으로 생긴 고장 (경주·랠리 등 가혹 주행, 엔진 과회전, 정원·적재량 초과 등)</li>
+            <li>사용설명서 규정 미준수로 생긴 고장 (점검·정비 주기, 사용 지침 미준수 등)</li>
+            <li>서비스 책자의 정기 점검 사항 (정기점검, 리콜, 서비스 메저 등)</li>
+            <li>타이어, 휠, 유리 제품(선루프 등), 보호 커버(소프트톱) 등</li>
+          </ul>
+          <p class="ex" style="margin:8px 0 0">PREMIUM 상품은 소모품 교환 일부가 포함됩니다. 자세한 내용은 약관을 따릅니다. (출처: HS효성더클래스 보증 프로그램 안내, 2026년 9월)</p>
+        </div></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap fc">
+    <div>
+      <strong>박지성 과장</strong> · HS효성더클래스 · 효성 벤츠 앰버서더<br>
+      <span class="num">010-6471-8942</span>
+      <div class="social sm">
+        <a href="https://blog.naver.com/aosskfrt" target="_blank" rel="noopener" aria-label="네이버 블로그"><svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#fff"/><rect x=".5" y=".5" width="39" height="39" rx="9.5" fill="none" stroke="#e3e3e3"/><text x="17" y="28" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="22" fill="#03C75A">b</text><rect x="26" y="12" width="2.6" height="17" rx="1" fill="#03C75A"/></svg></a>
+        <a href="https://www.youtube.com/@jisung_park224" target="_blank" rel="noopener" aria-label="유튜브"><svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#FF0000"/><path d="M16 13.5v13l11-6.5z" fill="#fff"/></svg></a>
+        <a href="https://open.kakao.com/o/sOhLJxKd" target="_blank" rel="noopener" aria-label="카카오톡 오픈채팅"><svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#FEE500"/><path d="M20 10.5c-6.4 0-11.5 4-11.5 8.9 0 3.2 2.1 6 5.3 7.6l-1.2 4.4c-.1.4.3.7.7.5l5.2-3.4c.5.1 1 .1 1.5.1 6.4 0 11.5-4 11.5-8.9S26.4 10.5 20 10.5z" fill="#191919"/></svg></a>
+      </div>
+    </div>
+    <div style="max-width:60ch">
+      <strong>안내</strong>
+      <ul>
+        <li>할인율은 메르세데스-벤츠 코리아 11~12월 고객 리테일 프로모션(2026.11.20 공지) 기준입니다. 재고와 출고 시점에 따라 달라질 수 있습니다.</li>
+        <li>권장가는 메르세데스-벤츠 코리아 2026년 11월 16일 가격표 기준(VAT 포함, 만원 단위)입니다. 표기가 없는 트림은 상담 시 안내드립니다.</li>
+        <li>‘예상가’는 권장가에 표시된 최대 할인율만 적용한 참고 금액이며, 취득세·탁송료 등은 포함되지 않습니다. 최종 금액은 견적서로 확인해 주세요.</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+  <div class="sheet-in" id="sheetIn"></div>
+</div>
+<div class="toast" id="toast" hidden></div>
+<div class="dock" role="navigation" aria-label="상담 연결"><div class="in">
+  <a class="btn btn-y" href="tel:01064718942">📞 전화하기</a>
+  <a class="btn btn-wo" href="sms:01064718942">✉ 문자하기</a>
+  <a class="btn btn-wo btn-kakao" href="https://open.kakao.com/o/sOhLJxKd" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="#FEE500" d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.9 5.3 4.7 6.7l-1 3.6c-.1.4.3.7.6.5l4.3-2.8c.5.1 1 .1 1.4.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg>카톡상담</a>
+</div></div>
+
+<script>
+const MOU=[["SK하이스텍 주식회사",""],["에스케이하이닉스 주식회사",""],["SK하이이엔지",""],["홈플러스",""],["신영증권",""],["엘지생활건강","엘지생활건강"],["딜로이트컨설팅 유한회사",""],["안진회계법인",""],["엘아이지디펜스앤에어로스페이스",""],["씨제이올리브 네트웍스",""],["씨제이대한통운",""],["씨제이제일제당",""],["씨제이이엔엠",""],["씨제이씨지브이",""],["씨제이올리브영",""],["에이치엘만도",""],["성가롤로병원",""],["롯데카드 주식회사",""],["엔에이치엔 주식회사",""],["SK 트레이딩인터내셔널",""],["신한라이프생명보험 주식회사",""],["네이버파이낸셜 주식회사",""],["주식회사 에스에스지닷컴",""],["㈜ 셀트리온",""],["에이치디현대중공업",""],["주식회사 더블유와이",""],["이지쿡 ㈜",""],["(주)케이티",""],["㈜ 미래새한감정평가법인",""],["케이비캐피탈 주식회사",""],["대보건설 ㈜",""],["㈜ 진에어",""],["㈜엘지에너지솔루션",""],["주식회사 카카오엔터테인먼트",""],["삼성전자",""],["한화에어로스페이스",""],["삼성물산",""],["에이치에스효성첨단소재㈜",""],["삼성디스플레이",""],["삼성바이오로직스㈜",""],["삼성SDI",""],["삼성전자판매",""],["삼정회계법인",""],["(유)프라이스워터하우스쿠퍼스컨설팅",""],["한울회계법인",""],["법무법인 세종",""],["삼덕회계법인",""],["삼일회계법인",""],["신한은행",""],["포스코이앤씨","포스코"],["법무법인 지평",""],["태영건설","태영"],["한영회계법인",""],["김앤장 법률사무소",""],["㈜효성",""],["효성중공업㈜",""],["효성티앤씨㈜",""],["(주)아모레퍼시픽",""],["케이비증권","현대"],["법무법인(유한) 태평양",""],["법무법인(유한) 대륙아주",""],["멀티캠퍼스",""],["삼성화재해상보험","삼성"],["지에스건설","지에스"],["한국타이어앤테크놀로지",""],["법무법인(유한) 화우",""],["제일기획",""],["법무법인(유한) 광장",""],["에이에스엠엘코리아",""],["에스케이렌터카",""],["삼성에스디에스",""],["삼성전기",""],["삼성바이오에피스",""],["티케이엘리베이터코리아",""],["엔씨","엔씨"],["엘에스증권",""],["하이프라자",""],["효성티앤에스㈜",""],["호텔신라",""],["대신전선",""],["한국아이비엠",""],["삼성카드",""],["삼성화재애니카손해사정",""],["미라콤아이앤씨",""],["에스케이가스㈜",""],["Daimler Truck Korea",""],["엘지마그나 이파워트레인",""],["워킹투게더",""],["삼성의료재단 강북삼성병원",""],["삼성생명보험",""],["삼성자산운용",""],["엘지유플러스",""],["광주은행",""],["삼성생명금융서비스보험대리점",""],["삼성증권",""],["비엔케이캐피탈",""],["넥센타이어",""],["두산밥캣코리아",""],["대우건설",""],["한세실업",""],["맥킨지인코포레이티드",""],["삼성전자서비스",""],["롯데이노베이트",""],["스테코",""],["한화오션",""],["엘엑스세미콘",""],["㈜컴투스",""],["스마일게이트",""],["씨제이㈜",""],["엔에이치투자증권",""],["해태에이치티비 ㈜","엘지생활건강"],["씨제이프레시웨이",""],["이와이컨설팅 유한책임회사",""],["삼성이앤에이",""],["한화에너지㈜",""],["대주회계법인",""],["네이버클라우드 주식회사",""],["네이버 주식회사",""],["네이버웹툰 유한회사",""],["스노우 주식회사",""],["한국베링거인겔하임",""],["씨엔씨티에너지",""],["삼성생명서비스손해사정",""],["지멘스㈜",""],["지멘스에너지 유한회사",""],["의료법인은성의료재단좋은삼선병원",""],["의료법인 은성의료재단 좋은강안병원",""],["의료법인 은성의료재단 좋은리버뷰요양",""],["의료법인 은성의료재단 좋은부산요양병",""],["의료법인 은성의료재단 좋은삼정병원",""],["의료법인 은성의료재단 좋은선린병원",""],["의료법인 은성의료재단 좋은선린요양병",""],["의료법인 은성의료재단 좋은애인병원",""],["의료법인 은성의료재단 좋은연인요양병",""],["의료법인 은성의료재단 좋은주례요양병",""],["삼성전자로지텍",""],["주식회사 셀트리온홀딩스",""],["한화투자증권","한화"],["카카오모빌리티",""],["유한양행",""],["두리두리",""],["에이치에스애드",""],["효성인포메이션시스템㈜",""],["서린컴퍼니",""],["한국마이크로소프트",""],["유진통신공업㈜",""],["삼성중공업",""],["엘에스전선",""],["의료법인 나라의료재단 부산나라요양병",""],["효성ITX㈜",""],["명랑시대외식청년창업협동조합",""],["골프존커머스","골프존홀딩스"],["주식회사 케이티샛",""],["에스유머티리얼스",""],["삼성액티브자산운용",""],["에스코어 주식회사",""],["주식회사 니트로 스튜디오",""],["비알팜",""],["(주)크래프톤",""],["삼성생명공익재단",""],["삼성복지재단",""],["삼성문화재단",""],["호암재단",""],["합동마트",""],["현대에버다임",""],["에스케이이터닉스",""],["진흥기업㈜",""],["롯데렌탈",""],["지에스동해전력",""],["청주폴리",""],["엘지에이치와이비씨엠",""],["싸이머코리아",""],["삼일피더블유씨엑셀러레이션센터",""],["(주)신세계톰보이",""],["(주)엘지경영개발원",""],["공덕경우개발 주식회사",""],["(주)아모레퍼시픽홀딩스",""],["포엠에듀",""],["이래에이엠에스",""],["제일",""],["보람회계법인",""],["의료법인 센텀의료재단",""],["의료법인 청록의료재단",""],["포스코에이앤씨건축사사무소",""],["㈜에이치에스효성",""],["효성화학㈜",""],["일우회계법인",""],["부경공영주식회사",""],["㈜블루홀스튜디오 (크래프톤)",""],["라이징윙스㈜ (크래프톤)",""],["㈜드림모션 (크래프톤)",""],["㈜오버데어코리아 (크래프톤)",""],["옴니크래프트랩스㈜ (크래프톤)",""],["㈜인조이스튜디오 (크래프톤)",""],["한국지멘스일렉트로닉디자인오토메이션",""],["의료법인 파란시티의료재단(부산항운병",""],["주식회사 오설록 (아모레퍼시픽)",""],["㈜ 에스쁘아 (아모레퍼시픽)",""],["㈜ 이니스프리 (아모레퍼시픽)",""],["㈜ 아모스프로페셔널 (아모레퍼시픽)",""],["지에스차지비 주식회사",""],["주식회사 세인트폴프렙센터",""],["태창산업",""],["성원근로장애인협회",""],["비알코리아",""],["(주)넥슨네트웍스",""],["대한한의사협회",""],["아세아시멘트",""],["주식회사 지이피코리아",""],["태산종합개발주식회사",""],["전라남도의사회",""],["대한치과의사협회부산시지부",""],["제주도의사회",""],["나우리의료재단 나우리요양병원",""],["셀트리온제약",""],["대한수의사회 제주지부",""],["광주지방변호사회",""],["대한치과의사협회 경기지부",""],["아이제이동수 (윈덤그랜드부산)(ECCK",""],["에어부산",""],["세홍",""],["파루",""],["파루전자",""],["지본코스메틱",""],["㈜ 넥센",""],["한국휴렛팩커드",""],["리가켐바이오사이언스",""],["경상남도의사회",""],["경상남도치과의사회",""],["대한약사회",""],["효성굿스프링스㈜",""],["골프존","골프존홀딩스"],["지에스에너지주식회사",""],["대전지방변호사회",""],["대한변리사회",""],["지멘스헬시니어스 주식회사",""],["효성벤처스 주식회사",""],["부산광역시의사회",""],["광주의사회",""],["효성네오켐 주식회사",""],["㈜ 세정",""],["나주관광개발㈜",""],["농심개발주식회사",""],["계룡건설산업",""],["광주광역시치과의사회",""],["울산광역시의사회",""],["주식회사 대륜",""],["울산광역시 치과의사회",""],["광양항운 ㈜",""],["㈜ 쥬디스코퍼레이션",""],["충청북도의사회",""],["해운대비치골프앤리조트 주식회사",""],["한국공인노무사회 부울경지회",""],["아크로관광 ㈜",""],["대한변호사협회",""],["대한여성치과의사회",""],["주식회사 화순컨트리클럽",""],["㈜ 한성엠엔에스",""],["경상북도의사회",""],["주식회사 피쉬데이",""],["한국도자기",""],["㈜삼양사","삼양"],["대전광역시치과의사회",""],["두산퓨얼셀",""],["엘엑스홀딩스",""],["퍼스트스파크게임즈","엔씨"],["㈜ 비바리퍼블리카","비바리퍼블리카"],["삼성여객 ㈜",""],["대구광역시의사회",""],["한섬",""],["신세계엘앤비",""],["나비스오토모티브시스템즈㈜",""],["HDC현대산업개발",""],["유안타증권 주식회사",""],["포스코홀딩스 주식회사",""],["㈜포스코퓨처엠",""],["(주)넥슨코리아",""],["㈜부산은행",""],["SK케미칼",""],["에스케이디스커버리",""],["(주)호반건설",""],["한미반도체",""],["한국텔레콤",""],["주식회사 태아보험가이드",""],["주식회사 엘엑스하우시스",""],["주식회사 넥슨게임즈 (NEXON Games",""],["㈜ 네오플",""],["한폴주식회사",""],["현대디에프",""],["주식회사부광공구마트",""],["지에스칼텍스 ㈜",""],["신영종합건설 ㈜",""],["하티스트앤드컴퍼니 주식회사",""],["비룡",""],["엘에스일렉트릭㈜",""],["메리츠화재해상보험",""],["㈜엘지화학",""],["메리츠증권㈜",""],["(주)지에스리테일",""],["에스메리안",""],["주식회사 포스코",""],["라이나생명보험",""],["엘지디스플레이",""],["크로베리",""],["대양롤랜트 주식회사",""],["주식회사 롯데아이스크림평택",""],["자람푸드시스템",""],["타임인터내셔널",""],["예일회계법인",""],["지케이건설",""],["디씨코리아",""],["재경",""],["코리아축산유통",""],["에스엘글로벌",""],["엘도라도리조트",""],["법무법인 대륜",""],["주식회사 카카오브이엑스(KAKAO VX)",""],["컴앤에스",""],["매그나칩반도체 유한회사",""],["지티엔알",""],["하이",""],["스웨이브",""],["신용산업",""],["더율",""],["인월",""],["올텍",""],["대한제지",""],["제이에이치케어스",""],["고려차량",""],["한백엔지니어링",""],["위메이드플레이",""],["에스엘페이퍼앤팩",""],["인터플라테크",""],["노무법인 이산",""],["한풍제약",""],["더비즈",""],["에스케이텔레콤씨에스티원",""],["온세미컨덕터코리아",""],["예수병원유지재단",""],["지엠",""],["다울지오인포",""],["뉴트리플래닛",""],["일성산업 주식회사",""],["피유코어 주식회사",""],["디자인인사이트",""],["비와이엔블랙야크",""],["스마트컨버전스",""],["(주)엔에스쇼핑",""],["굿나이스푸드주식회사",""],["주식회사 에스비",""],["주식회사 르젠퍼니처",""],["프로힐",""],["케이엠특수운송",""],["(주)씨에스글로비즈",""],["동경",""],["현대시계",""],["온라인팜",""],["동일전력 주식회사",""],["스튜디오 드래곤","씨제이"],["유진기업",""],["길훈메디",""],["인디고파리",""],["언제나위드",""],["세종병원장례식장",""],["다우",""],["태양이엔씨",""],["주식회사 해성티엠",""],["엠제이로지스틱",""],["삼도회계법인",""],["한국소둔열처리",""],["다음상사",""],["에스디하우스",""],["인투원",""],["법무법인 고구려",""],["신양산업개발",""],["지티씨코리아",""],["주식회사 아이원씨앤씨",""],["주식회사 디엠크레이트",""],["신영부동산신탁",""],["에스엠씨엔지니어링 ㈜",""],["주식회사 주원씨앤아이",""],["주식회사 위드런",""],["주식회사 신화레저",""],["메가박스 제주아라",""],["풀빌라소랑",""],["주식회사 유니언이엔지",""],["㈜제이슨인터내셔날",""],["㈜몬텍",""],["자이씨앤에이 주식회사",""],["지안인터내셔날",""],["린스몰",""],["신원캐슬",""],["우아한청년들",""],["데상트코리아",""],["울산광역시한의사회",""],["주식회사 남부산업",""],["경보해운 주식회사",""],["(유)한양특허법인",""],["대한건축사협회울산광역시건축사회",""],["주식회사블랙스톤리조트",""],["(주)블랙스톤리조트 이천",""],["경남철강 ㈜",""],["주식회사 마움디자인",""],["주식회사 씨케이피",""],["제이원산전 ㈜",""],["주식회사 푸르미르",""],["하남시의사회",""],["의료법인 인석의료재단 보람병원",""],["주식회사 솔루엠",""],["골드리치파트너스",""],["나우주식회사",""],["주식회사 세보글로벌",""],["대창엘리베이터㈜",""],["주식회사 인트브릿지",""],["㈜오양기업",""],["한솔렌탈",""],["카루스",""],["제이디코리아인터내셔날",""],["회계법인 베율",""],["㈜그레이스이엔엠",""],["농가축산",""],["보임",""],["천명토건주식회사",""],["주식회사 덕산디오종합건설",""],["주식회사 브이앤지",""],["(주) 토석이앤씨",""],["㈜ 종선에프에이",""],["SK바이오사이언스",""],["가온감정평가법인",""],["㈜종근당",""],["코닝정밀소재㈜",""],["(주)에스원",""],["에스케이디앤디 ㈜",""],["넷마블네오",""],["비케이",""],["골프존카운티","골프존홀딩스"],["골프존카운티매니지먼트","골프존홀딩스"],["골프존클라우드","골프존홀딩스"],["골프존조이마루","골프존홀딩스"],["골프존지디알아카데미","골프존홀딩스"],["골프존홀딩스","골프존홀딩스"],["에이에스엠엘리페어센터코리아",""],["엔씨아이디에스","엔씨"],["엔씨큐에이","엔씨"],["엔씨에이아이","엔씨"],["루디우스게임즈","엔씨"],["빅파이어게임즈","엔씨"],["엔씨아이티에스","엔씨"],["엔씨문화재단","엔씨"],["한국베링거인겔하임동물약품",""],["㈜웨이브온스튜디오",""],["㈜서희솔루션",""],["더시너지1 주식회사",""],["한국램리서치 유한회사",""],["램리서치코리아테크놀로지 유한회사",""],["램리서치코리아 유한회사",""],["케이뱅크",""],["교보증권",""],["두산테스나",""],["스토브페이",""],["주식회사 동산금형",""],["광양주식회사",""],["㈜피더블유에이치",""],["㈜ 학산",""],["주식회사 넥슨유니버스",""],["주식회사 넥슨에이치큐",""],["주식회사 딜로퀘스트",""],["주식회사 민트로켓",""],["주식회사 엔미디어플랫폼",""],["주식회사 넥슨스페이스",""],["㈜넥슨커뮤니케이션즈",""],["주식회사 데브캣",""],["주식회사 엔엑스씨",""],["주식회사 엔진스튜디오",""],["재단법인 넥슨재단",""],["㈜에뛰드(아모레퍼시픽)",""],["주식회사 5민랩",""],["주식회사 나인비스튜디오",""],["주식회사 렐루게임즈",""],["주식회사 룬샷게임즈",""],["주식회사 올리브트리게임즈",""],["주식회사 조프소프트",""],["주식회사 플라이웨이게임즈",""],["네이버랩스 주식회사",""],["네이버아이앤에스 주식회사",""],["네이버제트 주식회사",""],["(재)네이버커넥트",""],["주식회사 문피아",""],["주식회사 세미콜론스튜디어",""],["스튜디오리코 주식회사",""],["주식회사 컴파트너스",""],["케이크 주식회사",""],["크림페이 주식회사",""],["팹 주식회사(PAPCorp.)",""],["재단법인 해피빈",""],["엔아이티서비스 주식회사",""],["엔테크서비스 주식회사",""],["제트벤처 캐피탈 코리아",""],["주식회사 그린웹서비스",""],["크림 주식회사",""],["엔에이치엔케이씨피 주식회사",""],["링크 주식회사",""],["주식회사 아이비티코리아",""],["㈜ 엔에이치엔데이터",""],["엔에이치엔두레이 주식회사",""],["엔에이치엔링크 ㈜",""],["엔에이치엔서비스 주식회사(NHN Serv",""],["엔에이치엔애드 ㈜",""],["엔에이치엔에듀 주식회사(NHN Edu C",""],["㈜엔에이치엔에이스(NHN ACE Corpo",""],["엔에이치엔엔터프라이즈 주식회사",""],["엔에이치엔위투 주식회사",""],["엔에이치엔커머스㈜",""],["엔에이치엔코미코코리아 주식회사",""],["엔에이치엔클라우드 주식회사",""],["엔에이치엔토스트캠 주식회사",""],["엔에이치엔페이코 주식회사",""],["한국신용카드결제㈜",""],["토스씨엑스 주식회사","비바리퍼블리카"],["토스인컴 주식회사","비바리퍼블리카"],["토스증권 주식회사","비바리퍼블리카"],["토스페이먼츠 주식회사","비바리퍼블리카"],["토스플레이스 주식회사","비바리퍼블리카"],["주식회사 컴투스플랫폼",""],["주식회사 컴투스홀딩스",""],["주식회사 카탈리스터",""],["㈜베리안메티컬시스템즈코리아",""],["지멘스모빌리티유한회사",""],["한국코닝㈜","코닝정밀소재㈜"],["이와이관세법인",""],["이와이케이디에스 유한회사",""],["언스트앤영어드바이저리 주식회사",""],["주식회사 신화주택건설",""],["넷마블에프앤씨 주식회사",""],["충북치과의사회",""],["카카오뱅크",""],["주식회사 파크조경",""],["주식회사 어바웃씽킹",""],["주식회사 하수구폴리스",""],["㈜ 선영후르츠",""],["라비돌",""],["㈜한울이엔씨",""],["㈜해평건설",""],["주식회사 비에스에어텍",""],["㈜엘케이로지스틱",""],["샤브향기",""],["운수소방",""],["법무법인 동인",""],["씨제이씨푸드㈜",""],["씨제이바이오사이언스(주)",""],["(주)원지",""],["씨제이엠디원(주)",""],["신의도천일염(주)",""],["씨제이브리딩(주)",""],["(주)코휘드",""],["삼해상사(주)",""],["씨제이웰케어(주)",""],["한국복합물류(주)",""],["씨제이대한통운비엔디(주)",""],["대한통운에스비(주)",""],["씨제이푸드빌(주)",""],["씨제이포디플렉스(주)",""],["(주)씨제이텔레닉스",""],["(주)브랜드웍스코리아",""],["(주)씨제이메조미디어",""],["(주)스튜디오테이크원",""],["(주)디엑스이",""],["(주)티빙",""],["씨제이이엔엠 스튜디오스(주)",""],["디아이웨어(주)",""],["씨제이인베스트먼트(주)",""],["고성그린파워㈜",""],["디앤디인베스트먼트㈜",""],["디앤디프라퍼티솔루션㈜",""],["에스케이멀티유틸리티㈜",""],["에스케이어드밴스드㈜",""],["에스케이플라즈마㈜",""],["울산지피에스㈜",""],["코리아에너지터미널㈜",""],["주식회사 케이티스포츠",""],["(주) 케이티엠앤에스",""],["주식회사 이지로지스",""],["주식회사에스씨엔터테인먼트",""],["파인앤파트너스 자산운용 주식회사",""],["유한회사 분필",""],["쿠팡 주식회사","쿠팡 주식회사"],["쿠팡로지스틱스서비스 유한회사","쿠팡 주식회사"],["주식회사 떠나요","쿠팡 주식회사"],["쿠팡페이 주식회사","쿠팡 주식회사"],["쿠팡이츠서비스 유한회사","쿠팡 주식회사"],["씨피엘비 주식회사","쿠팡 주식회사"],["쿠팡풀필먼트서비스 유한회사","쿠팡 주식회사"],["주식회사 보더리스필름","쿠팡 주식회사"],["쿠팡파이낸셜 주식회사","쿠팡 주식회사"],["씨피엔터테인먼트 주식회사","쿠팡 주식회사"],["주식회사 삼우에코",""],["㈜ 이노앤",""],["주식회사에스앤홀딩스",""],["㈜ 신세계인터내셔날",""],["지피씨 주식회사(GPC Corp.)",""],["주식회사 하이브(HYBE Co., Ltd.)","하이브"],["주식회사 빅히트뮤직(BIGHIT MUSIC","하이브"],["㈜플레디스엔터테인먼트","하이브"],["주식회사 쏘스뮤직","하이브"],["주식회사 케이오지 엔터테인먼트","하이브"],["주식회사 드림에이지","하이브"],["주식회사 위버스컴퍼니 (WEVERSE CO","하이브"],["주식회사 빌리프랩 (BElift Lab Inc.)","하이브"],["주식회사 어도어(ADOR Co., Ltd.)","하이브"],["주식회사 수퍼톤","하이브"],["주식회사 에이비디(ABD CO.,Ltd)","하이브"],["㈜비엔피컴퍼니",""],["전라남도 치과의사회",""],["주식회사뉴템즈",""],["경신글로비스",""],["주식회사 비엔케이금융지주",""],["㈜ 라미에이스",""],["삼정케이피엠지 유한회사",""],["코카콜라음료 주식회사","엘지생활건강"],["델인터내셔널 주식회사",""],["주식회사 바이트랩",""],["주식회사 포스코인터내셔널",""],["엔픽스 유한회사",""],["농심켈로그 ㈜",""],["주식회사 경일감정평가법인",""],["티케이지태광 ㈜",""],["㈜ 녹십자홀딩스","녹십자홀딩스"],["㈜녹십자","녹십자홀딩스"],["주식회사녹십자엠에스","녹십자홀딩스"],["㈜ 녹십자이엠","녹십자홀딩스"],["주식회사 GC 케어","녹십자홀딩스"],["㈜ 녹십자웰빙","녹십자홀딩스"],["농업회사법인 인백팜 ㈜","녹십자홀딩스"],["주식회사 지씨셀","녹십자홀딩스"],["주식회사 지씨지놈","녹십자홀딩스"],["주식회사 지씨웰페어","녹십자홀딩스"],["㈜녹십자메디스","녹십자홀딩스"],["㈜지씨씨엘","녹십자홀딩스"],["주식회사 GC메디아이","녹십자홀딩스"],["㈜헥톤프로젝트","녹십자홀딩스"],["㈜ 비브로스 (B-bros Corporation)","녹십자홀딩스"],["주식회사 그린벳","녹십자홀딩스"],["주) 진스랩","녹십자홀딩스"],["주식회사 어니스트리","녹십자홀딩스"],["주식회사 이니바이오","녹십자홀딩스"],["정우이앤이 주식회사",""],["주식회사 에프앤에프",""],["라온건설주식회사",""],["주식회사 메디브로",""],["주식회사 위메이드",""],["미래에셋증권 주식회사",""],["롯데칠성음료 ㈜",""],["㈜더프리마",""],["주식회사 핏로지",""],["엘젠테크 ㈜",""],["주식회사 에프엠케이",""],["지에스파워주식회사",""],["주식회사무학",""],["와이피코리아주식회사",""],["법무법인 (유한) 율촌",""],["(주)성은특수콘크리트",""],["이노레스주식회사",""],["자이에스앤디㈜",""],["포티투닷 주식회사",""],["롯데쇼핑",""],["SK이노베이션",""],["에스케이어스온",""],["SK에너지",""],["에스케이지오센트릭",""],["에스케이아이이테크놀로지",""],["에스케이인천석유화학",""],["에스케이온",""],["피씨디렉트",""],["에이스엘앤에스",""],["SK오앤에스",""],["삼양인터내셔날",""]];
+
+// 카테고리
+const CATS = [
+  {id:"all",  name:"전체"},
+  {id:"sedan",name:"세단"},
+  {id:"suv",  name:"SUV"},
+  {id:"coupe",name:"쿠페·카브리올레"},
+  {id:"ev",   name:"전기차"},
+  {id:"amg",  name:"AMG"},
+  {id:"mb",   name:"마이바흐"}
+];
+
+/* 트림 필드: y 연식, n 트림명, p 권장가(만원, 숫자 또는 문자열), c 현금할인(%) 또는 문자열,
+   f 벤츠파이낸셜 추가(%) 또는 문자열, j MBM 조인트 캠페인, r 재구매(+%), t 트레이드인(+%), q 타브랜드(+% 또는 문자열),
+   e 보증연장, b GLC BEV 우선배정, x 기타 메모 */
+/* 차종 정보. 트림·가격은 MB 코리아 권장 소비자 가격표(2026.11.16, 부가세 포함·개별소비세 5%), 할인은 11~12월 고객 리테일 프로모션(2026.11.20) 기준.
+   트림 필드: y 연식, n 트림명, p 권장가(만원), c 현금할인(%), f 벤츠파이낸셜 추가(%), j MBM 조인트, r 재구매(+%), t 트레이드인(+%), q 타브랜드, e 보증연장, b GLC EV 우선배정, x 메모 */
+const TRIMS = {"amg-a": [{"y": 27, "n": "Mercedes-AMG A 45 S 4MATIC+", "p": 8230}, {"y": 26, "n": "Mercedes-AMG A 45 S 4MATIC+", "p": 8140}], "cla": [{"y": 27, "n": "CLA 220", "p": 5990, "c": "-", "r": 1, "t": 1}, {"y": 27, "n": "CLA 220 AMG Line", "p": 6290, "c": "-", "r": 1, "t": 1}, {"y": 26, "n": "CLA 250 4MATIC AMG Line", "p": 6450, "c": 7, "r": 1, "t": 1}], "cla-ev": [{"y": 27, "n": "CLA 200 electric Essential", "p": 5290, "c": "100만원", "r": 1, "t": 1}, {"y": 27, "n": "CLA 200 electric Advanced", "p": 5580, "c": "100만원", "r": 1, "t": 1}, {"y": 27, "n": "CLA 200 electric AMG Line", "p": 5890, "c": "100만원", "r": 1, "t": 1}, {"y": 27, "n": "CLA 250+ electric", "p": 6370, "c": "100만원", "r": 1, "t": 1}, {"y": 27, "n": "CLA 250+ electric AMG Line", "p": 6770, "c": "100만원", "r": 1, "t": 1}], "gla": [{"y": 27, "n": "GLA 250 4MATIC AMG Line", "p": 7080, "c": 9, "f": 4, "r": 1, "t": 1}, {"y": 26, "n": "GLA 250 4MATIC AMG Line", "p": 7000, "c": 9, "f": 4, "r": 1, "t": 1}], "glb-ev": [{"y": 27, "n": "GLB 250+ electric", "p": 6990, "c": "100만원", "r": 1, "t": 1, "b": 1}], "eqa": [{"y": 27, "n": "EQA 250 Progressive", "p": 7080, "c": "-", "e": 1, "r": 1, "t": 1}, {"y": 27, "n": "EQA 250 AMG Line", "p": 7670, "c": "-", "e": 1, "r": 1, "t": 1}, {"y": 26, "n": "EQA 250 Progressive", "p": 7000, "c": "-", "e": 1, "r": 1, "t": 1}, {"y": 26, "n": "EQA 250 AMG Line", "p": 7580, "c": "-", "e": 1, "r": 1, "t": 1}], "cle-coupe": [{"y": 27, "n": "CLE 200 Coupé", "p": 7760, "c": 2, "r": 1, "t": 1}, {"y": 27, "n": "CLE 450 4MATIC Coupé", "p": 10080, "c": 2, "r": 1, "t": 1}, {"y": 26, "n": "CLE 200 Coupe AMG Line", "p": 7670, "c": 5, "r": 1, "t": 1}, {"y": 26, "n": "CLE 450 4MATIC Coupe AMG Line", "p": 9970, "c": 9, "r": 1, "t": 1}], "amg-cle": [{"y": 27, "n": "Mercedes-AMG CLE 53 4MATIC+ Coupé", "p": 11060, "c": 2, "r": 2, "t": 1}, {"y": 27, "n": "Mercedes-AMG CLE 53 4MATIC+ Cabriolet", "p": 11660, "c": 2, "r": 2, "t": 1}, {"y": 26, "n": "Mercedes-AMG CLE 53 4MATIC+ Coupe", "p": 10910, "c": 3, "r": 2, "t": 1}, {"y": 26, "n": "Mercedes-AMG CLE 53 4MATIC+ Coupe Limited Edition", "p": 13270}, {"y": 26, "n": "Mercedes-AMG CLE 53 4MATIC+ Cabriolet", "p": 11500, "c": 3, "r": 2, "t": 1}, {"y": 26, "n": "Mercedes-AMG CLE 53 4MATIC+ Cabriolet Limited Edition", "p": 13870}], "cle-cabrio": [{"y": 27, "n": "CLE 200 Cabriolet", "p": 8410, "c": 2, "r": 1, "t": 1}, {"y": 27, "n": "CLE 450 4MATIC Cabriolet", "p": 10520, "c": 2, "r": 1, "t": 1}, {"y": 26, "n": "CLE 200 Cabriolet AMG Line", "p": 8310, "c": 4, "r": 1, "t": 1}, {"y": 26, "n": "CLE 450 4MATIC Cabriolet AMG Line", "p": 10400, "c": 6, "r": 1, "t": 1}], "e-class": [{"y": 27, "n": "E 200 EXCLUSIVE", "p": 7750, "c": 14, "f": 4, "j": 1, "r": 1, "t": 1}, {"y": 27, "n": "E 200 AMG Line", "p": 8100, "c": 14, "f": 3, "j": 1, "r": 1, "t": 1}, {"y": 27, "n": "E 220 d 4MATIC AVANTGARDE", "p": 8750, "r": 1, "t": 1}, {"y": 27, "n": "E 300 4MATIC EXCLUSIVE", "p": 9480, "c": 8, "f": 4, "j": 1, "r": 1, "t": 1, "x": "전시·위탁 10%"}, {"y": 27, "n": "E 300 4MATIC AMG Line", "p": 10010, "c": 8, "f": 4, "j": 1, "r": 1, "t": 1, "x": "전시·위탁 10%"}, {"y": 27, "n": "E 350 e 4MATIC EXCLUSIVE", "p": 10110, "r": 1, "t": 1}, {"y": 27, "n": "E 450 4MATIC AMG Line", "p": 11220, "c": 10, "r": 1, "t": 1}, {"y": 27, "n": "E 450 4MATIC EXCLUSIVE", "c": 10, "r": 1, "t": 1}], "amg-e": [{"y": 27, "n": "Mercedes-AMG E 53 HYBRID 4MATIC+", "p": 14990, "r": 2, "t": 1}, {"y": 26, "n": "Mercedes-AMG E 53 HYBRID 4MATIC+ (사양 1)", "p": 14300, "c": 10, "r": 2, "t": 1}, {"y": 26, "n": "Mercedes-AMG E 53 HYBRID 4MATIC+ (사양 2)", "p": 14840, "c": 10, "r": 2, "t": 1}], "glc": [{"y": 27, "n": "GLC 220 d 4MATIC", "p": 8220, "r": 1, "t": 1, "q": 1, "b": 1}, {"y": 27, "n": "GLC 300 4MATIC", "p": 7700, "c": 7, "f": 1, "r": 1, "t": 1, "q": 1, "b": 1, "x": "전시·위탁 11%"}, {"y": 27, "n": "GLC 300 4MATIC AVANTGARDE", "p": 8250, "c": 7, "f": 1, "r": 1, "t": 1, "q": 1, "b": 1, "x": "전시·위탁 11%"}, {"y": 27, "n": "GLC 300 4MATIC AMG Line", "p": 9550, "c": 7, "f": 1, "r": 1, "t": 1, "q": 1, "b": 1, "x": "전시·위탁 11%"}], "amg-glc": [{"y": 27, "n": "Mercedes-AMG GLC 53 4MATIC+", "p": 10510, "r": 2, "t": 1, "q": 1}, {"y": 27, "n": "Mercedes-AMG GLC 53 4MATIC+ Coupé", "p": 10980, "r": 2, "t": 1, "q": 1}, {"y": 26, "n": "Mercedes-AMG GLC 43 4MATIC", "p": 10360, "c": 7, "r": 2, "t": 1, "q": 1, "b": 1}, {"y": 26, "n": "Mercedes-AMG GLC 43 4MATIC Coupé", "p": 10830, "c": 3, "r": 2, "t": 1, "q": 1, "b": 1}], "glc-coupe": [{"y": 27, "n": "GLC 300 4MATIC Coupé", "p": 8000, "r": 1, "t": 1, "q": 1, "b": 1}, {"y": 27, "n": "GLC 300 4MATIC Coupé AVANTGARDE", "p": 8660, "j": 1, "c": 7, "f": 1, "r": 1, "t": 1, "q": 1, "b": 1, "x": "전시·위탁 11%"}, {"y": 27, "n": "GLC 300 4MATIC Coupé AMG Line (MY27 초기 생산분)", "p": 9690, "j": 1, "c": 7, "f": 1, "r": 1, "t": 1, "q": 1, "b": 1, "x": "전시·위탁 11%"}, {"y": 27, "n": "GLC 300 4MATIC Coupé AMG Line", "p": 9790, "j": 1, "c": 7, "f": 1, "r": 1, "t": 1, "q": 1, "b": 1, "x": "전시·위탁 11%"}], "glc-ev": [{"y": 27, "n": "GLC 300 4MATIC electric AMG Line (Launch Edition)", "p": 9000, "c": "-", "r": 1, "t": 1}, {"y": 27, "n": "GLC 300 4MATIC electric AMG Line+ (Launch Edition)", "p": 9480, "c": "-", "r": 1, "t": 1}], "gle": [{"y": 27, "n": "GLE 450 4MATIC AMG Line", "p": 13670, "c": 5, "r": 1, "t": 1, "q": 1}, {"y": 26, "n": "GLE 300 d 4MATIC", "p": 11920, "c": 8, "r": 1, "t": 1, "q": 1}, {"y": 26, "n": "GLE 350 4MATIC", "p": 11800, "c": 10, "j": 1, "r": 1, "t": 1, "q": 1}, {"y": 26, "n": "GLE 450 4MATIC", "p": 12900, "c": 12, "f": 4, "j": 1, "r": 1, "t": 1, "q": 1}, {"y": 26, "n": "GLE 450 4MATIC AMG Line", "p": 13900, "c": 12, "f": 4, "j": 1, "r": 1, "t": 1, "q": 1}], "gle-coupe": [{"y": 27, "n": "GLE 450 4MATIC Coupé", "p": 14080, "c": "-", "r": 1, "t": 1, "q": 1}, {"y": 26, "n": "GLE 450 d 4MATIC Coupé AMG Line", "p": 13400, "c": 12, "j": 1, "r": 1, "t": 1, "q": 1}, {"y": 26, "n": "GLE 450 4MATIC Coupé AMG Line", "p": 14250, "c": 15, "f": 4, "j": 1, "r": 1, "t": 1, "q": 1}], "gls": [{"y": 27, "n": "GLS 450 4MATIC", "p": 15510, "c": "-", "r": 2, "t": 1}, {"y": 27, "n": "GLS 450 4MATIC 6-seater", "p": 15200, "c": "-", "r": 2, "t": 1}, {"y": 27, "n": "GLS 450 4MATIC AMG Line", "p": 16120, "c": "-", "r": 2, "t": 1}, {"y": 27, "n": "GLS 450 4MATIC AMG Line 6-seater", "p": 15810, "c": "-", "r": 2, "t": 1}, {"y": 26, "n": "GLS 450 d 4MATIC AMG Line", "p": 15400, "c": 2, "r": 2, "t": 1}, {"y": 26, "n": "GLS 450 4MATIC AMG Line", "p": 15400, "c": 8, "j": 1, "r": 2, "t": 1}, {"y": 26, "n": "GLS 450 d 4MATIC AMG Line Premium", "p": 15850}, {"y": 26, "n": "GLS 450 4MATIC AMG Line Premium", "p": 15850}, {"y": 26, "n": "GLS 580 4MATIC AMG Line", "p": 19340, "c": 9, "j": 1, "r": 2, "t": 1}], "s-class": [{"y": 27, "n": "S 350 d 4MATIC", "p": 15400, "c": "재구매 전용", "r": 2, "t": "1 (전시 3)", "q": "보증연장", "x": "주유 50만원"}, {"y": 27, "n": "S 450 4MATIC", "p": 16240, "c": "재구매 전용", "r": 2, "t": "1 (전시 3)", "q": "보증연장", "x": "주유 50만원"}, {"y": 27, "n": "S 450 4MATIC Long Exclusive", "p": 17540, "c": "재구매 전용", "r": 2, "t": "1 (전시 3)", "q": "보증연장", "x": "주유 50만원"}, {"y": 27, "n": "S 450 4MATIC Long AMG Line", "p": 19540, "c": "재구매 전용", "r": 2, "t": "1 (전시 3)", "q": "보증연장", "x": "주유 50만원"}, {"y": 27, "n": "S 500 4MATIC Long", "p": 22000, "c": "재구매 전용", "r": 2, "t": "1 (전시 3)", "q": "보증연장", "x": "주유 50만원"}, {"y": 27, "n": "S 580 4MATIC Long", "p": 27000, "c": "재구매 전용", "r": 2, "t": "1 (전시 3)", "q": "보증연장", "x": "주유 50만원"}, {"y": 26, "n": "S 350 d 4MATIC", "p": 15400, "c": 10, "r": 2, "t": 1}, {"y": 26, "n": "S 350 d 4MATIC (CY25/2)", "p": 15500, "c": 10, "r": 2, "t": 1}, {"y": 26, "n": "S 450 4MATIC", "p": 16100, "c": 7, "f": "할부 4 / 리스·렌트 6", "j": 1, "r": 2, "t": 1}, {"y": 26, "n": "S 450 4MATIC (CY25/2)", "p": 16200, "c": 7, "f": "할부 4 / 리스·렌트 6", "j": 1, "r": 2, "t": 1}, {"y": 26, "n": "S 450 4MATIC Long", "p": 19300, "c": 10, "r": 2, "t": 1}, {"y": 26, "n": "S 450 4MATIC Long (CY25/2)", "p": 19500, "c": 10, "r": 2, "t": 1}, {"y": 26, "n": "S 500 4MATIC Long", "p": 21500, "c": 10, "r": 2, "t": 1}, {"y": 26, "n": "S 500 4MATIC Long (CY25/2)", "p": 21700, "c": 10, "r": 2, "t": 1}, {"y": 26, "n": "S 580 4MATIC Long", "p": 26000, "c": 10, "r": 2, "t": 1}], "mb-s": [{"y": 27, "n": "Mercedes-Maybach S 580", "p": 31700, "c": "재구매 전용", "r": 2, "t": "1 (전시 3)", "q": "보증연장", "x": "주유 50만원"}, {"y": 27, "n": "Mercedes-Maybach S 580 MANUFAKTUR", "p": 33600, "c": "재구매 전용", "r": 2, "t": "1 (전시 3)", "q": "보증연장", "x": "주유 50만원"}, {"y": 27, "n": "Mercedes-Maybach S 680", "p": 40700, "c": "재구매 전용", "r": 2, "t": "1 (전시 3)", "q": "보증연장", "x": "주유 50만원"}, {"y": 26, "n": "Mercedes-Maybach S 580", "p": 31700, "c": 9, "f": "리스·렌트 2", "e": 1, "r": 2, "t": 1}, {"y": 26, "n": "Mercedes-Maybach S 680", "p": 40300, "c": 9, "f": "리스·렌트 2", "e": 1, "r": 9, "t": 1, "q": 7}, {"y": 26, "n": "Mercedes-Maybach S 680 \"V12 Edition\"", "p": 47940}], "amg-sl": [{"y": 27, "n": "Mercedes-AMG SL 43", "p": 16180, "c": 8, "r": 2, "t": 1}, {"y": 27, "n": "Mercedes-AMG SL 63 4MATIC+", "p": 25280, "r": 2, "t": 1}, {"y": 26, "n": "Mercedes-AMG SL 43", "p": 16000, "c": 9, "r": 2, "t": 1}, {"y": 26, "n": "Mercedes-AMG SL 63 4MATIC+", "p": 25000, "c": 9, "r": 2, "t": 1}], "mb-sl": [{"y": 27, "n": "Mercedes-Maybach SL 680", "p": 34800, "r": 2, "t": 1}, {"y": 26, "n": "Mercedes-Maybach SL 680", "p": 34400, "c": 2, "r": 2, "t": 1}], "amg-gt": [{"y": 27, "n": "Mercedes-AMG GT 43", "p": 14950, "c": 8, "r": 2, "t": 1}, {"y": 27, "n": "Mercedes-AMG GT 55 4MATIC+", "p": 21260, "c": 2, "r": 2, "t": 1}, {"y": 27, "n": "Mercedes-AMG GT 63 S E Performance", "p": 28310, "r": 2, "t": 1}, {"y": 26, "n": "Mercedes-AMG GT 43", "p": 14950, "c": 9, "r": 2, "t": 1}, {"y": 26, "n": "Mercedes-AMG GT 55 4MATIC+", "p": 21000, "c": 3, "r": 2, "t": 1}, {"y": 26, "n": "Mercedes-AMG GT 63 S E Performance", "p": 28000, "c": 4, "r": 2, "t": 1}], "g-class": [{"y": 27, "n": "G 450 d", "p": 19970, "c": "-", "r": 2, "t": 1}, {"y": 27, "n": "G 450 d MANUFAKTUR", "p": 22820, "c": "-", "r": 2, "t": 1}, {"y": 26, "n": "G 450 d", "p": 19490, "c": "-", "r": 2, "t": 1}, {"y": 26, "n": "G 450 d MANUFAKTUR", "p": 21910, "c": "-", "r": 2, "t": 1}], "amg-g": [{"y": 27, "n": "Mercedes-AMG G 63", "p": 27500, "c": "-", "j": 1, "r": 2, "t": 1, "x": "스페셜 기프트"}, {"y": 27, "n": "Mercedes-AMG G 63 MANUFAKTUR", "p": 30100, "c": "-", "j": 1, "r": 2, "t": 1, "x": "스페셜 기프트"}, {"y": 26, "n": "Mercedes-AMG G 63", "p": 26260, "c": "-", "j": 1, "r": 2, "t": 1, "x": "스페셜 기프트"}, {"y": 26, "n": "Mercedes-AMG G 63 MANUFAKTUR", "p": 28980, "c": "-", "j": 1, "r": 2, "t": 1, "x": "스페셜 기프트"}], "g-eq": [{"y": 27, "n": "G 580 with EQ Technology", "p": 21900, "c": "-", "e": 1, "r": 2, "t": 1}, {"y": 27, "n": "G 580 with EQ Technology MANUFAKTUR", "p": 23850, "c": "-", "e": 1, "r": 2, "t": 1}, {"y": 26, "n": "G 580 with EQ Technology", "p": 21610, "c": "-", "e": 1, "r": 2, "t": 1}], "eqs-suv": [{"y": 27, "n": "EQS 450 4MATIC SUV", "p": 16790, "e": 1, "r": 2, "t": 1}, {"y": 27, "n": "EQS 580 4MATIC SUV", "p": 19420, "e": 1, "r": 2, "t": 1}, {"y": 26, "n": "EQS 450 4MATIC SUV", "p": 16600, "c": 10, "e": 1, "j": 1, "r": 2, "t": 1}, {"y": 26, "n": "EQS 580 4MATIC SUV", "p": 19200, "c": 10, "e": 1, "j": 1, "r": 2, "t": 1}], "mb-eqs": [{"y": 27, "n": "Mercedes-Maybach EQS 680 SUV", "p": 23760, "e": 1, "r": 2, "t": 1}, {"y": 26, "n": "Mercedes-Maybach EQS 680 SUV", "p": 23500, "c": "-", "e": 1, "r": 9, "t": 1, "q": 7}], "a-class": [{"y": 26, "n": "A 220", "p": 4870, "c": 10, "r": 1, "t": 1}], "a-sedan": [{"y": 26, "n": "A 220 Sedan", "p": 5050}], "amg-a-sedan": [{"y": 26, "n": "Mercedes-AMG A 35 4MATIC", "p": 6860}], "amg-cla": [{"y": 26, "n": "Mercedes-AMG CLA 45 S 4MATIC+", "p": 9180, "c": 5, "r": 2, "t": 1}, {"y": 26, "n": "Mercedes-AMG CLA 45 S 4MATIC+ Final Edition", "p": 9700}], "glb": [{"y": 26, "n": "GLB 200 d", "p": 6430}, {"y": 26, "n": "GLB 250 4MATIC", "p": 7200, "c": 13, "f": 4, "j": 1, "r": 1, "t": 1}], "amg-glb": [{"y": 26, "n": "Mercedes-AMG GLB 35 4MATIC", "p": 7950, "c": 9, "f": 4, "j": 1, "r": 2, "t": 1}], "c-class": [{"y": 26, "n": "C 200 AVANTGARDE", "p": 6510, "c": 10, "f": 4, "j": 1, "r": 1, "t": 1}, {"y": 26, "n": "C 200 AMG Line", "p": 6830, "c": 10, "f": 4, "j": 1, "r": 1, "t": 1}, {"y": 26, "n": "C 200 Special Edition", "p": 6630, "c": 10, "f": 4, "j": 1, "r": 1, "t": 1, "x": "파이널 에디션"}], "amg-s": [{"y": 26, "n": "Mercedes-AMG S 63 E Performance", "p": 29900, "c": 10, "j": 1, "r": 2, "t": 1}], "amg-gt4": [{"y": 26, "n": "Mercedes-AMG GT 43 4MATIC+", "p": 16400, "c": 9, "r": 2, "t": 1}], "amg-gle": [{"y": 26, "n": "Mercedes-AMG GLE 53 4MATIC+", "p": 16600, "c": 8, "j": 1, "r": 2, "t": 1, "q": 1}, {"y": 26, "n": "Mercedes-AMG GLE 53 4MATIC+ Coupé", "p": 17000, "c": 5, "j": 1, "r": 2, "t": 1, "q": 1}], "mb-gls": [{"y": 26, "n": "Mercedes-Maybach GLS 600", "p": 29500, "c": 5, "j": 1, "r": 9, "t": 1, "q": 7}, {"y": 26, "n": "Mercedes-Maybach GLS 600 MANUFKATUR", "p": 33700, "c": 5, "j": 1, "r": 9, "t": 1, "q": 7}], "amg-gls": [{"y": 26, "n": "Mercedes-AMG GLS 63 4MATIC+", "p": 21000, "c": 1, "j": 1, "r": 2, "t": 1}], "eqb": [{"y": 26, "n": "EQB 300 4MATIC Progressive", "p": 7880, "c": "-", "e": 1, "r": 1, "t": 1}, {"y": 26, "n": "EQB 300 4MATIC AMG Line", "p": 8430, "c": "-", "e": 1, "r": 1, "t": 1}], "eqe-suv": [{"y": 26, "n": "EQE 350+ SUV", "p": 10600, "c": 10, "e": 1, "j": 1, "r": 1, "t": 1}, {"y": 26, "n": "EQE 500 4MATIC SUV", "p": 14100, "c": 10, "e": 1, "j": 1, "r": 1, "t": 1}], "eqe": [{"y": 26, "n": "EQE 350+", "p": 11000, "c": 10, "e": 1, "j": 1, "r": 1, "t": 1}], "eqs": [{"y": 27, "n": "EQS 400", "c": "-", "e": 1, "r": 2, "t": 1}]};
+const META = [
+ // 세단
+ {id:"a-class",cat:"sedan",nm:"A-클래스",seg:"컴팩트 해치백",cats:["c24"],d:"도심 주행에 맞춘 엔트리 해치백입니다."},
+ {id:"a-sedan",cat:"sedan",nm:"A-클래스 세단",seg:"컴팩트 세단",cats:["c27"],d:"A-클래스의 4도어 세단 모델입니다. 이번 달 공문에 별도 할인은 없습니다."},
+ {id:"c-class",cat:"sedan",nm:"C-클래스",seg:"중형 세단",cats:["c25"],d:"S-클래스 디자인을 이어받은 중형 세단. 26년식 C 200은 현금 10%에 파이낸셜 이용 시 4%가 더해집니다."},
+ {id:"e-class",cat:"sedan",nm:"E-클래스",seg:"준대형 비즈니스 세단",cats:["c28"],d:"메르세데스-벤츠를 대표하는 비즈니스 세단. 27년식 E 200은 파이낸셜 포함 최대 18%, E 300은 전시·위탁 차량 최대 15%까지 가능합니다.",
+  notes:["27년식 E 300은 위탁·전시 차량에 한해 현금 8%+위탁·전시 2%+파이낸셜 4%+전시차 1%로 최대 15%까지 가능합니다."]},
+ {id:"s-class",cat:"sedan",nm:"S-클래스",seg:"플래그십 세단",cats:["c26"],d:"메르세데스-벤츠의 플래그십. 26년식은 최대 10~13%, 신형 27년식은 기본 할인 없이 재구매 고객 전용 혜택이 큽니다.",
+  notes:["27년식은 S-클래스 보유 고객 재구매 시 재구매 2% + 트레이드인 최대 3% + 취득세 지원 4%(전시·위탁 차량)로 최대 7%까지 적용됩니다.","27년식 재구매 고객에게 주유 바우처 50만원, 사전계약 재구매 고객에게 보증연장이 제공됩니다.","타 브랜드(롤스로이스·벤틀리·BMW·아우디·제네시스·볼보·포르쉐·랜드로버·렉서스) 보유 고객은 보증연장 +1년/+3만km, 전시·위탁 차량은 +2%."]},
+ // SUV
+ {id:"gla",cat:"suv",nm:"GLA",seg:"컴팩트 SUV",cats:["c14"],d:"도심형 컴팩트 SUV. 현금 9%에 파이낸셜 이용 시 4%가 더해집니다."},
+ {id:"glb",cat:"suv",nm:"GLB",seg:"컴팩트 7인승 SUV",cats:["c15"],d:"3열 7인승이 가능한 컴팩트 SUV. GLB 250은 이번 달 SUV 가운데 할인 폭이 가장 큽니다.",notes:["GLB 250은 KB·하나캐피탈 특별 고잔가 운용리스 대상입니다(이 경우 현금 할인 4%는 별도 조건)."]},
+ {id:"glc",cat:"suv",nm:"GLC",seg:"중형 SUV",cats:["c18"],d:"메르세데스-벤츠의 대표 중형 SUV. 12월 31일까지 출고하면 2027년 GLC 전기차 우선 배정권이 함께 제공됩니다.",
+  notes:["27년식 위탁·전시 차량은 현금 7%+위탁·전시 4%+파이낸셜 1%+전시차 1%로 최대 13%.","GLC·GLE는 BMW·아우디·제네시스·볼보·포르쉐·랜드로버·렉서스 보유 고객 +1%."]},
+ {id:"glc-coupe",cat:"suv",nm:"GLC 쿠페",seg:"중형 쿠페형 SUV",cats:["c18"],d:"GLC의 쿠페형 모델. 27년식은 현금 7%에 파이낸셜 1%, 전시·위탁 차량은 최대 13%입니다."},
+ {id:"gle",cat:"suv",nm:"GLE",seg:"준대형 SUV",cats:["c19"],d:"넉넉한 공간의 준대형 SUV. 26년식 GLE 450은 파이낸셜 포함 최대 16%입니다."},
+ {id:"gle-coupe",cat:"suv",nm:"GLE 쿠페",seg:"준대형 쿠페형 SUV",cats:["c19"],d:"이번 달 전 차종 최대 할인. 26년식 GLE 450 쿠페는 현금 15%에 파이낸셜 4%로 최대 19%입니다."},
+ {id:"gls",cat:"suv",nm:"GLS",seg:"대형 7인승 SUV",cats:["c16"],d:"메르세데스-벤츠의 대형 플래그십 SUV입니다. 27년식은 6인승 모델도 있습니다."},
+ {id:"g-class",cat:"suv",nm:"G-클래스",seg:"오프로더",cats:["c17"],d:"G-클래스는 현금 할인이 없고, 재구매·트레이드인 혜택만 적용됩니다.",notes:["G-클래스는 수출 방지 서약이 필요하며, 골든타임 사은품 대상에서 제외됩니다."]},
+ // 쿠페·카브리올레
+ {id:"cla",cat:"coupe",nm:"CLA",seg:"컴팩트 4도어 쿠페",cats:["c40"],d:"쿠페 실루엣의 컴팩트 세단. 27년식 신형 CLA(가솔린)는 기본 할인 없이 재구매 혜택만 적용됩니다."},
+ {id:"cle-coupe",cat:"coupe",nm:"CLE 쿠페",seg:"2도어 쿠페",cats:["c39"],d:"E-클래스급 2도어 쿠페. 26년식 CLE 450은 9%입니다."},
+ {id:"cle-cabrio",cat:"coupe",nm:"CLE 카브리올레",seg:"오픈톱 카브리올레",cats:["c39"],d:"소프트톱 4인승 카브리올레입니다."},
+ // 전기차
+ {id:"cla-ev",cat:"ev",nm:"일렉트릭 CLA",seg:"전기 세단 · 신형",cats:["c32"],d:"신형 전기 CLA. 이번 달 100만원 할인이 적용됩니다."},
+ {id:"glb-ev",cat:"ev",nm:"일렉트릭 GLB",seg:"전기 SUV · 신형",cats:["c33"],d:"신형 전기 GLB. 100만원 할인과 함께 2027년 GLC 전기차 우선 배정권이 제공됩니다."},
+ {id:"glc-ev",cat:"ev",nm:"일렉트릭 GLC",seg:"전기 SUV · 신형",cats:["c34"],d:"신형 전기 GLC 런치 에디션. 현금 할인은 없고 재구매·트레이드인 혜택이 적용됩니다."},
+ {id:"eqa",cat:"ev",nm:"EQA",seg:"컴팩트 전기 SUV",cats:["c35"],d:"컴팩트 전기 SUV. 현금 할인은 없고 보증연장이 제공됩니다."},
+ {id:"eqb",cat:"ev",nm:"EQB",seg:"컴팩트 7인승 전기 SUV",cats:["c36"],d:"7인승 컴팩트 전기 SUV. 현금 할인은 없고 보증연장이 제공됩니다."},
+ {id:"eqe",cat:"ev",nm:"EQE",seg:"전기 세단",cats:["c30"],d:"E-클래스급 전기 세단. 10% 할인에 보증연장이 더해집니다."},
+ {id:"eqe-suv",cat:"ev",nm:"EQE SUV",seg:"전기 SUV",cats:["c37"],d:"EQE 기반의 전기 SUV. 10% 할인에 보증연장이 더해집니다."},
+ {id:"eqs",cat:"ev",nm:"EQS",seg:"플래그십 전기 세단",cats:["c38"],d:"플래그십 전기 세단. 27년식 EQS 400은 재구매 2% 대상입니다. 이번 가격표에는 가격이 없어 상담으로 안내드립니다."},
+ {id:"eqs-suv",cat:"ev",nm:"EQS SUV",seg:"플래그십 전기 SUV",cats:["c31"],d:"3열 플래그십 전기 SUV. 26년식은 10% 할인과 보증연장이 적용됩니다."},
+ {id:"g-eq",cat:"ev",nm:"G-클래스 EQ",seg:"전기 오프로더",cats:["c29"],d:"G 580 with EQ Technology. 현금 할인은 없고 보증연장·재구매 혜택이 적용됩니다."},
+ // AMG
+ {id:"amg-a",cat:"amg",nm:"AMG A 45 S",seg:"AMG 컴팩트 해치백",cats:["c07"],d:"AMG 2.0리터 엔진의 고성능 해치백입니다. 이번 달 공문에 별도 할인은 없습니다."},
+ {id:"amg-a-sedan",cat:"amg",nm:"AMG A 35 세단",seg:"AMG 컴팩트 세단",cats:["c06"],d:"AMG A-클래스 세단입니다. 이번 달 공문에 별도 할인은 없습니다."},
+ {id:"amg-cla",cat:"amg",nm:"AMG CLA 45 S",seg:"AMG 컴팩트 쿠페",cats:["c08"],d:"AMG 고성능 컴팩트 4도어 쿠페입니다."},
+ {id:"amg-glb",cat:"amg",nm:"AMG GLB 35",seg:"AMG 컴팩트 SUV",cats:["c10"],d:"AMG 컴팩트 SUV. 현금 9%에 파이낸셜 4%로 최대 13%입니다."},
+ {id:"amg-e",cat:"amg",nm:"AMG E 53",seg:"AMG 세단",cats:["c01"],d:"AMG 플러그인 하이브리드 E-클래스입니다."},
+ {id:"amg-s",cat:"amg",nm:"AMG S 63",seg:"AMG 플래그십 세단",cats:["c26"],d:"AMG S 63 E 퍼포먼스. 10% 할인입니다. 카탈로그는 S-클래스 카탈로그로 연결됩니다."},
+ {id:"amg-cle",cat:"amg",nm:"AMG CLE 53",seg:"AMG 쿠페·카브리올레",cats:["c05","c04"],d:"AMG CLE 53 쿠페와 카브리올레입니다."},
+ {id:"amg-sl",cat:"amg",nm:"AMG SL",seg:"AMG 로드스터",cats:["c03"],d:"AMG SL 로드스터. 26년식 9%, 27년식 SL 43은 8%입니다."},
+ {id:"amg-gt",cat:"amg",nm:"AMG GT 쿠페",seg:"AMG 스포츠카",cats:["c13"],d:"AMG GT 2도어 쿠페입니다."},
+ {id:"amg-gt4",cat:"amg",nm:"AMG GT 4도어",seg:"AMG 4도어 쿠페",cats:["c12"],d:"AMG GT 4도어 쿠페입니다."},
+ {id:"amg-glc",cat:"amg",nm:"AMG GLC",seg:"AMG 중형 SUV",cats:["c11"],d:"AMG GLC 43(26년식)과 신형 AMG GLC 53(27년식)입니다."},
+ {id:"amg-gle",cat:"amg",nm:"AMG GLE 53",seg:"AMG 준대형 SUV",cats:["c02"],d:"AMG GLE 53 SUV와 쿠페입니다."},
+ {id:"amg-gls",cat:"amg",nm:"AMG GLS 63",seg:"AMG 대형 SUV",cats:["c16"],d:"AMG 대형 SUV입니다. 카탈로그는 GLS 카탈로그로 연결됩니다."},
+ {id:"amg-g",cat:"amg",nm:"AMG G 63",seg:"AMG 오프로더",cats:["c09"],d:"현금 할인은 없고, 11월 출고 고객 선착순 90명에게 G-클래스 슈트케이스를 드립니다.",notes:["11월 30일까지 출고 고객 선착순 90명 G-클래스 슈트케이스 증정(12월 일괄 발송).","골든타임 사은품 대상에서 제외됩니다."]},
+ // 마이바흐
+ {id:"mb-s",cat:"mb",nm:"마이바흐 S-클래스",seg:"Mercedes-Maybach 세단",cats:["c23"],d:"최상위 쇼퍼 드리븐 세단. 26년식 S 680은 재구매 고객 최대 18%까지 가능합니다.",notes:["재구매와 타 브랜드 할인은 둘 중 하나만 적용됩니다."]},
+ {id:"mb-gls",cat:"mb",nm:"마이바흐 GLS",seg:"Mercedes-Maybach SUV",cats:["c22"],d:"마이바흐 GLS 600. 재구매 고객 +9%, 타 브랜드 보유 고객 +7%입니다."},
+ {id:"mb-sl",cat:"mb",nm:"마이바흐 SL",seg:"Mercedes-Maybach 로드스터",cats:["c21"],d:"마이바흐 SL 680입니다."},
+ {id:"mb-eqs",cat:"mb",nm:"마이바흐 EQS SUV",seg:"Mercedes-Maybach 전기 SUV",cats:["c20"],d:"마이바흐 전기 SUV. 26년식은 재구매 +9%, 타 브랜드 +7%, 보증연장이 적용됩니다."}
+];
+const CATALOG_NAMES = {"c01": "AMG E-클래스 카탈로그", "c02": "AMG GLE·GLE 쿠페 카탈로그", "c03": "AMG SL 카탈로그", "c04": "AMG CLE 카브리올레 카탈로그", "c05": "AMG CLE 쿠페 카탈로그", "c06": "AMG A-클래스 세단 카탈로그", "c07": "AMG A-클래스 카탈로그", "c08": "AMG CLA 카탈로그", "c09": "AMG G-클래스 카탈로그", "c10": "AMG GLB 카탈로그", "c11": "AMG GLC·GLC 쿠페 카탈로그", "c12": "AMG GT 4도어 카탈로그", "c13": "AMG GT 쿠페 카탈로그", "c14": "GLA 카탈로그", "c15": "GLB 카탈로그", "c16": "GLS 카탈로그", "c17": "G-클래스 카탈로그", "c18": "GLC·GLC 쿠페 카탈로그", "c19": "GLE·GLE 쿠페 카탈로그", "c20": "마이바흐 EQS SUV 카탈로그", "c21": "마이바흐 SL 카탈로그", "c22": "마이바흐 GLS 카탈로그", "c23": "마이바흐 S-클래스 카탈로그", "c24": "A-클래스 카탈로그", "c25": "C-클래스 카탈로그", "c26": "S-클래스 카탈로그", "c27": "A-클래스 세단 카탈로그", "c28": "E-클래스 카탈로그", "c29": "G-클래스 EQ 카탈로그", "c30": "EQE 카탈로그", "c31": "EQS SUV 카탈로그", "c32": "일렉트릭 CLA 카탈로그", "c33": "일렉트릭 GLB 카탈로그", "c34": "일렉트릭 GLC 카탈로그", "c35": "EQA 카탈로그", "c36": "EQB 카탈로그", "c37": "EQE SUV 카탈로그", "c38": "EQS 카탈로그", "c39": "CLE 쿠페·카브리올레 카탈로그", "c40": "CLA 카탈로그"};
+const CATALOG_URLS = {"c01": "../catalogs/c01_Mercedes-AMG_E-Class_Catalogue_20260519.pdf", "c02": "../catalogs/c02_Mercedes-AMG_GLE_n_GLE_Coupe_Catalogue_20260619.pdf", "c03": "../catalogs/c03_Mercedes-AMG_SL_Catalogue_20261105.pdf", "c04": "../catalogs/c04_The_all-new_AMG_CLE_Cabriolet_catalogue_20260921.pdf", "c05": "../catalogs/c05_The_all-new_AMG_CLE_Coupe_catalogue_20260921.pdf", "c06": "../catalogs/c06_The_new_Mercedes-AMG_A-Class_Sedan_Catalogue_20260424.pdf", "c07": "../catalogs/c07_The_new_Mercedes-AMG_A-Class_Catalogue_20260522.pdf", "c08": "../catalogs/c08_The_new_Mercedes-AMG_CLA_Catalogue_20260424.pdf", "c09": "../catalogs/c09_The_new_Mercedes-AMG_G-Class_Catalogue_20261029.pdf", "c10": "../catalogs/c10_The_new_Mercedes-AMG_GLB_20260716.pdf", "c11": "../catalogs/c11_The_new_Mercedes-AMG_GLC_n_GLC_Coupe_Catalogue_20260424.pdf", "c12": "../catalogs/c12_The_new_Mercedes-AMG_GT_4Door_Catalogue_20260424.pdf", "c13": "../catalogs/c13_The_new_Mercedes-AMG_GT_Coupe_Catalogue_260424.pdf", "c14": "../catalogs/c14_Mercedes-Benz_GLA_Catalogue_20260707.pdf", "c15": "../catalogs/c15_Mercedes-Benz_The_new_GLB_Catalogue_20260813.pdf", "c16": "../catalogs/c16_Mercedes-Benz_The_new_GLS_Catalogue_20261118.pdf", "c17": "../catalogs/c17_The_new_G-Class_Catalogue_20260930.pdf", "c18": "../catalogs/c18_The_new_GLC_n_GLC_Coupe_Catalogue_20260424.pdf", "c19": "../catalogs/c19_The_new_GLE_n_GLE_Coupe_Catalogue_20261118.pdf", "c20": "../catalogs/c20_The_all-new_Mercedes-Maybach_EQS_SUV_Catalogue_20260519.pdf", "c21": "../catalogs/c21_The_all-new_Mercedes-Maybach_SL_Catalogue_20260424.pdf", "c22": "../catalogs/c22_The_new_Mercedes-Maybach_GLS_catalogue_20260622.pdf", "c23": "../catalogs/c23_The_new_Mercedes-Maybach_S-Class_Catalogue_20260811.pdf", "c24": "../catalogs/c24_Mercedes-Benz_A-Class_Catalogue_20260424.pdf", "c25": "../catalogs/c25_Mercedes-Benz_C-Class_Catalogue_20260424.pdf", "c26": "../catalogs/c26_Mercedes-Benz_S-Class_Catalogue_20260914.pdf", "c27": "../catalogs/c27_Mercedes-Benz_The_new_A-Class_Sedan_Catalogue_20260424.pdf", "c28": "../catalogs/c28_Mercedes-Benz_The_new_E-Class_Catalogue_20260424.pdf", "c29": "../catalogs/c29_G-Class_with_EQ_Technology_Catalogue_20260424.pdf", "c30": "../catalogs/c30_Mercedes-Benz_EQE_Catalogue_20260429.pdf", "c31": "../catalogs/c31_Mercedes-Benz_The_new_EQS_SUV_Catalogue_20260907.pdf", "c32": "../catalogs/c32_The_all_new_electric_CLA_catalogue_20261118.pdf", "c33": "../catalogs/c33_The_all-new_electric_GLB_catalogue_20261028.pdf", "c34": "../catalogs/c34_The_all-new_electric_GLC_catalogue_20261016.pdf", "c35": "../catalogs/c35_The_new_EQA_Catalogue_20260902.pdf", "c36": "../catalogs/c36_The_new_EQB_Catalogue_20260424.pdf", "c37": "../catalogs/c37_The_new_EQE_SUV_Catalogue_20260424.pdf", "c38": "../catalogs/c38_The_new_EQS_Catalogue_20260424.pdf", "c39": "../catalogs/c39_The_all_new_CLE_Coupe_n_CLE_Cabriolet_Catalogue_20260921.pdf", "c40": "../catalogs/c40_The_all-new_CLA_catalogue_20261007.pdf"};
+const M = META.map(m => ({...m, trims: TRIMS[m.id] || []}));
+
+
+const fmt = n => n.toLocaleString("ko-KR");
+const CATALOG_VIEW = true;
+const COLORS = {"c01":[["188U","베르데 실버",0],["197U","옵시디안 블랙",0],["595U","노틱 블루",0],["771U","벨벳 브라운",0],["831U","그라파이트 그레이",0],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",0],["956U","MANUFAKTUR 알파인 그레이",0],["993U","MANUFAKTUR 파타고니아 레드 브라이트",0]],"c02":[["149U","폴라 화이트",0],["197U","옵시디안 블랙",0],["842U","소달라이트 블루",0],["922U","하이 테크 실버",0],["992U","셀레나이트 그레이",0]],"c03":[["197U","옵시디안 블랙",0],["888U","하이퍼 블루",0],["914U","썬 옐로우",0],["922U","하이 테크 실버",0],["970U","스펙트럴 블루",0],["992U","셀레나이트 그레이",0],["054U","AMG 몬자 그레이 마그노",0],["056U","MANUFAKTUR 나이트 블랙 마그노",0],["190U","MANUFAKTUR 실리콘 그레이",0],["385U","MANUFAKTUR 코트다쥐르 라이트 블루",0],["593U","MANUFAKTUR 스펙트럴 블루 마그노",0],["599U","MANUFAKTUR 아일랜드 미드 그린 마그노",0],["659U","MANUFAKTUR 오팔라이트 화이트 마그노",0],["660U","MANUFAKTUR 루벨라이트 레드",0],["734U","MANUFAKTUR 하이 테크 실버 마그노",0],["818U","MANUFAKTUR 그라파이트 그레이 마그노",0],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",0],["934U","MANUFAKTUR 빈티지 블루 솔리드",0],["956U","MANUFAKTUR 알파인 그레이 솔리드",0],["993U","MANUFAKTUR 파타고니아 레드 브라이트",0]],"c04":[["197U","옵시디안 블랙",0],["914U","썬 옐로우",0],["970U","스펙트럴 블루",0],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",0],["993U","MANUFAKTUR 파타고니아 레드 브라이트",0]],"c05":[["197U","옵시디안 블랙",0],["914U","썬 옐로우",0],["970U","스펙트럴 블루",0],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",0],["993U","MANUFAKTUR 파타고니아 레드 브라이트",0]],"c06":[["149U","폴라 화이트",0],["696U","나이트 블랙",0],["191U","코스모스 블랙",1],["787U","마운틴 그레이",1],["970U","스펙트럴 블루",1],["922U","하이테크 실버",1],["662U","MANUFAKTUR 마운틴 그레이",1]],"c07":[["149U","폴라 화이트",0],["191U","코스모스 블랙",0],["696U","나이트 블랙",0],["787U","마운틴 그레이",0],["922U","하이 테크 실버",0]],"c08":[["191U","코스모스 블랙",0],["149U","폴라 화이트",0],["662U","MANUFAKTUR 마운틴 그레이 마그노",1]],"c09":[["149U","폴라 화이트",0],["197U","옵시디안 블랙",0],["992U","셀레나이트 그레이",0],["775U","이리디움 실버",0],["842U","소달라이트 블루",0],["859U","모하비 실버",0],["896U","브릴리안트 블루",0],["989U","에메랄드 그린",0],["041U","MANUFAKTUR 그라파이트 메탈릭",0],["124U","MANUFAKTUR 클래식 그레이 논-메탈릭",0],["693U","MANUFAKTUR 트레벌타인 베이지 메탈릭",0],["825U","MANUFAKTUR 딥 그린 논-메탈릭",0],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",0],["904U","MANUFAKTUR 다크 블루 논-메탈릭",0],["934U","MANUFAKTUR 빈티지 블루 논-메탈릭",0],["963U","MANUFAKTUR 인디움 그레이 메탈릭",0],["026U","MANUFAKTUR 오션 블루 메탈릭",0],["056U","MANUFAKTUR 나이트 블랙 마그노",0],["162U","MANUFAKTUR 사우스 씨 블루 메탈릭",0],["255U","MANUFAKTUR 올리브 메탈릭",0],["464U","MANUFAKTUR 데저트 샌드 논-메탈릭",0],["660U","MANUFAKTUR 루벨라이트 레드 메탈릭",0],["914U","MANUFAKTUR 썬 옐로우 논-메탈릭",0],["996U","MANUFAKTUR 하이신스 레드 메탈릭",0]],"c10":[["191U","코스모스 블랙",0],["149U","폴라 화이트",0],["696U","나이트 블랙",0],["787U","마운틴 그레이",0],["922U","하이 테크 실버",0],["970U","스펙트럴 블루",0],["993U","MANUFAKTUR 파타고니아 레드",0]],"c11":[["149U","폴라 화이트",0],["197U","옵시디안 블랙",0],["188U","베르데 실버",0],["831U","그라파이트 그레이",0],["922U","하이 테크 실버",0],["970U","스펙트럴 블루",0],["734U","MANUFAKTUR 하이 테크 실버 마그노",1],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",1],["956U","MANUFAKTUR 알파인 그레이",1],["818U","MANUFAKTUR 그라파이트 그레이 마그노",1],["993U","MANUFAKTUR 파타고니아 레드 메탈릭",1]],"c12":[["197U","옵시디안 블랙",0],["149U","폴라 화이트",0],["970U","스펙트럴 블루",0],["831U","그라파이트 그레이",0],["922U","하이 테크 실버",0],["124U","MANUFAKTUR 클래식 그레이 솔리드",1],["255U","MANUFAKTUR 올리브 메탈릭",1],["297U","MANUFAKTUR 셀레나이트 그레이 마그노",1],["385U","MANUFAKTUR 코트다쥐르 라이트 블루 메탈릭",1],["593U","MANUFAKTUR 스펙트럴 블루 마그노",1],["658U","MANUFAKTUR 쿠퍼 오렌지 마그노",1],["660U","MANUFAKTUR 루벨라이트 레드",1],["677U","MANUFAKTUR 칼라하리 골드 마그노",1],["685U","MANUFAKTUR 옐로우스톤 솔리드",1],["818U","MANUFAKTUR 그라파이트 그레이 마그노",1],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",1],["934U","MANUFAKTUR 빈티지 블루 솔리드",1],["993U","MANUFAKTUR 파타고니아 레드",1],["376U","AMG 그린 헬 마그노",1]],"c13":[["197U","옵시디안 블랙",0],["914U","썬 옐로우",0],["922U","하이테크 실버",0],["970U","스펙트럴 블루",0],["992U","셀레나이트 그레이",0],["056U","MANUFAKTUR 나이트 블랙 마그노",1],["190U","MANUFAKTUR 실리콘 그레이",1],["376U","MANUFAKTUR 그린 헬 마그노",1],["379U","MANUFAKTUR 오렌지 플레임",1],["464U","MANUFAKTUR 데저트 샌드",1],["593U","MANUFAKTUR 스펙트럴 블루 마그노",1],["658U","MANUFAKTUR 코퍼 오렌지 마그노",1],["659U","MANUFAKTUR 오팔라이트 화이트 마그노",1],["660U","MANUFAKTUR 루벨라이트 레드",1],["734U","MANUFAKTUR 하이테크 실버 마그노",1],["818U","MANUFAKTUR 그라파이트 그레이 마그노",1],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",1],["934U","MANUFAKTUR 빈티지 블루 솔리드",1],["956U","MANUFAKTUR 알파인 그레이 솔리드",1],["964U","MANUFAKTUR 하이퍼 블루 마그노",1],["993U","MANUFAKTUR 파타고니아 레드 브라이트",1]],"c14":[["149U","폴라 화이트",0],["696U","나이트 블랙",0],["787U","마운틴 그레이",0]],"c15":[["149U","폴라 화이트",0],["696U","나이트 블랙",0],["191U","코스모스 블랙",0],["787U","마운틴 그레이",0],["922U","하이 테크 실버",0],["970U","스펙트럴 블루",0],["993U","MANUFAKTUR 파타고니아 레드",0]],"c16":[["149U","폴라 화이트",0],["197U","옵시디안 블랙",0],["489U","다크 페트롤",0],["842U","소달라이트 블루",0],["922U","하이테크 실버",0]],"c17":[["149U","폴라 화이트",0],["197U","옵시디안 블랙",0],["992U","셀레나이트 그레이",0],["775U","이리디움 실버",0],["842U","소달라이트 블루",0],["859U","모하비 실버",0],["896U","브릴리언트 블루",0],["989U","에메랄드 그린",0],["041U","MANUFAKTUR 그라파이트 메탈릭",0],["124U","MANUFAKTUR 클래식 그레이 논-메탈릭",0],["693U","MANUFAKTUR 트레벌타인 베이지 메탈릭",0],["825U","MANUFAKTUR 딥 그린 논-메탈릭",0],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",0],["904U","MANUFAKTUR 다크 블루 논-메탈릭",0],["934U","MANUFAKTUR 빈티지 블루 논-메탈릭",0],["963U","MANUFAKTUR 인디움 그레이 메탈릭",0],["026U","MANUFAKTUR 오션 블루 메탈릭",0],["162U","MANUFAKTUR 사우스 씨 블루 메탈릭",0],["255U","MANUFAKTUR 올리브 메탈릭",0],["464U","MANUFAKTUR 데저트 샌드 논-메탈릭",1],["660U","MANUFAKTUR 루벨라이트 레드 메탈릭",0],["914U","MANUFAKTUR 썬 옐로우 논-메탈릭",0],["996U","MANUFAKTUR 하이신스 레드 메탈릭",0]],"c18":[["149U","폴라 화이트",0],["197U","옵시디안 블랙",0],["188U","베르데 실버",0],["831U","그라파이트 그레이",0],["922U","하이 테크 실버",0],["970U","스펙트럴 블루",0],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",1],["956U","MANUFAKTUR 알파인 그레이",1],["993U","MANUFAKTUR 파타고니아 레드 메탈릭",1]],"c19":[["149U","폴라 화이트",0],["197U","옵시디안 블랙",0],["489U","다크 페트롤",0],["842U","소달라이트 블루",0],["922U","하이테크 실버",0]],"c20":[["040U","블랙",0],["149U","폴라 화이트",0],["197U","옵시디안 블랙",0],["771U","벨벳 브라운",0],["842U","소다라이트 블루",0],["922U","하이 테크 실버",0],["989U","에메랄드 그린",0],["992U","셀레나이트 그레이",0]],"c21":[["393U","MANUFAKTUR 가넷 레드 메탈릭",0],["659U","MANUFAKTUR 오팔라이트 화이트 마그노",0]],"c22":[["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",0],["197U","옵시디안 블랙",0],["842U","소달라이트 블루",0],["922U","하이 테크 실버",0],["992U","셀레나이트 그레이",0]],"c23":[["197U","옵시디안 블랙",0],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",0],["993U","MANUFAKTUR 파타고니아 레드",0],["802U","MANUFAKTUR 칼라하리 골드 메탈릭",0],["831U","그라파이트 그레이",0],["989U","에메랄드 그린",0],["040U","블랙",0],["188U","베르데 실버",0],["595U","노틱 블루",0],["715U","웜 그레이 솔리드",0],["771U","벨벳 브라운",0],["922U","하이 테크 실버",0],["032U","MANUFAKTUR 미스틱 블루",0],["041U","MANUFAKTUR 그라파이트 그레이",0],["056U","MANUFAKTUR 나이트 블랙 마그노",0],["190U","MANUFAKTUR 실리콘 그레이 솔리드",0],["255U","MANUFAKTUR 올리브 메탈릭",0],["378U","MANUFAKTUR 베르데 실버 마그노",0],["659U","MANUFAKTUR 오팔라이트 화이트 마그노",0],["677U","MANUFAKTUR 칼라하리 골드 마그노",0],["934U","MANUFAKTUR 빈티지 블루",0]],"c24":[["149U","폴라 화이트",0],["696U","나이트 블랙",0],["191U","코스모스 블랙",1],["787U","마운틴 그레이",1],["922U","하이 테크 실버",1],["662U","MANUFAKTUR 마운틴 그레이 마그노",1],["993U","MANUFAKTUR 파타고니아 레드",1]],"c25":[["040U","블랙",0],["149U","폴라 화이트",0],["197U","옵시디안 블랙",0],["922U","하이 테크 실버",0],["831U","그라파이트 그레이",0],["842U","소달라이트 블루",0],["970U","스펙트럴 블루",0],["992U","셀레나이트 그레이",0],["818U","MANUFAKTUR 그라파이트 그레이 마그노",1],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",1],["956U","MANUFAKTUR 알파인 그레이",1],["993U","MANUFAKTUR 파타고니아 레드 브라이트",1]],"c26":[["032U","MANUFAKTUR 미스틱 블루",0],["040U","블랙",0],["041U","MANUFAKTUR 그라파이트 그레이",0],["056U","MANUFAKTUR 나이트 블랙 마그노",0],["188U","베르데 실버",0],["190U","MANUFAKTUR 실리콘 그레이 솔리드",0],["255U","MANUFAKTUR 올리브 메탈릭",0],["197U","옵시디안 블랙",0],["378U","MANUFAKTUR 베르데 실버 마그노",0],["595U","노틱 블루",0],["659U","MANUFAKTUR 오팔라이트 화이트 마그노",0],["677U","MANUFAKTUR 칼라하리 골드 마그노",0],["715U","웜 그레이 솔리드",0],["771U","벨벳 브라운",0],["802U","MANUFAKTUR 칼라하리 골드 메탈릭",0],["831U","그라파이트 그레이",0],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",0],["922U","하이 테크 실버",0],["934U","MANUFAKTUR 빈티지 블루",0],["989U","에메랄드 그린",0],["993U","MANUFAKTUR 파타고니아 레드",0]],"c27":[["149U","폴라 화이트",0],["696U","나이트 블랙",0],["191U","코스모스 블랙",1],["787U","마운틴 그레이",1],["922U","하이 테크 실버",1],["662U","MANUFAKTUR 마운틴 그레이 마그노",1],["993U","MANUFAKTUR 파타고니아 레드",1]],"c28":[["149U","폴라 화이트",0],["188U","베르데 실버",0],["197U","옵시디안 블랙",0],["595U","노틱 블루",0],["771U","벨벳 브라운",0],["831U","그라파이트 그레이",0],["922U","하이 테크 실버",0],["885U","MANUFAKTUR 오팔라이트 화이트",1],["956U","MANUFAKTUR 알파인 그레이",1],["993U","MANUFAKTUR 파타고니아 레드",1]],"c29":[["149U","폴라 화이트",0],["197U","옵시디안 블랙",0],["775U","이리디움 실버",0],["859U","모하비 실버",0],["842U","소달라이트 블루",0],["896U","브릴리언트 블루",0],["989U","에메랄드 그린",0],["992U","셀레나이트 그레이",0],["124U","MANUFAKTUR 클래식 그레이 논-메탈릭",1],["464U","MANUFAKTUR 데저트 샌드 논-메탈릭",1],["825U","MANUFAKTUR 딥 그린 논-메탈릭",1],["904U","MANUFAKTUR 다크 블루 논-메탈릭",1],["914U","MANUFAKTUR 썬 옐로우 논-메탈릭",1],["934U","MANUFAKTUR 빈티지 블루 논-메탈릭",1],["026U","MANUFAKTUR 오션 블루 메탈릭",1],["041U","MANUFAKTUR 그라파이트 메탈릭",1],["162U","MANUFAKTUR 사우스 씨 블루 메탈릭",1],["255U","MANUFAKTUR 올리브 메탈릭",1],["660U","MANUFAKTUR 루벨라이트 레드 메탈릭",1],["693U","MANUFAKTUR 트레벌타인 베이지 메탈릭",1],["963U","MANUFAKTUR 인디움 그레이 메탈릭",1],["996U","MANUFAKTUR 하이신스 레드 메탈릭",1],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",1],["659U","MANUFAKTUR 오팔라이트 화이트 마그노",1],["051U","MANUFAKTUR 플래티넘 마그노",1],["054U","MANUFAKTUR 몬자 그레이 마그노",1],["056U","MANUFAKTUR 나이트 블랙 마그노",1],["164U","MANUFAKTUR 다크 올리브 마그노",1],["271U","MANUFAKTUR 시트린 브라운 마그노",1],["658U","MANUFAKTUR 쿠퍼 오렌지 마그노",1],["677U","MANUFAKTUR 칼라하리 골드 마그노",1],["795U","MANUFAKTUR 망가나이트 그레이 마그노",1],["739U","MANUFAKTUR 올리브 마그노",1],["644U","MANUFAKTUR 브릴리언트 블루 마그노",1],["823U","MANUFAKTUR 히아신스 레드 마그노",1]],"c30":[["040U","블랙",0],["149U","폴라 화이트",0],["197U","옵시디안 블랙",0],["831U","그라파이트 그레이 메탈릭",0],["922U","하이 테크 실버 메탈릭",0],["842U","소다라이트 블루",0],["992U","셀레나이트 그레이 메탈릭",0]],"c31":[["197U","옵시디안 블랙",0],["040U","블랙",0],["149U","폴라 화이트",0],["842U","소다라이트 블루",0],["922U","하이 테크 실버",0],["992U","셀레나이트 그레이",0],["771U","벨벳 브라운",0],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",0],["956U","MANUFAKTUR 알파인 그레이 솔리드",0],["993U","MANUFAKTUR 파타고니아 레드",0]],"c32":[["149U","폴라 화이트",0],["341U","아쿠아 민트",0],["696U","제트 블랙",0],["809U","시어 블루",0],["922U","하이테크 실버",0],["993U","MANUFAKTUR 파타고니아 레드",0]],"c33":[["149U","폴라 화이트",0],["341U","아쿠아 민트",0],["696U","제트 블랙",0]],"c34":[["149U","폴라 화이트",0],["197U","옵시디안 블랙",0],["689U","라벤더 실버",0],["809U","시어 블루",0],["842U","소달라이트 블루",0],["922U","하이 테크 실버",0],["956U","MANUFAKTUR 알파인 그레이",0],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",0]],"c35":[["191U","코스모스 블랙",0],["149U","폴라 화이트",0],["696U","나이트 블랙",0],["922U","하이 테크 실버",0],["787U","마운틴 그레이",0]],"c36":[["191U","코스모스 블랙",0],["696U","나이트 블랙",0],["149U","폴라 화이트",0],["787U","마운틴 그레이",0],["922U","하이 테크 실버",0],["970U","스펙트럴 블루",0],["993U","MANUFAKTUR 파타고니아 레드",1]],"c37":[["197U","옵시디안 블랙",0],["149U","폴라 화이트",0],["040U","블랙",0],["771U","벨벳 브라운",0],["842U","소다라이트 블루",0],["922U","하이 테크 실버",0],["992U","셀레나이트 그레이",0]],"c38":[["197U","옵시디안 블랙",0],["346U","오닉스 블랙",0],["595U","노틱 블루",0],["831U","그라파이트 그레이",0],["842U","소다라이트 블루",0],["922U","하이 테크 실버",0],["040U","블랙",0],["149U","폴라 화이트",0]],"c39":[["149U","폴라 화이트",0],["197U","옵시디안 블랙",0],["831U","그라파이트 그레이",0],["914U","썬 옐로우",0],["922U","하이 테크 실버",0],["970U","스펙트럴 블루",0],["818U","MANUFAKTUR 그라파이트 그레이 마그노",0],["885U","MANUFAKTUR 오팔라이트 화이트 브라이트",0],["956U","MANUFAKTUR 알파인 그레이",0],["993U","MANUFAKTUR 파타고니아 레드 브라이트",0]],"c40":[["149U","폴라 화이트",0],["341U","아쿠아 민트",0],["696U","제트 블랙",0],["809U","시어 블루",0],["922U","하이테크 실버",0],["993U","MANUFAKTUR 파타고니아 레드",0]]};
+const SEATS = {"c01":[["851A","AMG 나파 가죽, 블랙","","",500,640],["854A","AMG 투톤 나파 가죽, 통카 브라운/블랙","","",501,640],["858A","AMG 투톤 나파 가죽, 실버 펄/블랙","","",500,640],["861A","AMG 나파 가죽, 블랙","","",504,640]],"c02":[["851A","AMG 나파 가죽, 블랙","","",800,375],["855A","AMG 나파 가죽, 마키아토 베이지/블랙","","",800,375],["857A","AMG 나파 가죽, 레드 페퍼/블랙","","",800,375],["874A","AMG 나파 가죽, 내추럴 베이지","","",800,375]],"c03":[["807A","나파 가죽, 레드 페퍼/블랙","","",800,375],["801A","나파 가죽, 블랙","","",800,375],["804A","나파 가죽, 시에나 브라운/블랙","","",800,375],["808A","나파 가죽, 세이지 그레이/블랙","","",800,375],["824A","MANUFAKTUR, 트러플 브라운/블랙","","",800,375],["825A","MANUFAKTUR, 크리스탈 화이트/블랙","","",800,375],["835A","MANUFAKTUR, 마키아토 베이지/티타늄 그레이","","",800,375]],"c04":[["251A","AMG 가죽, 블랙","","",499,640],["851A","AMG 나파 가죽, 블랙","","",499,640],["861A","AMG 나파 가죽, 블랙","","",499,640],["887A","AMG 나파 가죽, 투톤 파워 레드/블랙","","",499,640]],"c05":[["251A","AMG 가죽, 블랙","","",500,640],["851A","AMG 나파 가죽, 블랙","","",501,640],["861A","AMG 나파 가죽, 블랙","","",500,640],["887A","AMG 나파 가죽, 투톤 파워 레드/블랙","","",501,640]],"c06":[["651A","아티코 가죽/마이크로컷 마이크로파이버 블랙","기본사양","",800,375],["158A","아티코 가죽 세이지 그레이/블랙","선택사양","",800,375],["277A","가죽, 투톤 레드 페퍼/블랙","선택사양","AMG 가죽 패키지 선택 시 적용 가능",800,360],["654A","아티코 가죽/마이크로컷 마이크로파이버 바이아 브라운/블랙","유료옵션","",800,375]],"c07":[["671A","아티코 가죽, 마이크로컷 마이크로파이버 AMG 블랙","","",500,640],["277A","가죽, 투톤 레드 페퍼/블랙","","",501,640],["654A","아티코 가죽, 마이크로컷 마이크로파이버 바이아 브라운/블랙","","",501,640],["651A","아티코 가죽, 마이크로컷 마이크로파이버 블랙","","",500,640],["158A","아티코 가죽, 세이지 그레이/블랙","","",500,640]],"c08":[["671A","아티코 가죽 마이크로컷 마이크로파이버, AMG 블랙","기본사양","",500,640],["158A","아티코 가죽, 세이지 그레이/블랙","선택사양","",501,640],["651A","아티코 가죽, 마이크로컷 마이크로파이버 블랙","선택사양","",500,640],["277A","가죽, 투톤 레드 페퍼/블랙","유료옵션","",501,640],["654A","아티코 가죽 마이크로컷 마이크로파이버, 바이아 브라운/블랙","유료옵션","",500,640]],"c09":[["501A","나파 가죽, 블랙","","",500,640],["545A","나파 가죽, 트러플 브라운/블랙","","",501,640],["575A","나파 가죽, 마키아토 베이지/블랙","","",500,640],["801A","나파 가죽, 블랙","","",501,640],["808A","나파 가죽, 마키아토 베이지/마그마 그레이","","",500,640],["825A","나파 가죽, 트러플 브라운/블랙","","",501,640]],"c10":[["651A","아티코 가죽/마이크로컷 마이크로파이버 블랙","","",800,361],["158A","아티코 가죽 세이지 그레이/블랙","","",800,361],["277A","가죽, 투톤 레드 페퍼/블랙","","",800,361],["654A","아티코 가죽/마이크로컷 마이크로파이버 바이아 브라운/블랙","","",800,361]],"c11":[["251A","블랙, AMG 가죽","기본사양","",800,376]],"c12":[["801A","나파 가죽, 블랙","기본사양","",800,351],["501A","익스클루시브 나파 가죽, 블랙","유료옵션","",800,351],["507A","익스클루시브 나파 가죽, 레드 페퍼/블랙","유료옵션","",800,336],["528A","익스클루시브 나파 가죽, 투톤 블랙/티타늄 그레이 펄","유료옵션","",800,336],["554A","MANUFAKTUR 익스클루시브 나파 가죽, 새들 브라운/블랙","유료옵션","",800,336],["564A","MANUFAKTUR 익스클루시브 나파 가죽, 트러플 브라운/블랙","유료옵션","",800,351],["565A","MANUFAKTUR 익스클루시브 나파 가죽, 마키아토 베이지/마그마 그레이","유료옵션","",800,351],["952A","MANUFAKTUR 익스클루시브 나파 가죽, 요트 블루/블랙","유료옵션","",800,351],["954A","MANUFAKTUR 익스클루시브 나파 가죽, 시에나 브라운/블랙","유료옵션","",800,351],["957A","MANUFAKTUR 익스클루시브 나파 가죽, 클래식 레드/블랙","유료옵션","",800,336],["958A","MANUFAKTUR 익스클루시브 나파 가죽, 네바 그레이/블랙","유료옵션","",800,336],["959A","MANUFAKTUR 익스클루시브 나파 가죽, 딥 화이트/블랙","유료옵션","",800,351]],"c13":[["807A","나파 가죽, 레드페퍼/블랙","기본사양","",500,640],["801A","나파 가죽, 블랙","선택사양","",507,640],["804A","나파 가죽, 시에나 브라운/블랙","선택사양","",500,640],["808A","나파 가죽, 세이지 그레이/블랙","선택사양","",501,640],["952A","MANUFAKTUR 나파 가죽, 요트 블루/블랙","선택사양","",500,640],["954A","MANUFAKTUR 나파 가죽, 토바코 브라운/블랙","선택사양","",501,640],["955A","MANUFAKTUR 나파 가죽, 사바나 베이지/블랙","선택사양","",500,640],["956A","MANUFAKTUR 나파 가죽, 셰이디 그린/블랙","선택사양","",501,640],["957A","MANUFAKTUR 나파 가죽, 미스틱 레드/블랙","선택사양","",500,640],["958A","MANUFAKTUR 나파 가죽, 로제 그레이/블랙","선택사양","",501,640],["967A","MANUFAKTUR 나파 가죽, 클래식 레드/블랙","선택사양","",500,640],["824A","MANUFAKTUR 나파 가죽, 트러플 브라운/블랙","유료옵션","",501,640],["825A","MANUFAKTUR 나파 가죽, 크리스탈 화이트/블랙","유료옵션","",500,640],["835A","MANUFAKTUR 나파 가죽, 마키아토 베이지/티타늄 그레이","유료옵션","",501,640]],"c14":[["651A","아티코 가죽/마이크로컷 마이크로파이버 블랙","","",800,364],["654A","아티코 가죽/마이크로컷 마이크로파이버 바이아 브라운/블랙","","",800,364]],"c15":[["651A","아티코 가죽/다이나미카 블랙","","",800,364],["158A","아티코 가죽 세이지 그레이/블랙","","",800,364],["654A","아티코 가죽/마이크로컷 마이크로파이버 바이아 브라운/블랙","","",800,364]],"c16":[["231A","가죽, 블랙","","",500,640],["234A","가죽, 비치 브라운/블랙","","",501,640],["235A","가죽, 마키아토 베이지/블랙","","",500,640]],"c17":[["501A","나파 가죽, 블랙","","",500,640],["545A","나파 가죽, 트러플 브라운/블랙","","",501,640],["575A","나파 가죽, 마키아토 베이지/블랙","","",500,640],["801A","나파 가죽, 블랙","","",501,640],["808A","나파 가죽, 마키아토 베이지/마그마 그레이","","",500,640],["825A","나파 가죽, 트러플 브라운/블랙","","",501,640],["923A","MANUFAKTUR 나파 가죽, 플래티넘 화이트/블랙","","",500,640],["924A","MANUFAKTUR 나파 가죽, 에스프레소 브라운/블랙","","",501,640],["925A","MANUFAKTUR 나파 가죽, 카탈라나 베이지/블랙","","",500,640],["927A","MANUFAKTUR 나파 가죽, 뱅갈 레드/블랙","","",501,640],["928A","MANUFAKTUR 나파 가죽, 티타늄 그레이 펄/블랙","","",500,640],["934A","MANUFAKTUR 나파 가죽, 새들 브라운/블랙","","",501,640],["937A","MANUFAKTUR 나파 가죽, 레드 페퍼/블랙","","",500,640],["938A","MANUFAKTUR 나파 가죽, 세이지 그레이/블랙","","",501,640]],"c18":[["101A","아티코 인조 가죽, 블랙","기본사양","GLC 220 d 4MATIC, GLC 300 4MAITC AVANTGARDE / GLC 300 4MATIC Coupé AVANTGARDE 기준",800,375],["104A","아티코 인조 가죽, 시에나 브라운/블랙","유료옵션","GLC 220 d 4MATIC, GLC 300 4MAITC AVANTGARDE / GLC 300 4MATIC Coupé AVANTGARDE 기준 · 루프라이너, 크리스탈 그레이 선택 시 적용 불가",800,360],["105A","아티코 인조 가죽, 마키아토 베이지/블랙","유료옵션","GLC 220 d 4MATIC, GLC 300 4MAITC AVANTGARDE / GLC 300 4MATIC Coupé AVANTGARDE 기준 · 루프라이너, 크리스탈 그레이 선택 시 적용 불가",800,360],["111A","아티코 인조 가죽, 블랙","기본사양","GLC 300 4MATIC AMG Line / GLC 300 4MATIC Coupé AMG Line 기준",800,375],["118A","아티코 인조 가죽, 네바 그레이/블랙","유료옵션","GLC 300 4MATIC AMG Line / GLC 300 4MATIC Coupé AMG Line 기준",800,375],["194A","아티코 투톤 인조 가죽, 시에나 브라운/블랙","유료옵션","GLC 300 4MATIC AMG Line / GLC 300 4MATIC Coupé AMG Line 기준 · 루프라이너, 크리스탈 그레이 선택 시 적용 불가",800,360]],"c19":[["231A","가죽, 블랙","","",500,640],["234A","가죽, 비치 브라운/블랙","","",501,640],["235A","가죽, 마키아토 베이지/블랙","","",500,640],["801A","나파 가죽, 블랙","","",501,640],["804A","나파 가죽, 비치 브라운/블랙","","",500,640],["885A","나파 가죽, 투톤 화이트/블랙","","",501,640],["887A","나파 가죽, 투톤 클래식 레드/블랙","","",494,640]],"c20":[["515A","마이바흐 익스클루시브 나파 가죽, 마키아토 베이지/브론즈 브라운 펄","","",500,640],["514A","마이바흐 익스클루시브 나파 가죽, 발라오 브라운 펄/에스프레소 브라운","","",501,640],["519A","마이바흐 익스클루시브 나파 가죽, 크리스탈 화이트/실버 그레이 펄","","",500,640]],"c21":[["509A","MANUFAKTUR 익스클루시브 나파 가죽, 크리스탈 화이트","기본사양","",494,640]],"c22":[["511A","익스클루시브 나파 가죽, 블랙","","",800,375],["514A","익스클루시브 나파 가죽, 자바","","",800,375]],"c23":[["533A","마이바흐 익스클루시브 나파 가죽, 블랙","","",500,640],["534A","마이바흐 익스클루시브 나파 가죽, 브라운","","",501,640],["535A","마이바흐 익스클루시브 나파 가죽, 마키아토 베이지/브론즈 브라운 펄","","",500,640],["941A","MANUFAKTUR 마이바흐 익스클루시브 나파 가죽, 토바코/블랙","","",500,640],["991A","MANUFAKTUR 마이바흐 익스클루시브 나파 가죽, 딥 화이트/블랙","","",501,640],["992A","MANUFAKTUR 마이바흐 익스클루시브 나파 가죽, 요트 블루/블랙","","",500,640],["993A","MANUFAKTUR 마이바흐 익스클루시브 나파 가죽, 콘 옐로우/블랙","","",501,640],["996A","MANUFAKTUR 마이바흐 익스클루시브 나파 가죽, 레이크그린/블랙","","",500,640],["997A","MANUFAKTUR 마이바흐 익스클루시브 나파 가죽, 카민 레드/블랙","","",501,640]],"c24":[["101A","아티코 가죽, 블랙/블랙","기본사양","",800,375],["105A","아티코 가죽, 마키아토 베이지/블랙","유료옵션","",800,375]],"c25":[["101A","아티코 인조 가죽, 블랙","기본사양","C 200 AVANTGARDE 기준",800,375],["104A","아티코 가죽, 시에나 브라운/블랙","유료옵션","C 200 AVANTGARDE 기준",800,375],["105A","아티코 가죽, 마키아토 베이지/블랙","유료옵션","C 200 AVANTGARDE 기준",800,375],["111A","아티코 가죽, 블랙","기본사양","C 200 AMG Line 기준",800,375],["118A","아티코 가죽, 네바 그레이/블랙","유료옵션","C 200 AMG Line 기준",800,375],["194A","아티코 가죽, 시에나 브라운/블랙","유료옵션","C 200 AMG Line 기준",800,375],["297A","가죽, 파워 레드/블랙","유료옵션","C 200 AMG Line 기준 · 스펙트럴 블루 선택 시 적용 불가",800,360]],"c26":[["213A","가죽, 블랙","","",500,640],["214A","가죽, 브라운/블랙","","",501,640],["215A","가죽, 마키아토 베이지/마그마 그레이","","",500,640],["823A","나파 가죽, 블랙","","",619,640],["824A","나파 가죽, 브라운/블랙","","",500,640],["825A","나파 가죽, 마키아토 베이지/마그마 그레이","","",501,640],["523A","익스클루시브 나파 가죽, 블랙","","",500,640],["524A","익스클루시브 나파 가죽, 브라운/블랙","","",501,640],["525A","익스클루시브 나파 가죽, 마키아토 베이지/마그마 그레이","","",500,640]],"c27":[["101A","아티코 가죽, 블랙/블랙","기본사양","",800,375],["105A","아티코 가죽, 마키아토 베이지/블랙","유료옵션","",800,375]],"c28":[["101A","아티코 가죽, 블랙","","E 200 AVANTGARDE, E 200 EXCLUSIVE, E 220 d 4MATIC EXCLUSIVE 기본사양 / E 200 EXCLUSIVE 선택사양",800,375],["104A","아티코 가죽, 통카 브라운/블랙","","E 200 AMG Line 기본사양 / E 200 AVANTGARDE 유료옵션 · 루프라이너, 블랙 선택 시 적용 가능",800,360],["105A","아티코 가죽, 마키아토 베이지/블랙","","E 200 AMG Line 선택사양/E 200 AVANTGARDE 유료옵션",800,375],["114A","아티코 가죽, 통카 브라운","","E 200 EXCLUSIVE 기본사양 / E 220 d 4MATIC EXCLUSIVE 유료옵션 · 루프라이너, 블랙 선택 시 적용 가능",800,360],["115A","아티코 가죽, 마키아토 베이지","","E 200 EXCLUSIVE 선택사양 / E 220 d 4MATIC EXCLUSIVE 유료옵션",800,375],["201A","가죽, 블랙","","E 300 4MATIC EXCLUSIVE, E 350 e 4MATIC EXCLUSIVE 기본사양 / E 300 4MATIC AMG Line, E 450 4MATIC AMG Line 선택사양",800,375],["221A","가죽, 블랙","기본사양","E 300 4MATIC AMG Line, E 450 4MATIC AMG Line 기준",800,375],["205A","가죽, 마키아토 베이지/블랙","유료옵션","E 300 4MATIC AMG Line, E 450 4MATIC AMG Line 기준",800,375],["214A","가죽, 통카 브라운","유료옵션","E 300 4MATIC EXCLUSIVE, E 300 4MATIC AMG Line, E 350 e 4MATIC EXCLUSIVE, E 450 4MATIC AMG Line 기준",800,375],["215A","가죽, 마키아토 베이지","유료옵션","E 300 4MATIC EXCLUSIVE, E 350 e 4MATIC EXCLUSIVE 기준",800,375],["801A","나파 가죽, 블랙","기본사양","E 450 4MATIC EXCLUSIVE 기준",800,375],["814A","나파 가죽, 통카 브라운","유료옵션","E 450 4MATIC EXCLUSIVE 기준",800,375],["808A","나파가죽, 네바 그레이/블랙","유료옵션","E 300 4MATIC EXCLUSIVE, E 300 4MATIC AMG Line, E 350 e 4MATIC EXCLUSIVE, E 450 4MATIC EXCLUSIVE, E 450 4MATIC AMG Line 기준",800,359]],"c29":[["501A","나파 가죽, 블랙","기본사양","",500,640],["545A","나파 가죽, 트러플 브라운/블랙","선택사양","",501,640],["575A","나파 가죽, 마키아토 베이지/블랙","선택사양","",500,640],["904A","MANUFAKTUR 나파 가죽, 블랙/브론즈 스티칭","유료옵션","",499,640],["906A","MANUFAKTUR 나파 가죽, 블랙/라임 그린 스티칭","유료옵션","",500,640],["902A","MANUFAKTUR 나파 가죽, 블랙/블루 스티칭","유료옵션","",500,640],["903A","MANUFAKTUR 나파 가죽, 블랙/화이트 스티칭","유료옵션","",501,640],["907A","MANUFAKTUR 나파 가죽, 블랙/레드 스티칭","유료옵션","",499,640],["909A","MANUFAKTUR 나파 가죽, 블랙/골드 스티칭","유료옵션","",500,640],["923A","MANUFAKTUR 나파 가죽, 플래티넘 화이트/블랙","유료옵션","",500,640],["924A","MANUFAKTUR 나파 가죽, 에스프레소 브라운/블랙","유료옵션","",501,640],["925A","MANUFAKTUR 나파 가죽, 카탈라나 베이지/블랙","유료옵션","",500,640],["927A","MANUFAKTUR 나파 가죽, 벵갈 레드/블랙","유료옵션","",501,640],["928A","MANUFAKTUR 나파 가죽, 티타늄 그레이 펄/블랙","유료옵션","",500,640],["934A","MANUFAKTUR 나파 가죽, 새들 브라운/블랙","유료옵션","",501,640],["937A","MANUFAKTUR 나파 가죽, 레드 페퍼/블랙","유료옵션","",500,640],["938A","MANUFAKTUR 나파 가죽, 세이지 그레이/블랙","유료옵션","",501,640],["944A","MANUFAKTUR 나파 가죽, 에스프레소 브라운/블랙 액센트 밴드","유료옵션","",503,640],["947A","MANUFAKTUR 나파 가죽, 레드 페퍼/블랙 액센트 밴드","유료옵션","",504,640],["948A","MANUFAKTUR 나파 가죽, 티타늄 그레이/블랙 액센트 밴드","유료옵션","",503,640],["953A","MANUFAKTUR 투톤 나파 가죽, 플래티넘 화이트/블랙","유료옵션","",501,640],["954A","MANUFAKTUR 투톤 나파 가죽, 에스프레소 브라운/블랙","유료옵션","",500,640],["955A","MANUFAKTUR 투톤 나파 가죽, 카탈라나 베이지/블랙","유료옵션","",501,640],["957A","MANUFAKTUR 투톤 나파 가죽, 뱅갈 레드/블랙","유료옵션","",500,640],["958A","MANUFAKTUR 투톤 나파 가죽, 티타늄 펄 그레이/블랙","유료옵션","",501,640],["964A","MANUFAKTUR 투톤 나파 가죽, 새들 브라운/블랙","유료옵션","",500,640],["967A","MANUFAKTUR 투톤 나파 가죽, 레드 페퍼/블랙","유료옵션","",501,640],["968A","MANUFAKTUR 투톤 나파 가죽, 세이지 그레이/블랙","유료옵션","",498,640]],"c30":[["201A","가죽, 블랙/스페이스 그레이","기본사양","",800,375],["209A","가죽, 네바 그레이/발라오 브라운","유료옵션","",800,375],["211A","가죽, 블랙/발라오 브라운","유료옵션","",800,375],["219A","가죽, 네바 그레이/비스케이 블루","유료옵션","",800,375],["221A","가죽, 블랙/비스케이 블루","유료옵션","",800,375]],"c31":[["201A","가죽, 블랙/스페이스 그레이","","",800,375],["211A","가죽, 블랙/발라오 브라운","","",800,375],["221A","가죽, 블랙/비스케이 블루","","",800,375],["205A","가죽, 마키아토 베이지/스페이스 그레이","","",800,375],["209A","가죽, 네바 그레이/발라오 브라운","","",800,375],["801A","나파 가죽, 블랙/스페이스 그레이","","",800,375],["811A","나파 가죽, 블랙/발라오 브라운","","",800,375],["821A","나파 가죽, 블랙/비스케이 블루","","",800,375],["805A","나파 가죽, 마키아토 베이지/스페이스 그레이","","",800,375]],"c32":[["105A","아티코 가죽, 아이보리 베이지/블랙","","",501,640],["101A","아티코 가죽, 블랙","","",502,640],["681A","아티코 가죽 마이크로컷 투톤 마이크로파이버, 블랙/클린 화이트","","",501,640],["224A","가죽, 브라운/블랙","","",502,640]],"c33":[["101A","ARTICO 가죽, 블랙","","",501,640],["105A","ARTICO 가죽, 아이보리 베이지/블랙","","",501,640],["224A","가죽, 브라운/블랙","","",501,640]],"c34":[["211A","가죽, 블랙","","",546,640],["111A","ARTICO 가죽, 블랙","","",545,640],["214A","가죽, 비치 브라운/블랙","","",501,640],["114A","ARTICO 가죽, 비치 브라운/블랙","","",502,640],["215A","가죽, 아이보리 베이지/블랙","","",501,640],["115A","ARTICO 가죽, 아이보리 베이지/블랙","","",502,640]],"c35":[["105A","아티코 가죽, 마키아토 베이지/블랙","","",800,364],["101A","아티코 가죽, 블랙/블랙","","",800,364],["651A","아티코 가죽/마이크로컷 마이크로파이버 블랙","","",800,364],["158A","아티코 가죽 세이지 그레이/블랙","","",800,364]],"c36":[["105A","아티코 가죽, 마키아토 베이지/블랙","기본사양","EQB 300 4MATIC Progressive 기준",800,373],["651A","아티코 가죽/마이크로컷 마이크로파이버 블랙","기본사양","EQB 300 4MATIC AMG Line 기준",800,373],["101A","아티코 가죽, 블랙/블랙","선택사양","EQB 300 4MATIC Progressive 기준",800,373],["158A","아티코 가죽 세이지 그레이/블랙","","EQB 300 4MATIC Progressive 선택사양, EQB 300 4MATIC AMG Line 유료옵션",800,373]],"c37":[["111A","NEOTEX/ARTICO, 블랙/스페이스 그레이","선택사양","EQE 350+ SUV 기준",800,375],["109A","NEOTEX/ARTICO, 네바 그레이/발라오 브라운","선택사양","EQE 350+ SUV 기준",800,375],["119A","NEOTEX/ARTICO, 네바 그레이/비스케이 블루","선택사양","EQE 350+ SUV 기준",800,375],["121A","NEOTEX/ARTICO, 블랙/발라오 브라운","기본사양","EQE 350+ SUV 기준",800,375],["131A","NEOTEX/ARTICO 블랙/비스케이 블루","선택사양","EQE 350+ SUV 기준",800,375],["201A","가죽, 블랙/스페이스 그레이","선택사양","EQE 500 4MATIC SUV 기준",800,375],["209A","가죽, 네바 그레이/발라오 브라운","선택사양","EQE 500 4MATIC SUV 기준",800,375],["211A","가죽, 블랙/발라오 브라운","기본사양","EQE 500 4MATIC SUV 기준",800,375],["219A","가죽, 네바 그레이/비스케이 블루","선택사양","EQE 500 4MATIC SUV 기준",800,375],["221A","가죽, 블랙/비스케이 블루","선택사양","EQE 500 4MATIC SUV 기준",800,375]],"c38":[["203A","가죽, 블랙/스페이스 그레이","기본사양","",800,375],["213A","가죽, 블랙/발라오 브라운","유료옵션","",800,375],["215A","가죽, 마키아토 베이지/스페이스 그레이","유료옵션","",800,375],["219A","가죽, 네바 그레이/발라오 브라운","유료옵션","",800,375],["223A","가죽, 블랙/비스케이 블루","유료옵션","",800,375],["803A","나파 가죽, 블랙/스페이스 그레이","유료옵션","",800,375],["813A","나파 가죽, 블랙/발라오 브라운","유료옵션","",800,375],["815A","나파 가죽, 마키아토 베이지/스페이스 그레이","유료옵션","",800,375],["823A","나파 가죽, 블랙/비스케이 블루","유료옵션","",800,375]],"c39":[["101A","아티코 가죽, 블랙","","",800,364],["104A","아티코 가죽, 통카 브라운/블랙","","",800,364],["105A","아티코 가죽, 마키아토 베이지/블랙","","",800,364],["201A","가죽, 블랙","","",800,364],["204A","가죽, 새들 브라운/블랙","","",800,364],["205A","가죽, 마키아토 베이지/블랙","","",800,364],["207A","가죽, 파워 레드/블랙","","",800,364]],"c40":[["105A","아티코 가죽, 아이보리 베이지/블랙","","",501,640],["101A","아티코 가죽, 블랙","","",502,640],["681A","아티코 가죽, 마이크로컷 투톤 마이크로파이버 블랙/클린 화이트","","",501,640],["224A","가죽, 브라운/블랙","","",502,640]]};
+const colSel={};
+function palBlock(m,kind){
+  const SRC=kind==="ext"?COLORS:SEATS, cid=(m.cats||[]).find(c=>SRC[c]&&SRC[c].length); if(!cid) return "";
+  const L=SRC[cid], key=m.id+kind, k=Math.min(colSel[key]||0,L.length-1), f=L[k];
+  const pre=kind==="ext"?"":"s-", t=kind==="ext"?"외장 컬러":"시트 컬러";
+  const tag=c=>!c[2]?"":c[2]===1?"<em>유료옵션</em>":`<em${c[2]==="기본사양"?" class=\"base\"":""}>${esc(c[2])}</em>`;
+  const nm=c=>esc(c[1]).replace(/^(MANUFAKTUR|AMG) /,"$1<br>");
+  const btns=L.map((c,i)=>`<button type="button" data-col="${i}" aria-pressed="${i===k}"><b class="num">${esc(c[0])}</b><span>${nm(c)}</span>${tag(c)}${c[3]?`<small>${esc(c[3])}</small>`:""}</button>`).join("");
+  const note=kind==="ext"
+    ?`<p class="col-note"><b>※</b> 사진·컬러명은 카탈로그 기준입니다. MANUFAKTUR 등 <b>일부 컬러는 추가 비용</b>이 있으며, 트림·연식에 따라 선택 가능한 컬러가 다를 수 있습니다.</p>`
+    :`<p class="col-note"><b>※</b> 블랙 시트 외 다른 시트 컬러를 선택하시면 <b>옵션 비용이 발생할 수 있습니다</b> (차종별 상이). 트림에 따라 기본 시트와 선택 가능한 시트가 다르며, 사진·명칭은 카탈로그 기준입니다.</p>`;
+  return `<details class="rule col-fold" data-kind="${kind}" data-cid="${cid}" data-pre="${pre}"><summary><span><b class="ct">${t} <i class="num">${L.length}종</i></b><small>누르면 사진이 바뀝니다</small></span></summary>
+  <div class="col-ph${kind==="seat"?" seat":""}"><img data-src="../col/${pre}${cid}-${f[0]}.webp" alt="${esc(m.nm)} ${t} ${esc(f[0])}" decoding="async"><p class="col-now"><span class="num">${esc(f[0])}</span>${esc(f[1])}</p></div>
+  <div class="col-list" role="group" aria-label="${t} 선택">${btns}</div>${note}</details>`;
+}
+function colorBlock(m){ const e=palBlock(m,"ext"), s=palBlock(m,"seat"); return (e||s)?`<div class="col-wrap">${e}${s}</div>`:""; }
+function colorBind(m){
+  document.querySelectorAll(".col-fold").forEach(box=>{
+    const kind=box.dataset.kind, cid=box.dataset.cid, pre=box.dataset.pre, L=(kind==="ext"?COLORS:SEATS)[cid];
+    const img=box.querySelector("img"), now=box.querySelector(".col-now"), url=i=>`col/${pre}${cid}-${L[i][0]}.webp`;
+    const pl=new Set(), load=i=>{ if(pl.has(i)||!L[i]) return; pl.add(i); const p=new Image(); p.src=url(i); };
+    box.addEventListener("toggle",()=>{ if(box.open&&!img.getAttribute("src")){ img.src=img.dataset.src; setTimeout(()=>{load(1);load(2);},500);} });
+    const list=box.querySelector(".col-list");
+    list.addEventListener("pointerdown",e=>{const b=e.target.closest("[data-col]"); if(b) load(+b.dataset.col);});
+    list.addEventListener("click",e=>{
+      const b=e.target.closest("[data-col]"); if(!b) return; const i=+b.dataset.col, c=L[i]; colSel[m.id+kind]=i;
+      list.querySelectorAll("[data-col]").forEach(x=>x.setAttribute("aria-pressed",x===b));
+      img.classList.add("ld"); const done=()=>img.classList.remove("ld"); img.onload=done; img.onerror=done; img.src=url(i); if(img.complete) done();
+      now.innerHTML=`<span class="num">${esc(c[0])}</span>${esc(c[1])}`;
+    });
+  });
+}
+
+function catalogBlock(m){
+  const cats=(m.cats||[]);
+  if(!cats.length) return "";
+  const rows=m.trims.filter(t=>typeof t.p==="number").map(t=>{
+    const mx=maxOfM(t,m); const est=mx!=null?Math.round(t.p*(1-mx/100)):null;
+    return `<li><span>${t.y}년식 ${esc(t.n)}</span><b class="num">${fmt(t.p)}만원${est!=null?` <em>→ 약 ${fmt(est)}만원</em>`:""}</b></li>`;}).join("");
+  const links=cats.map(c=>{const u=CATALOG_URLS[c]; const nm=CATALOG_NAMES[c]||"카탈로그";
+    if(u&&CATALOG_VIEW) return `<a class="btn btn-y cat-link" href="../catalog.html?c=${c}">${esc(nm)} 보기</a><a class="pdf-link" href="${u}" download>PDF 원본 저장</a>`;
+    return u?`<a class="btn btn-y cat-link" href="${u}" target="_blank" rel="noopener">${esc(nm)} 열기 (PDF)</a>`:`<span class="btn btn-o" aria-disabled="true">${esc(nm)} 준비 중</span>`;}).join("");
+  return `<div class="cat-box">
+    <div class="cat-head"><div><b>카탈로그 보기</b><p>옵션·사양은 카탈로그에서 위아래로 넘겨 보실 수 있습니다.</p></div></div>
+    <div class="btn-row cat-links">${links}</div>
+    <details class="rule cat-price"><summary><span>※ <b>실제 차량가</b> 확인하기<small>권장 소비자가격, 부가세 포함 · 2026.11.16 기준</small></span></summary><div class="rb">
+      <ul class="gate-list">${rows||"<li><span>가격은 상담 시 안내드립니다.</span></li>"}</ul>
+      <p class="seat-mini"><b>※</b> 블랙 시트 외 시트 컬러 선택 시 옵션 비용이 발생할 수 있습니다. (차종별 상이)</p>
+    </div></details>
+  </div>`;
+}
+// 월 납입금 계산기 (원리금균등, 예상치)
+const CALC_RATE = 7.0; // 예시 상품 고정 금리 (사용자 지시 2026-11-23)
+function calcBlock(m){
+  const ts=m.trims.map((t,i)=>({t,i})).filter(o=>typeof o.t.p==="number");
+  if(!ts.length) return "";
+  const best=ts.reduce((a,b)=>((maxOf(b.t)||0)>(maxOf(a.t)||0)?b:a));
+  const opts=ts.map(o=>`<option value="${o.i}" ${o===best?"selected":""}>${o.t.y}년식 ${esc(o.t.n)}</option>`).join("");
+  return `<div class="calc" id="calc" data-id="${m.id}">
+    <h4>월 납입금 계산기<span>예상치</span></h4>
+    <div class="grid">
+      <label class="wide">트림<select id="cTrim">${opts}</select></label>
+      <label>차량가 (만원, 할인 반영)<input id="cPrice" type="number" inputmode="numeric" min="0" step="10"></label>
+      <label>선수금 (만원)<input id="cDown" type="number" inputmode="numeric" min="0" step="100" value="0"></label>
+      <label>기간<select id="cTerm"><option value="36">36개월</option><option value="48">48개월</option><option value="60" selected>60개월</option></select></label>
+      <label>연 금리 (예시 고정)<input id="cRate" type="text" value="연 ${CALC_RATE.toFixed(1)}%" readonly aria-readonly="true" tabindex="-1" class="rate-fixed"></label>
+    </div>
+    <p class="rate-note"><b>※ 예시 상품입니다.</b> 금리 연 ${CALC_RATE.toFixed(1)}%는 계산용 예시이며, 실제 금리는 월별 금융 상품에 따라 변동될 수 있습니다.</p>
+    <div class="quick" aria-label="선수금 비율">${[0,10,20,30,40,50,65,75].map(p=>`<button type="button" data-dp="${p}"${p>=65?' class="hi"':''}>선수 ${p}%${p===75?" ※":""}</button>`).join("")}</div>
+    <p class="dp-note">벤츠파이낸셜은 선수금 최대 65% 또는 75%까지 설정할 수 있습니다. <b>※ 75%는 차종별로 선택이 불가할 수 있습니다.</b></p>
+    <div class="out" id="cOut"></div>
+    <p class="fine">원리금균등 할부 기준 예상치입니다. 실제 금리·조건은 신용도와 그달 금융 프로모션에 따라 상담 시 확정됩니다. 취득세·보험료·탁송료는 포함되지 않습니다.</p>
+  </div>`;
+}
+function calcSetPrice(m){
+  const t=m.trims[+document.getElementById("cTrim").value]; const mx=maxOfM(t,m)||0;
+  document.getElementById("cPrice").value=Math.round(t.p*(1-mx/100));
+}
+function calcRun(){
+  const P=+document.getElementById("cPrice").value||0, D=Math.min(+document.getElementById("cDown").value||0,P);
+  const n=+document.getElementById("cTerm").value, r=CALC_RATE/100/12;
+  const L=(P-D)*10000; const pay = L<=0?0:(r?L*r/(1-Math.pow(1+r,-n)):L/n);
+  const tot=pay*n-L;
+  document.getElementById("cOut").innerHTML = L<=0?`<div class="big">할부 없음</div><div class="sub">선수금이 차량가 이상입니다.</div>`:
+    `<div>월 납입금 약</div><div class="big num">${fmt(Math.round(pay/1000)*1000)}원</div>
+     <div class="sub num">할부원금 ${fmt(P-D)}만원 · ${n}개월 · 연 ${(r*1200).toFixed(1)}% · 총 이자 약 ${fmt(Math.round(tot/10000))}만원</div>`;
+}
+// 골든타임 사은품 (공문 골든타임 프로그램: TEV+ / Non-TEV+)
+function isTevPlus(m){ return m.cat==="amg"||m.cat==="mb"||m.trims.some(t=>typeof t.r==="number"&&t.r>=2); }
+function giftLine(m){
+  if(NO_MOU.includes(m.id)) return `<div class="gift"><b>골든타임 사은품</b> · G-클래스는 대상에서 제외됩니다.</div>`;
+  const items=isTevPlus(m)?"테일러메이드 웰컴 골프백(그레이) 또는 폴딩 체어 2개":"웰컴 보스턴 백(화이트) 또는 캠핑 테이블 & 피크닉 블랭킷";
+  return `<div class="gift"><b>골든타임 사은품</b> (${isTevPlus(m)?"상위 차종":"일반 차종"}, 택 1) · ${items}<br><span style="color:var(--muted);font-size:12px">같은 달 계약금 입금 후 7일 이내 잔금 완납 시</span></div>`;
+}
+// MOU / SME 추가 할인
+const EXTRA_PCT = 2;
+const TEV_PLUS = ["s-class","eqs","eqs-suv","gls"];
+const NO_MOU = ["g-class","amg-g","g-eq"]; // G-클래스 MOU·SME 모두 제외 (사용자 지시)
+function grade(m){ if(NO_MOU.includes(m.id)) return null; if(TEV_PLUS.includes(m.id)) return "TEV+"; if(m.cat==="amg"||m.cat==="mb") return "TEV"; return null; }
+let extra=""; try{ const v=localStorage.getItem("extra"); if(v==="mou"||v==="sme") extra=v; }catch(_){}
+function bonus(m){ if(extra==="mou") return NO_MOU.includes(m.id)?0:EXTRA_PCT; if(extra==="sme"&&grade(m)) return EXTRA_PCT; return 0; }
+function maxOfM(t,m){ const b=bonus(m), mx=maxOf(t); if(!b) return mx; if(typeof t.p!=="number"&&mx==null) return null; return (mx||0)+b; }
+function setExtra(v){ extra=v; try{localStorage.setItem("extra",v)}catch(_){} }
+function extraBlock(m){
+  const g=grade(m), mouOk=!NO_MOU.includes(m.id);
+  return `<div class="extra">
+    <div class="t">${(mouOk||g)?"추가 할인 선택":"추가 할인 안내"}${g?`<span class="grade">${g} 차종</span>`:""}</div>
+    <div class="opts"${(mouOk||g)?"":" hidden"}>
+      <button type="button" data-extra="" aria-pressed="${extra===""||(extra==="sme"&&!g)||(extra==="mou"&&!mouOk)}">해당 없음</button>
+      ${mouOk?`<button type="button" data-extra="mou" aria-pressed="${extra==="mou"}">MOU 기업 재직 +2%</button>`:""}
+      ${g?`<button type="button" data-extra="sme" aria-pressed="${extra==="sme"}">SME 법인 구매 +2%</button>`:""}
+    </div>
+    <p class="fine">${!mouOk?"G-클래스는 MOU·SME 할인 대상이 아닙니다 (재구매·트레이드인은 가능). ":""}${(mouOk&&g)?"MOU는 재직증명서 확인 후, SME는 법인 명의 구매 시 적용되며":mouOk?"MOU는 재직증명서 확인 후 적용되며":g?"SME는 법인 명의 구매 시 적용되며":""}${(mouOk||g)?" 표의 최대·예상가에 바로 반영됩니다.":""}</p>
+  </div>`;
+}
+// 재구매 명의 기준 (공문 5p 신차 등록 명의 지원 범위)
+const NAME_RULE = `<details class="rule"><summary><span>※ 재구매 <b>명의 기준</b> 확인하기</span></summary><div class="rb">
+  <p class="lead">기존 차 명의에 있던 사람(과 그 배우자)만 신차 명의에 들어갈 수 있습니다.</p>
+  <h5>① 기존 차가 단독 명의 (본인)</h5>
+  <ul><li><span class="ok">가능</span> 본인 / 배우자 / 본인+배우자 공동</li>
+  <li><span class="no">불가</span> 부모님·자녀·형제 등이 들어간 명의 (지분 1%라도 불가)</li>
+  <li class="ex">예) 기존 차 본인 단독 → 신차 본인 99% + 부모님 1% <span class="no">✕</span></li></ul>
+  <h5>② 기존 차가 공동 명의 (본인 + 부모님 등)</h5>
+  <ul><li><span class="ok">가능</span> 공동 명의자 각자 / 두 사람 공동 / 각자의 배우자</li>
+  <li class="ex">예) 기존 차 본인+부모님 공동 → 신차 본인 99% + 부모님 1% <span class="ok">○</span></li>
+  <li>공동 명의자 중 한 명이 새로운 사람과 공동 명의로 구매하는 것도 가능</li></ul>
+  <h5>③ 법인</h5>
+  <ul><li><span class="ok">가능</span> 법인 → 법인</li><li><span class="no">불가</span> 법인 ↔ 대표자(배우자 포함)</li></ul>
+  <p class="ex" style="margin:8px 0 0">신차 구매월 기준 3개월 이내 보유 이력(등록원부·보험가입증명)이 필요합니다. 장기 렌트·리스·중고차도 인정, 단기 렌트는 불가. 배우자·가족 명의 시 가족관계증명서 필요.</p>
+  <p style="margin:6px 0 0;font-weight:900">※ 기존 차가 <span class="no">렌트·리스</span>인 경우 렌트·리스사에서 <span class="no">계약사실확인서</span>를 발급받아 주세요.</p>
+</div></details>`;
+const numOr = v => typeof v === "number" ? v : null;
+function maxOf(t){ const c=numOr(t.c), f=numOr(t.f); if(c==null) return null; return c+(f||0); }
+function modelMax(m){ let best=null; m.trims.forEach(t=>{const v=maxOf(t); if(v!=null&&(best==null||v>best)) best=v;}); return best; }
+function modelFrom(m){ const ps=m.trims.map(t=>t.p).filter(p=>typeof p==="number"); if(ps.length) return Math.min(...ps); const s=m.trims.map(t=>t.p).find(p=>typeof p==="string"); return s||null; }
+function priceText(p){ if(p==null) return "상담 문의"; return (typeof p==="number"?fmt(p):p)+"만원"; }
+function catName(id){ return (CATS.find(c=>c.id===id)||{}).name||""; }
+const esc = s => String(s).replace(/[&<>"]/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch]));
+
+// 이달의 프로모션 (할인 폭 큰 트림, 같은 차종끼리 묶어 세단→SUV 크기순)
+const PICKS = [
+  ["c-class","C 200 AMG Line",26],
+  ["e-class","E 200 EXCLUSIVE",27],
+  ["e-class","E 200 AMG Line",27],
+  ["gla","GLA 250 4MATIC AMG Line",26],
+  ["glb","GLB 250 4MATIC",26],
+  ["amg-glb","Mercedes-AMG GLB 35 4MATIC",26],
+  ["gle","GLE 450 4MATIC",26],
+  ["gle-coupe","GLE 450 4MATIC Coupé AMG Line",26]
+];
+function renderPicks(){
+  const g=document.getElementById("promoGrid");
+  g.innerHTML = PICKS.map(([mid,tn,y])=>{
+    const m=M.find(x=>x.id===mid); const t=m.trims.find(x=>x.n===tn&&x.y===y);
+    const mx=maxOf(t);
+    const est = typeof t.p==="number" ? Math.round(t.p*(1-mx/100)) : null;
+    return `<button class="pcard" type="button" data-id="${m.id}">
+      <span class="seg">${esc(catName(m.cat))} · ${y}년식</span>
+      <span class="nm">${esc(tn.replace(/ \(.*\)/,""))}</span>
+      <span class="pct num">${mx}<small>%</small></span>
+      <span class="pct-lbl">${t.f?`현금 ${t.c}% + 파이낸셜 ${t.f}%`:`현금 ${t.c}%`}</span>
+      <span class="price num">${typeof t.p==="number"?`권장가 ${fmt(t.p)}만원 → <b>약 ${fmt(est)}만원</b>`:"가격 상담 문의"}</span>
+      ${t.x?`<span class="tag">${esc(t.x)}</span>`:""}
+    </button>`;
+  }).join("");
+}
+
+// 카탈로그
+let curCat="all";
+function normModel(s){ return s.toLowerCase().replace(/\s+/g,"").replace(/-/g,""); }
+function renderTabs(){
+  const tabs=document.getElementById("tabs");
+  tabs.innerHTML = CATS.map(c=>{
+    const n = c.id==="all"?M.length:M.filter(m=>m.cat===c.id).length;
+    return `<button class="tab" role="tab" aria-selected="${c.id===curCat}" data-cat="${c.id}">${c.name}<span class="c num">${n}</span></button>`;
+  }).join("");
+}
+function renderModels(){
+  const q=normModel(document.getElementById("q").value);
+  const evWords=["전기","ev","eq","일렉트릭"];
+  const fb=+document.getElementById("fBudget").value||0, fr=0;
+  const fit=m=>m.trims.filter(t=>{ const mx=maxOf(t);
+    if(fr&&(mx==null||mx<fr)) return false;
+    if(fb){ if(typeof t.p!=="number") return false; if(t.p*(1-(mx||0)/100)>fb) return false; }
+    return true; });
+  const list=M.filter(m=>{
+    if(curCat!=="all"&&m.cat!==curCat) return false;
+    if((fb||fr)&&!fit(m).length) return false;
+    if(!q) return true;
+    const hay=normModel(m.nm+" "+m.seg+" "+catName(m.cat)+" "+m.trims.map(t=>t.n).join(" "));
+    return hay.includes(q) || (evWords.includes(q)&&m.cat==="ev");
+  });
+  document.getElementById("modelEmpty").hidden = list.length>0;
+  document.getElementById("modelGrid").innerHTML = list.map(m=>{
+    const mx=modelMax(m), from=modelFrom(m);
+    const hasCashStr = m.trims.some(t=>typeof t.c==="string"&&t.c.includes("만원"));
+    let disc;
+    if(mx!=null) disc=`<span class="max num">최대 <span class="hl">${mx}%</span></span>`;
+    else if(hasCashStr) disc=`<span class="max num"><span class="hl">100만원</span> 할인</span>`;
+    else disc=`<span class="none">재구매·보증 혜택</span>`;
+    const cid=(m.cats||[])[0];
+    const ph=(CATALOG_VIEW&&cid)?`<span class="ph"><img src="../thumb/${cid}.webp" width="640" height="360" alt="" loading="lazy" decoding="async"></span>`:"";
+    return `<button class="mcard${ph?" has-ph":""}" type="button" data-id="${m.id}">${ph}
+      <span class="seg">${esc(catName(m.cat))} · ${esc(m.seg)}</span>
+      <span class="nm">${esc(m.nm)}</span>
+      ${disc}
+      ${(fb||fr)?`<span class="fit">예산 내 트림 ${fit(m).length}개</span>`:""}
+      <span class="from num">${from==null?"가격 상담 문의":"권장가 "+(typeof from==="number"?fmt(from)+"만원~":from+"만원")}</span>
+    </button>`;
+  }).join("");
+}
+
+// 상세
+function pctCell(v,big){ if(v==null||v==="") return "–"; if(typeof v==="number") return `<span class="pct ${big?"big":""}">${v}%</span>`; return `<span>${esc(v)}</span>`; }
+function plus(v){ if(v==null) return ""; return typeof v==="number"?`+${v}%`:(/^\d/.test(v)?`+${v}%`:v); }
+function openModel(id, push){
+  const m=M.find(x=>x.id===id); if(!m) return;
+  const bn=bonus(m);
+  const rows=m.trims.map(t=>{
+    const mx=maxOfM(t,m);
+    const est=(typeof t.p==="number"&&mx!=null)?Math.round(t.p*(1-mx/100)):null;
+    const chips=[];
+    if(bn) chips.push(`<span class="chip m">${extra==="mou"?"MOU":"SME"} +${bn}%</span>`);
+    if(t.r) chips.push(`<span class="chip y">재구매 ${plus(t.r)}</span>`);
+    if(t.t) chips.push(`<span class="chip t">트레이드인 ${plus(t.t)}</span>`);
+    if(t.q) chips.push(`<span class="chip">타브랜드 ${plus(t.q)}</span>`);
+    if(t.e) chips.push(`<span class="chip">보증연장 +2년</span>`);
+    if(t.j) chips.push(`<span class="chip">파이낸셜 조인트</span>`);
+    if(t.b) chips.push(`<span class="chip k">GLC EV 우선 배정</span>`);
+    if(t.x) chips.push(`<span class="chip k">${esc(t.x)}</span>`);
+    return `<tr>
+      <td class="num">${t.y}년식</td>
+      <td><b>${esc(t.n)}</b><div class="chips trim-chips">${chips.join("")}</div></td>
+      <td class="r num" data-l="권장가">${t.p==null?"<span class='sm'>상담</span>":priceText(t.p)}</td>
+      <td class="r num" data-l="현금 할인">${pctCell(t.c)}</td>
+      <td class="r num" data-l="파이낸셜">${t.f==null?"–":(typeof t.f==="number"?"+"+t.f+"%":esc(t.f)+"%")}</td>
+      <td class="r num" data-l="최대 · 예상가">${mx!=null?pctCell(mx,true):"–"}${est!=null?`<span class="sm">약 ${fmt(est)}만원</span>`:""}</td>
+    </tr>`;
+  }).join("");
+  let mx=null; m.trims.forEach(t=>{const v=maxOfM(t,m); if(v!=null&&(mx==null||v>mx)) mx=v;}); const from=modelFrom(m);
+  const notes=(m.notes||[]).map(n=>`<li>${esc(n)}</li>`).join("");
+  document.getElementById("sheetIn").innerHTML=`
+    <div class="sheet-top">
+      <div><div class="seg">${esc(catName(m.cat))} · ${esc(m.seg)}</div><h3 id="sheetTitle">${esc(m.nm)}</h3></div>
+      <button class="x" type="button" id="closeSheet" aria-label="닫기">×</button>
+    </div>
+    <div class="seat-note"><b>※</b> 블랙 시트 외 다른 시트 컬러를 선택하시면 옵션 비용이 발생할 수 있습니다. <span class="seat-sub">(차종별 상이합니다)</span></div>
+    <p class="sheet-notice"><span class="nw">2026.11.20 공문 · 11.16 가격표 기준 ·</span> <span class="nw"><b>실제 조건은 상담 시 확정</b>됩니다.</span></p>
+    <p class="desc">${esc(m.d)}</p>
+    <div class="kv">
+      <span>최대 할인 <b class="num">${mx!=null?mx+"%":"재구매 전용"}</b></span>
+      <span>권장가 <b class="num">${from==null?"상담 문의":(typeof from==="number"?fmt(from)+"만원~":from+"만원")}</b></span>
+      <span>트림 <b class="num">${m.trims.length}</b>개</span>
+    </div>
+    ${catalogBlock(m)}
+    ${colorBlock(m)}
+    ${extraBlock(m)}
+    <div class="tbl-wrap trim-tbl"><table>
+      <thead><tr><th>연식</th><th>트림 · 추가 혜택 (조건 충족 시)</th><th class="r">권장가</th><th class="r">현금 할인</th><th class="r">파이낸셜</th><th class="r">최대 · 예상가</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>
+    ${m.trims.some(t=>t.t)?`<p class="tri-note" style="margin:12px 0 0"><b>※</b> 트레이드인: 기존 차량이 <b>6년 미만</b>이고 <b>주행거리 15만km 미만</b>, 두 조건을 모두 충족할 때만 적용됩니다. <span class="red">재구매 할인과 중복 가능</span>합니다.</p>`:""}
+    ${giftLine(m)}
+    ${NAME_RULE}
+    <a class="ew-link" href="#warranty">공식 보증 3년/10만km · HS효성 보증 상품 보기 →</a>
+    ${notes?`<ul class="notes">${notes}</ul>`:""}
+    ${calcBlock(m)}
+    <div class="sheet-cta">
+      <div class="t">이 차종 견적이 궁금하시면<span class="who"><b>박지성 과장</b><span class="num">010-6471-8942</span></span></div>
+      <a class="btn btn-y" href="tel:01064718942">전화 상담</a>
+      <a class="btn btn-wo" href="sms:01064718942">문자 문의</a>
+    </div>`;
+  if(document.getElementById("calc")){ calcSetPrice(m); calcRun(); }
+  colorBind(m);
+  const sh=document.getElementById("sheet");
+  sh.hidden=false; document.body.style.overflow="hidden";
+  document.getElementById("closeSheet").focus();
+  if(push!==false && location.hash!=="#m-"+id){ location.hash="m-"+id; }
+}
+function closeModel(){
+  document.getElementById("sheet").hidden=true; document.body.style.overflow="";
+  if(location.hash.startsWith("#m-")){ try{ history.replaceState(null,"","#models"); }catch(_){ location.hash="models"; } }
+}
+
+// MOU 검색
+const ALIAS=[["SK","에스케이"],["LG","엘지"],["KT","케이티"],["CJ","씨제이"],["GS","지에스"],["HD","에이치디"],["LS","엘에스"],["KB","케이비"],["NH","엔에이치"],["HS","에이치에스"],["LX","엘엑스"],["HL","에이치엘"],["NHN","엔에이치엔"],["SSG","에스에스지"],["SDS","에스디에스"],["SDI","에스디아이"],["IBM","아이비엠"],["DB","디비"],["BNK","비엔케이"],["LIG","엘아이지"]].sort((a,b)=>b[0].length-a[0].length);
+function normCo(s){
+  let x=String(s).toUpperCase();
+  ALIAS.forEach(([a,b])=>{ x=x.split(a).join(b); });
+  return x.replace(/주식회사|유한회사|유한책임회사|\(주\)|㈜|\(유\)|\(유한\)|법인|[\s()·.,\-]/g,"");
+}
+const MOU_IDX = MOU.map(r=>({n:r[0],g:r[1]||"",k:normCo(r[0]),gk:normCo(r[1]||"")}));
+function searchMou(){
+  const raw=document.getElementById("mq").value.trim();
+  const box=document.getElementById("mouResult");
+  if(!raw){ box.innerHTML=""; return; }
+  const q=normCo(raw);
+  if(q.length<2){ box.innerHTML=`<div class="verdict no"><div class="ic">?</div><div><b>두 글자 이상 입력해 주세요.</b></div></div>`; return; }
+  const hits=MOU_IDX.filter(r=>r.k.includes(q)||(r.gk&&r.gk.includes(q)));
+  const exact=hits.some(r=>r.k===q);
+  if(hits.length){
+    hits.sort((a,b)=>(b.k===q)-(a.k===q)||a.k.length-b.k.length);
+    const shown=hits.slice(0,30);
+    box.innerHTML=`<div class="verdict ok"><div class="ic">✓</div><div><b>${exact?`‘${esc(raw)}’은(는) MOU 체결 기업입니다.`:`‘${esc(raw)}’ 관련 MOU 기업 ${hits.length}곳`}</b><p>재직 증빙(재직증명서 등)이 있으면 이달 프로모션에 <b>MOU 2%</b>가 추가됩니다. 아래 목록에서 정확한 법인명을 확인해 주세요.</p><button class="btn btn-y mou-go" type="button" id="mouGo">MOU 2% 넣고 차종 보기</button></div></div>
+    <ul class="hits">${shown.map(r=>`<li><span>${esc(r.n)}</span>${r.g?`<span class="g">${esc(r.g)}</span>`:""}</li>`).join("")}</ul>
+    ${hits.length>30?`<p class="mou-meta">외 ${hits.length-30}곳이 더 있습니다. 회사명을 더 정확히 입력해 주세요.</p>`:""}`;
+  } else {
+    box.innerHTML=`<div class="verdict no"><div class="ic">–</div><div><b>‘${esc(raw)}’은(는) 목록에서 찾지 못했습니다.</b><p>법인 정식 명칭이나 계열사 이름으로 다시 검색해 보세요. 최근 체결된 기업일 수 있으니 010-6471-8942로 문의 주시면 바로 확인해 드립니다.</p></div></div>`;
+  }
+}
+
+// 이벤트
+function toast(msg){ const t=document.getElementById("toast"); t.textContent=msg; t.hidden=false; clearTimeout(toast._t); toast._t=setTimeout(()=>t.hidden=true,1800); }
+document.getElementById("tabs").addEventListener("click",e=>{ const b=e.target.closest(".tab"); if(!b) return; curCat=b.dataset.cat; try{localStorage.setItem("cat",curCat)}catch(_){} renderTabs(); renderModels(); });
+document.getElementById("q").addEventListener("input",()=>{ if(document.getElementById("q").value&&curCat!=="all"){curCat="all";renderTabs();} renderModels(); });
+document.addEventListener("click",e=>{ const c=e.target.closest(".mcard,.pcard"); if(c) openModel(c.dataset.id); });
+document.getElementById("sheet").addEventListener("click",e=>{ if(e.target.id==="sheet"||e.target.id==="closeSheet") { closeModel(); return; }
+  const g=e.target.closest("[data-gate]"); if(g){ const el=document.getElementById("gate-"+g.dataset.gate); el.hidden=false; g.hidden=true; el.scrollIntoView({block:"nearest",behavior:"smooth"}); } });
+document.getElementById("sheet").addEventListener("input",e=>{ if(e.target.closest&&e.target.closest("#calc")&&e.target.id!=="cTrim") calcRun(); });
+document.getElementById("sheet").addEventListener("click",e=>{ const x=e.target.closest("[data-extra]"); if(!x||x.disabled) return;
+  const id=document.getElementById("calc")?document.getElementById("calc").dataset.id:(location.hash.startsWith("#m-")?location.hash.slice(3):null);
+  setExtra(x.dataset.extra); const si=document.getElementById("sheetIn"), st=si.scrollTop; if(id){ openModel(id,false); si.scrollTop=st; } toast(x.dataset.extra?(x.dataset.extra==="mou"?"MOU 2% 반영":"SME 2% 반영"):"추가 할인 해제"); });
+document.getElementById("sheet").addEventListener("click",e=>{ const b=e.target.closest("[data-dp]"); if(!b) return; const P=+document.getElementById("cPrice").value||0; document.getElementById("cDown").value=Math.round(P*b.dataset.dp/100/10)*10; calcRun(); });
+["fBudget"].forEach(id=>document.getElementById(id).addEventListener("change",renderModels));
+document.getElementById("fReset").addEventListener("click",()=>{ document.getElementById("fBudget").value=""; renderModels(); });
+document.getElementById("sheet").addEventListener("change",e=>{ if(e.target.id==="cTrim"){ const m=M.find(x=>x.id===document.getElementById("calc").dataset.id); calcSetPrice(m); calcRun(); return; } const id=e.target.dataset&&e.target.dataset.ok; if(id){ document.getElementById("links-"+id).hidden=!e.target.checked; } });
+document.addEventListener("keydown",e=>{ if(e.key==="Escape"&&!document.getElementById("sheet").hidden) closeModel(); });
+document.getElementById("mq").addEventListener("input",searchMou);
+document.getElementById("mqBtn").addEventListener("click",searchMou);
+document.getElementById("mouResult").addEventListener("click",e=>{ if(e.target.id!=="mouGo") return; setExtra("mou"); toast("MOU 2%가 차종 상세에 반영됩니다"); document.getElementById("models").scrollIntoView({behavior:"smooth"}); });
+document.getElementById("mq").addEventListener("keydown",e=>{ if(e.key==="Enter") searchMou(); });
+function route(){ const h=location.hash; if(h.startsWith("#m-")) openModel(h.slice(3),false); else if(!document.getElementById("sheet").hidden) { document.getElementById("sheet").hidden=true; document.body.style.overflow=""; } }
+window.addEventListener("hashchange",route);
+
+try{ const c=localStorage.getItem("cat"); if(c&&CATS.some(x=>x.id===c)) curCat=c; }catch(_){}
+document.getElementById("mouCount").textContent=fmt(MOU.length);
+document.querySelectorAll(".rule-slot").forEach(el=>el.innerHTML=NAME_RULE);
+renderPicks(); renderTabs(); renderModels(); route();
+
+(function(){const n=document.querySelector('.nav nav'); if(!n) return; const f=()=>n.classList.toggle('more', n.scrollWidth-n.clientWidth-n.scrollLeft>4); n.addEventListener('scroll',f,{passive:true}); addEventListener('resize',f); f();})();
+
+document.querySelectorAll('.ew-cards table').forEach(t=>{const h=[...t.querySelectorAll('thead th')].map(th=>th.innerHTML.replace(/<br\s*\/?>/gi,'\n').replace(/<[^>]+>/g,'').trim());t.querySelectorAll('tbody tr').forEach(tr=>[...tr.children].forEach((td,i)=>{if(i>0&&h[i])td.setAttribute('data-l',h[i]);}));});
+</script>
+
+<script>
+/* 'S-클래스', '1%라도', '(가족 포함)는' 처럼 기호 앞뒤에서 줄이 끊기지 않도록 하이픈 뒤에 단어 결합 문자(U+2060)를 넣음 */
+(function(){
+  var RE=/([^\s\u2060])(?=[-+&%\/()~\u00B7])|([-+&%\/()~])(?=[^\s\u2060\u00B7])/g;
+  function fix(root){
+    var w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:function(n){var p=n.parentNode&&n.parentNode.nodeName;return (p==="SCRIPT"||p==="STYLE"||p==="TEXTAREA")?2:1;}}),n,t;
+    while((n=w.nextNode())){t=n.nodeValue;if(/[-+&%\/()~\u00B7]/.test(t)){var r=t.replace(RE,function(m){return m+"\u2060";});if(r!==t)n.nodeValue=r;}}
+  }
+  function run(){fix(document.body);}
+  if(document.readyState!=="loading")run();else document.addEventListener("DOMContentLoaded",run);
+  new MutationObserver(function(ms){for(var i=0;i<ms.length;i++){var m=ms[i];if(m.type==="characterData")fix(m.target.parentNode||m.target);else for(var j=0;j<m.addedNodes.length;j++){var a=m.addedNodes[j];if(a.nodeType===3)fix(a.parentNode);else if(a.nodeType===1)fix(a);}}}).observe(document.documentElement,{childList:true,subtree:true,characterData:true});
+})();
+</script>
+</body>
+</html>
